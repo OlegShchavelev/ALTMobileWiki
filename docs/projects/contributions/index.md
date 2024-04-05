@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Участники
+layout: contribution
+longtitle: Участники
 ---
 
-<AMWTeamMembers />
+Список участников

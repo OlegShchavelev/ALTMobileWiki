@@ -3,7 +3,7 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
-import AMWTeamMembers from './components /AMWTeamMembers.vue'
+import AMWContribution from './components/AMWContribution.vue'
 
 import {
   NolebaseEnhancedReadabilitiesMenu,
@@ -28,6 +28,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.provide(InjectionKey, NolebaseEnhancedReadabilitiesOptions as Options)
-    app.component('AMWTeamMembers', AMWTeamMembers);
+    app.component('contribution', AMWContribution);
   }
 } satisfies Theme

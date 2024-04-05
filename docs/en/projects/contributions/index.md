@@ -1,6 +1,4 @@
 ---
-layout: page
-title: Contributions
+layout: contribution
+longtitle: Contributions
 ---
-
-<AMWTeamMembers />
