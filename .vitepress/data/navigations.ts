@@ -33,6 +33,7 @@ export const sidebar = {
                     collapsed: true
                 }, {
                     text: 'Програмное обеспечение', base: '/apps', items: [
+                        { text: 'Текстовый редактор', link: '/text-editor/' },
                         { text: 'Amberol', link: '/amberol/' }
                     ],
                     collapsed: true
@@ -53,7 +54,8 @@ export const sidebar = {
                     collapsed: true
                 }, {
                     text: 'Software', base: '/en/apps', items: [
-                        { text: 'Amberol', link: '/amberol/' }
+                        { text: 'Amberol', link: '/amberol/' },
+                        { text: 'Text Editor', link: '/text-editor/' }
                     ],
                     collapsed: true
                 }, {

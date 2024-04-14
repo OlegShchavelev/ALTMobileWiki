@@ -31,7 +31,7 @@ Amberol plays music and nothing else.
 
 There are several ways to install Amberol on ALT Mobile:
 
-<!--@include: @en/apps/parts/install/software-repo.md-->
+<!--@include: @en/apps/_parts/install/software-repo.md-->
 
 **Installation via the terminal**
 
@@ -50,4 +50,4 @@ If you have the Flatpak package, you can install Amberol with one command. Termi
 flatpak install io.bassi.Amberol
 ```
 
-<!--@include: @en/apps/parts/install/software-flatpak.md-->
+<!--@include: @en/apps/_parts/install/software-flatpak.md-->
