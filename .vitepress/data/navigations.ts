@@ -28,7 +28,8 @@ export const sidebar = {
                 {
                     text: 'Установка и обновление', base: '/instalations', items: [
                         { text: 'Загрузчик', link: '/booting/' },
-                        { text: 'ALT Mobile', link: '/alt-mobile/' }
+                        { text: 'Мобильное устройство', link: '/mobile-device/' },
+                        { text: 'Виртуальная машина', link: '/virtual-machine/' }
                     ],
                     collapsed: true
                 }, {
@@ -49,7 +50,8 @@ export const sidebar = {
                 {
                     text: 'Installation and update', base: '/en/instalations', items: [
                         { text: 'The loader', link: '/booting/' },
-                        { text: 'ALT Mobile', link: '/alt-mobile/' }
+                        { text: 'Mobile device', link: '/mobile-device/' },
+                        { text: 'Virtual machine', link: '/virtual-machine/' }
                     ],
                     collapsed: true
                 }, {
