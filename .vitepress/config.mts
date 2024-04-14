@@ -109,7 +109,7 @@ export default defineConfigWithTheme({
         nav: nav.en,
         sidebar: sidebar.en,
         footer: {
-          message: 'Released under the <a href="en/licence/">MIT License</a>',
+          message: 'Released under the <a href="licence/">MIT License</a>',
           copyright: 'Copyright © 2024 ALT Mobile Wiki, developed on the platform <a href="//vitepress.dev/" target="_blank">VitePress 1.1.0</a>'
         },
         asideMeta: {

@@ -26,5 +26,5 @@ npm run docs:dev
 
 ## Лицензия
 
-[MIT](https://gitea.basealt.ru/schavelevoi/ALTMobileWiki/src/branch/main/LICENSE)
-Copyright © 2024-present OLEG SHCHAVELEV
+[MIT](https://gitea.basealt.ru/schavelevoi/ALTMobileWiki/src/branch/main/LICENCE)
+Copyright © 2024-present <OLEG SHCHAVELEV>
