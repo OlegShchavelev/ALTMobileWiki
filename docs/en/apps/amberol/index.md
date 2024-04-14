@@ -1,7 +1,24 @@
 ---
-appstream: 
+aggregation:
+    flatpak: io.bassi.Amberol
+    sisyphus: amberol
+appstream:
     id: io.bassi.Amberol
     name: Amberol
+    icon: https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.bassi.Amberol.png
+    summary: Plays music, and nothing else
+    keywords: 
+        - adaptive
+        - circle
+        - altmobile
+    developer: 
+        name: GNOME
+    metadata_license: 
+        name: GNU GPLv3
+        link: https://choosealicense.com/licenses/gpl-3.0/
+    url: 
+        homepage: https://gitlab.gnome.org/World/amberol/
+        bugtracker: https://github.com/flathub/com.anydesk.Anydesk/issues
 ---
 
 # Amberol

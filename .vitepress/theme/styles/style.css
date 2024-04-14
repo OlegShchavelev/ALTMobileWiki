@@ -137,3 +137,18 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Component: Badge
+ * -------------------------------------------------------------------------- */
+
+.VPBadge.success {
+  border-color: transparent;
+  color: var(--vp-c-success-1);
+  background-color: var(--vp-c-success-soft);
+}
+
+.VPBadge.success-1 {
+  border-color: transparent;
+  color: var(--vp-c-white);
+  background-color: var(--vp-c-success-2);
+}

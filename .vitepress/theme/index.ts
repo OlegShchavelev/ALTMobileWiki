@@ -14,6 +14,8 @@ import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { options as NolebaseEnhancedReadabilitiesOptions } from './plugins/enhanced-readabilities/index'
 
+import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
+
 import './styles/style.css'
 import './styles/theme.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
@@ -23,7 +25,8 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
-      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu)
+      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+      'aside-outline-after': () => h(AMWDocsAsideMeta),
     })
   },
   enhanceApp({ app, router, siteData }) {
