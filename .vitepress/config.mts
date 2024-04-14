@@ -38,6 +38,10 @@ export default defineConfigWithTheme({
           quote: 'Похоже, что вы перешли по неверной или устаревшей ссылке. Вы можете воспользоваться поиском.',
           linkText: 'Вернуться на главную'
         },
+        footer: {
+          message: 'Released under the  <a href="en/licence/">MIT License</a>',
+          copyright: 'Copyright © 2024 ALT Mobile Wiki, developed on the platform <a href="//vitepress.dev/" target="_blank">VitePress 1.1.0</a>'
+        },
         asideMeta: {
           developer: {
             label: 'Разрабочик'
@@ -104,6 +108,10 @@ export default defineConfigWithTheme({
       themeConfig: {
         nav: nav.en,
         sidebar: sidebar.en,
+        footer: {
+          message: 'Released under the  <a href="licence/">MIT License</a>',
+          copyright: 'Copyright © 2024 ALT Mobile Wiki, developed on the platform <a href="//vitepress.dev/" target="_blank">VitePress 1.1.0</a>'
+        },
         asideMeta: {
           developer: {
             label: 'Developer'
