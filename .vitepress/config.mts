@@ -20,7 +20,7 @@ export default defineConfigWithTheme({
           next: 'Следующая страница'
         },
         editLink: {
-          pattern: 'https://github.com/OlegShchavelev/ALTRegularGnomeWiki/edit/main/docs/:path',
+          pattern: 'https://gitea.basealt.ru/schavelevoi/ALTMobileWiki/src/branch/main/docs/:path',
           text: 'Предложить изменения на этой странице'
         },
         lastUpdated: {
@@ -178,6 +178,9 @@ export default defineConfigWithTheme({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/OlegShchavelev/ALTMobileWiki' }
     ],
+    editLink: {
+      pattern: 'https://gitea.basealt.ru/schavelevoi/ALTMobileWiki/src/branch/main/docs/:path',
+    },
     outline: {
       level: [2, 3],
     },
