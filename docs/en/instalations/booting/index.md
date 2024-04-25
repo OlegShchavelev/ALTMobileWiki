@@ -39,6 +39,8 @@ dd if=spi.installer.img of=/dev/XXX bs=1M oflag=direct,sync status=progress
 
 **Note:** Erasing the storage before installation is not required. The erasing option can be used to remove Tow-Boot (or any other firmware installed in the SPI partition).
 
+<Video id="7piXOM8G2uQ" />
+
 # Additional
 
 ### Default Account Data

@@ -4,6 +4,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
 import AMWContribution from './components/AMWContribution.vue'
+import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
+import AMWVideo from './components/AMWVideo.vue'
 
 import {
   NolebaseEnhancedReadabilitiesMenu,
@@ -13,8 +15,6 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { options as NolebaseEnhancedReadabilitiesOptions } from './plugins/enhanced-readabilities/index'
-
-import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 
 import './styles/style.css'
 import './styles/theme.css'
@@ -33,5 +33,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.provide(InjectionKey, NolebaseEnhancedReadabilitiesOptions as Options)
     app.component('contribution', AMWContribution);
+    app.component('Video', AMWVideo)
   }
 } satisfies Theme

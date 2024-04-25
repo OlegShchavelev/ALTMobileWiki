@@ -51,6 +51,7 @@ dd if=spi.installer.img of=/dev/XXX bs=1M oflag=direct,sync status=progress
 стирания может использоваться для удаления Tow-Boot (или любого другого
 прошивочного ПО, установленного в раздел SPI).
 
+<Video id="7piXOM8G2uQ" />
 
 # Дополнительно
 
