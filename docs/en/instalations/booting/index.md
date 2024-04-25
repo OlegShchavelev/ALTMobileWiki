@@ -21,7 +21,9 @@ dd if=spi.installer.img of=/dev/XXX bs=1M oflag=direct,sync status=progress
 
 - After writing the Tow-Boot image to the SD card, follow these steps:
 
-**Note:** If you are not sure that the battery is fully charged, it is recommended to connect the phone to a power source.
+::: info
+If you are not sure that the battery is fully charged, it is recommended to connect the phone to a power source.
+:::
 
 ### Installation process
 
@@ -37,7 +39,9 @@ dd if=spi.installer.img of=/dev/XXX bs=1M oflag=direct,sync status=progress
 8. After a while, the screen will turn on showing a blue color or directly load into the graphical installer interface.
 9. In the graphical installer interface, select "Install Tow-Boot to SPI", connect the charger to the phone, and press the "Start installation" button.
 
-**Note:** Erasing the storage before installation is not required. The erasing option can be used to remove Tow-Boot (or any other firmware installed in the SPI partition).
+:::info 
+Erasing the storage before installation is not required. The erasing option can be used to remove Tow-Boot (or any other firmware installed in the SPI partition).
+:::
 
 <Video id="7piXOM8G2uQ" />
 

@@ -196,6 +196,13 @@ export default defineConfigWithTheme({
     },
   },
   markdown: {
+    container: {
+      tipLabel: 'TIPS',
+      warningLabel: 'WARNING',
+      dangerLabel: 'CAUTION',
+      infoLabel: 'NOTE',
+      detailsLabel: 'DETAILS'
+    },
     config: (md) => {
       md.use(markdownimeline);
     },
