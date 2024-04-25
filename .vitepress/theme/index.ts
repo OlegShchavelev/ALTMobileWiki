@@ -19,6 +19,7 @@ import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import './styles/style.css'
 import './styles/theme.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import "vitepress-markdown-timeline/dist/theme/index.css"
 
 export default {
   extends: DefaultTheme,

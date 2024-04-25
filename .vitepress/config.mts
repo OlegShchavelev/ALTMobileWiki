@@ -1,6 +1,8 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from './data/navigations'
 
+import markdownimeline from "vitepress-markdown-timeline"
+
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
   title: "ALT Mobile Wiki",
@@ -192,5 +194,10 @@ export default defineConfigWithTheme({
     outline: {
       level: [2, 3],
     },
-  }
+  },
+  markdown: {
+    config: (md) => {
+      md.use(markdownimeline);
+    },
+  },
 })
