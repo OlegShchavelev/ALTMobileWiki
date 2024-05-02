@@ -1,7 +1,7 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from './data/navigations'
 
-import markdownimeline from "vitepress-markdown-timeline"
+import markdownTimeline from "vitepress-markdown-timeline"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
@@ -204,7 +204,7 @@ export default defineConfigWithTheme({
       detailsLabel: 'DETAILS'
     },
     config: (md) => {
-      md.use(markdownimeline);
+      md.use(markdownTimeline);
     },
   },
 })
