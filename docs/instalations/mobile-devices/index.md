@@ -1,19 +1,16 @@
-# ALT Mobile Pinephone / Pinephone Pro
+# Установка ALT Mobile на Pinephone / Pinephone Pro
 
 Данный блок посвящён установке системы ALT Mobile на устройства
 Pinephone и Pinephone Pro и другой важной информации которая может пригодится при установке.
 
-## Установка ALT Mobile на Pinephone / Pinephone Pro
-
-
-### Скачивание образа ALT Mobile
+## Скачивание образа ALT Mobile
 
 - Образ ALT Mobile можно скачать c
     [ftp](http://beta.altlinux.org/mobile/latest/), нам
     необходимы образы начинающиеся с pinephone, к примеру
     `pinephone-phosh-20231123-aarch64.img.xz`.
 
-### Установка на внутреннюю память (emmc)
+## Установка на внутреннюю память (emmc)
 
 **Подготовка телефона:**
 
@@ -49,7 +46,7 @@ resize2fs -p /dev/sdX1
 - После завершения процедуры, перезагрузите устройство для запуска с
     новой системой.
 
-### Установка на SD карту
+## Установка на SD карту
 
 **Графический способ установки:**
 
@@ -70,7 +67,7 @@ resize2fs -p /dev/sdX1
 - Для загрузки с SD карты, при включении телефона зажмите кнопку
     Volume Down.
 
-### Установка Tow-Boot на Pinephone Pro
+## Установка Tow-Boot на Pinephone Pro
 
 - Скачайте образ установщика Tow-Boot со [страницы
     релизов](https://github.com/Tow-Boot/Tow-Boot/releases/tag/release-2022.07-006). Образ установщика ищем согласно модели вашего устройства.

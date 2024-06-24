@@ -28,7 +28,8 @@ export const sidebar = {
                 {
                     text: 'Установка и обновление', base: '/instalations', items: [
                         { text: 'Загрузчик', link: '/booting/' },
-                        { text: 'Мобильное устройство', link: '/mobile-device/' },
+                        { text: 'Мобильные устройства', link: '/mobile-devices/' },
+                        { text: 'Портотивные игровые приставки', link: '/portable-game-consoles/' },
                         { text: 'Виртуальная машина', link: '/virtual-machine/' }
                     ],
                     collapsed: true
@@ -50,7 +51,8 @@ export const sidebar = {
                 {
                     text: 'Installation and update', base: '/en/instalations', items: [
                         { text: 'The loader', link: '/booting/' },
-                        { text: 'Mobile device', link: '/mobile-device/' },
+                        { text: 'Mobile devices', link: '/mobile-devices/' },
+                        { text: 'Portable Game Consoles', link: '/portable-game-consoles/' },
                         { text: 'Virtual machine', link: '/virtual-machine/' }
                     ],
                     collapsed: true
