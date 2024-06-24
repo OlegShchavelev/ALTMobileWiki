@@ -16,9 +16,13 @@ Anbernic для запуска на них ОС ALT, в частности, ALT 
 
 `apt-get install alt-rootfs-installer`
 
-Скачиваем образ с ядром rocknix:
+Для RG552 Скачиваем образ с ядром rocknix:
 
 `wget `[`https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-rocknix-ad-20240623-aarch64.img.xz`](https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-rocknix-ad-20240623-aarch64.img.xz)
+
+Для RG353M - образ с pine:
+
+`wget `[`https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-pine-ad-20240623-aarch64.img.xz`](https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-pine-ad-20240623-aarch64.img.xz)
 
 Вставляем адаптер с картой памяти в порт USB и в режиме
 суперпользователя выполняем команду
