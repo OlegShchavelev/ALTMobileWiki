@@ -29,7 +29,7 @@ export const sidebar = {
                     text: 'Установка и обновление', base: '/instalations', items: [
                         { text: 'Загрузчик', link: '/booting/' },
                         { text: 'Мобильные устройства', link: '/mobile-devices/' },
-                        { text: 'Портотивные игровые приставки', link: '/portable-game-consoles/' },
+                        { text: 'Портативные игровые приставки', link: '/portable-game-consoles/' },
                         { text: 'Виртуальная машина', link: '/virtual-machine/' }
                     ],
                     collapsed: true
