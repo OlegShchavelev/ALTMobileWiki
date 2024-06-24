@@ -42,7 +42,7 @@ export default defineConfigWithTheme({
         },
         footer: {
           message: 'Опубликовано под <a href="licence/">лицензией MIT</a>',
-          copyright: '© 2024 ALT Mobile Wiki, разработано на платформе <a href="//vitepress.dev/" target="_blank">VitePress 1.1.4</a>'
+          copyright: '© 2024 ALT Mobile Wiki, разработано на платформе <a href="//vitepress.dev/" target="_blank">VitePress 1.2.3</a>'
         },
         asideMeta: {
           developer: {
