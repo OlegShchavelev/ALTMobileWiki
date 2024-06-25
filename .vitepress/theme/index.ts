@@ -15,6 +15,7 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { options as NolebaseEnhancedReadabilitiesOptions } from './plugins/enhanced-readabilities/index'
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './styles/style.css'
 import './styles/theme.css'
@@ -32,7 +33,8 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.provide(InjectionKey, NolebaseEnhancedReadabilitiesOptions as Options)
-    app.component('contribution', AMWContribution);
+    app.component('contribution', AMWContribution)
     app.component('Video', AMWVideo)
+    enhanceAppWithTabs(app)
   }
 } satisfies Theme

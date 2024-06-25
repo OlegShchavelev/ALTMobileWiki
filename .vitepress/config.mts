@@ -2,6 +2,7 @@ import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from './data/navigations'
 
 import markdownTimeline from "vitepress-markdown-timeline"
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
@@ -205,6 +206,7 @@ export default defineConfigWithTheme({
     },
     config: (md) => {
       md.use(markdownTimeline);
+      md.use(tabsMarkdownPlugin)
     },
   },
 })

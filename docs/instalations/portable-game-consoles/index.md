@@ -5,37 +5,54 @@ Anbernic для запуска на них ОС ALT, в частности, ALT 
 
 Возможность запуска была протестирована на следующих моделях приставок:
 
-`- Anbernic RG 552`\
-`- Anbernic RG 353M`
+- Anbernic RG 552
+- Anbernic RG 353M
 
 ## Подготовка карты памяти {#подготовка_карты_памяти}
 
-Устанавливаем утилиту alt-rootfs-installer
+Устанавливаем утилиту `alt-rootfs-installer`
 
-`su -`
+```shell
+su -
+apt-get install alt-rootfs-installer
+```
 
-`apt-get install alt-rootfs-installer`
+:::tabs
+== RG552
 
-Для RG552 Скачиваем образ с ядром rocknix:
+Скачиваем образ с ядром rocknix:
 
-`wget `[`https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-rocknix-ad-20240623-aarch64.img.xz`](https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-rocknix-ad-20240623-aarch64.img.xz)
+```shell
+wget https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-rocknix-ad-20240623-aarch64.img.xz
+```
 
-Для RG353M - образ с pine:
+Вставляем адаптер с картой памяти в порт USB
 
-`wget `[`https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-pine-ad-20240623-aarch64.img.xz`](https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-pine-ad-20240623-aarch64.img.xz)
+```shell
+su -
+alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rg552-rk3399
+```
 
-Вставляем адаптер с картой памяти в порт USB и в режиме
-суперпользователя выполняем команду
+== RG353M 
 
-Для Anbernic RG 552:
+Скачиваем образ с ядром pine:
 
-`alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rg552-rk3399`
+```shell
+wget https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-pine-ad-20240623-aarch64.img.xz
+```
 
-Для Anbernic RG 353M:
+Вставляем адаптер с картой памяти в порт USB
 
-`alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rgxx3-rk3566`
+```shell
+su -
+alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rgxx3-rk3566
+```
 
-где /dev/sdX - путь до нашей карты памяти.
+:::
+
+:::info
+где `/dev/sdX` - путь до нашей карты памяти.
+:::
 
 ## Подготовка приставки {#подготовка_приставки}
 
@@ -49,32 +66,51 @@ Anbernic для запуска на них ОС ALT, в частности, ALT 
 памяти объёмом от 128 гигабайт, чтобы в будущем восстановить стоковый Android. Если же сохранения
 Android не планируется, то пункты с 4 по 7 можно проигнорировать.
 
-0\. Переводим устройство в режим Recovery, зажав при запуске клавишу
+Переводим устройство в режим Recovery, зажав при запуске клавишу
 увеличения громкости. Мы попадаем в меню восстановления системы.
 
-Подключаем устройство к ПК через разъём, который подписан как OTG.
+0. Подключаем устройство к ПК через разъём, который подписан как OTG. Все дальнейшие действие производим из под `root`:
 
-1\. Устанавливаем android-tools:
+```shell
+su -
+```
 
-`su -`
+1\. Устанавливаем `android-tools`:
 
-`apt-get install andriod-tools`
+```shell
+apt-get install andriod-tools
+```
 
 2\. Вводим одну за другой команды, дожидаясь завершения выполнения
 каждой из них.
 
-`adb devices` - Ищем наше устройство. Должна появиться
-строка к кодовым номером и названием \"Recovery\"
 
-`adb root` - получаем привелегии суперпользователя на системе устройства
+Ищем наше устройство. Должна появиться
+строка к кодовым номером и названием \"Recovery\":
 
-`adb shell` - заходим в устройство.
+```shell
+adb devices
+```
+
+Получаем привелегии суперпользователя на системе устройства:
+
+```shell
+adb root
+```
+
+Заходим в устройство:
+
+```shell
+adb shell
+```
 
 3\. Ищем блочное устройство памяти, которое будем затирать.
 
-`ls /dev/block/ | grep mmcblk`
+```shell
+ls /dev/block/ | grep mmcblk
+```
 
-Встроенная память определится как `/dev/block/mmcblkX`, с кучей
+Встроенная память определится как `/dev/block/mmcblkX`, с большим количеством
 разделов.
 
 4\. Вставляем карту памяти во второй слот, она определится как
@@ -82,23 +118,33 @@ Android не планируется, то пункты с 4 по 7 можно п
 
 5\. Монтируем раздел нашей карты памяти:
 
-`mount /dev/block/mmcblkYp1 /mnt`
+```shell
+mount /dev/block/mmcblkYp1 /mnt
+```
 
 6, Создаём образ с содержимым eMMC:
 
-`dd if=/dev/block/mmcblkX of=/mnt/android_rg552.img`
+```shell
+dd if=/dev/block/mmcblkX of=/mnt/android_rg552.img
+```
 
+:::info
 Создание образа будет долгой (объём встроенной памяти - 64 гигабайта).
+:::
 
 7\. После завершения процесса отмонтируем карту памяти.
 
-`umount /mnt`
+```shell
+umount /mnt
+```
 
 и вынимаем карту из приставки
 
 8\. Начинаем затирание встроенного ПЗУ
 
-`dd if=/dev/zero of=/dev/block/mmcblkX bs=4M`
+```shell
+dd if=/dev/zero of=/dev/block/mmcblkX bs=4M
+```
 
 И ждём, пока утилита нам не скажет, что место закончилось.
 
@@ -109,28 +155,33 @@ Android не планируется, то пункты с 4 по 7 можно п
 
 Для восстановления Android нужно:
 
-1\. Вставить карту с образом Android во второй слот приставки;
+0\. Вставить карту с образом Android во второй слот приставки. Запустить терминал и перейти в режим рута:
 
-2\. Запустить терминал и перейти в режим рута;
+```shell
+su -
+```
 
-`su -`
+1\. Посмотреть список блочных устройств:
 
-3\. Посмотреть список блочных устройств:
-
-`lsblk`
+```shell
+lsblk
+```
 
 Накопитель объёмом 58,2G с названием, схожим с mmcblkXboot1, и есть наша
 встроенная память, а устройство вида /dev/mmcblkApB с одним разделом без
 точки монтирования - карта памяти с образом.
 
-4\. Примонтировать раздел карты памяти с образом:
+2\. Примонтировать раздел карты памяти с образом:
 
-`mount /dev/mmcblkApB /mnt`
+```shell
+mount /dev/mmcblkApB /mnt
+```
 
-5\. Записать образ стокового Android обратно во встроенную память с
+3\. Записать образ стокового Android обратно во встроенную память с
 помощью dd:
 
-`dd if=/mnt/android_rg552.img of=/dev/mmcblkX oflag=direct,sync iflag=fullblock bs=1M status=progress`
+```shell
+dd if=/mnt/android_rg552.img of=/dev/mmcblkX oflag=direct,sync iflag=fullblock bs=1M status=progress
+```
 
-6\. По завершении записи выключить приставку, вынуть обе карты памяти, и
-включить устройство. Android должен начать загрузку.
+По завершении записи выключить приставку, вынуть обе карты памяти, и включить устройство. Android должен начать загрузку.
