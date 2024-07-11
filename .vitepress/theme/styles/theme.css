@@ -115,3 +115,11 @@
   .VPHomeSponsors .message {
     max-width: 800px;
   }
+
+  /**
+ * Component: GitChangeLog
+ * -------------------------------------------------------------------------- */
+.bg-\$vp-custom-block-details-bg,
+.bg-vp-custom-block-details-bg {
+  background-color: var(--vp-c-gray-3) !important;
+}

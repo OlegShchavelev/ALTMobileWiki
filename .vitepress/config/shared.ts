@@ -1,16 +1,25 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
 import markdownTimeline from "vitepress-markdown-timeline"
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import UnoCSS from 'unocss/vite'
+import { 
+  GitChangelog, 
+  GitChangelogMarkdownSection, 
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
-export const shared = defineConfigWithTheme({
+export const shared = defineConfig({
   title: "ALT Mobile Wiki",
   titleTemplate: ':title — ALT Mobile Wiki',
   base: '/ALTMobileWiki/',
   srcDir: './docs',
   vite: {
     plugins: [
-      UnoCSS()
+      UnoCSS(),
+      GitChangelog({ 
+        // Fill in your repository URL here
+        repoURL: () => 'https://github.com/OlegShchavelev/ALTMobileWiki', 
+      }),
+      GitChangelogMarkdownSection(), 
     ],
     optimizeDeps: {
       exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']

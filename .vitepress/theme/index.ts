@@ -14,12 +14,19 @@ import {
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+
+import { 
+  NolebaseGitChangelogPlugin 
+} from '@nolebase/vitepress-plugin-git-changelog/client'
+
+
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './styles/style.css' 
 import './styles/theme.css'
 import 'uno.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css"
 import { ERlocales } from '../data/lexicon'
 
@@ -35,6 +42,7 @@ export default {
   },
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: ERlocales} as Options)
+    app.use(NolebaseGitChangelogPlugin)  
     app.component('contribution', AMWContribution)
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
