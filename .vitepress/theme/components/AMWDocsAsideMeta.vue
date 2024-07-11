@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useData } from 'vitepress'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
 

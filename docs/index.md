@@ -21,4 +21,16 @@ features:
     details: Всё знакомо&#58; от сообщества до приложений в операционной системе.
   - title: Свобода выбора и открытого ПО
     details: Единая инфраструктура для сборки программного обеспечения в общем репозитории «Сизиф»
+sponsors:
+  introtext: Данный сервис является CПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
+  collections:
+    - tier: Организационная структура
+      size: big
+      items: 
+        - name: ALT Linux Team
+          img: ./alt-linux-team.png
+          url: https://packages.altlinux.org/ru/sisyphus
+        - name: BaseALT
+          img: ./basealt.png
+          url: https://www.basealt.ru
 ---
