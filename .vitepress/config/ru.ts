@@ -1,4 +1,4 @@
-import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from '../data/navigations'
 import { packages } from '../../package-lock.json'
 

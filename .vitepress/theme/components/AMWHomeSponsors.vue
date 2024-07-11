@@ -2,7 +2,7 @@
 import { VPHomeSponsors } from 'vitepress/theme'
 import { sponsors } from '../../data/sponsors'
 
-const { message, data } = defineProps({
+const { message } = defineProps({
   message: {
     type: String,
     default:

@@ -8,20 +8,20 @@ import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWVideo from './components/AMWVideo.vue'
 
-import {
+import { 
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu
-} from '@nolebase/vitepress-plugin-enhanced-readabilities'
-
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
-import { options as NolebaseEnhancedReadabilitiesOptions } from './plugins/enhanced-readabilities/index'
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
-import './styles/style.css'
+import './styles/style.css' 
 import './styles/theme.css'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/dist/style.css'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css"
+import { ERlocales } from '../data/lexicon'
 
 export default {
   extends: DefaultTheme,
@@ -33,8 +33,8 @@ export default {
       'home-features-after': () => h(AMWHomeSponsors)
     })
   },
-  enhanceApp({ app, router, siteData }) {
-    app.provide(InjectionKey, NolebaseEnhancedReadabilitiesOptions as Options)
+  enhanceApp({ app }) {
+    app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: ERlocales} as Options)
     app.component('contribution', AMWContribution)
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
