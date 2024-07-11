@@ -10,7 +10,7 @@ appstream:
     keywords: 
         - adaptive
         - circle
-        - altmobile
+        - oobe
     developer: 
         name: GNOME
     metadata_license: 

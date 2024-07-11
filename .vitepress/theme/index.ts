@@ -26,7 +26,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
+      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AMWDocsAsideMeta),
     })

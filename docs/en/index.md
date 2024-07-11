@@ -5,6 +5,9 @@ title: Main
 hero:
   name: "ALT Mobile Wiki"
   tagline: the official knowledge library of the ALT Mobile operating system
+  image:
+      src: /hero.png
+      alt: GNOME
   actions:
     - theme: brand
       text: Download

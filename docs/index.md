@@ -5,6 +5,9 @@ title: Главная
 hero:
   name: "ALT Mobile Wiki"
   tagline: официальная библиотека знаний операционной системы ALT Mobile
+  image:
+        src: /hero.png
+        alt: GNOME
   actions:
     - theme: brand
       text: Cкачать
@@ -12,7 +15,6 @@ hero:
     - theme: alt
       text: Документация
       link: /wiki/
-
 features:
   - title: Преимущество A
     details: Пользователь очень важен, за пользователем последует пользователь

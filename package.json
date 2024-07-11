@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.27.2",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.2.0",
     "vitepress": "^1.0.2",
     "vitepress-markdown-timeline": "^1.2.1",
     "vitepress-plugin-tabs": "^0.5.0"
