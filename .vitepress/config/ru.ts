@@ -17,10 +17,6 @@ export const ru = defineConfigWithTheme({
         },
         lastUpdated: {
             text: 'Последнее обновление',
-            formatOptions: {
-                dateStyle: 'medium',
-                timeStyle: 'medium'
-            }
         },
         returnToTopLabel: 'Наверх',
         sidebarMenuLabel: 'Меню',

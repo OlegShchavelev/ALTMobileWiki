@@ -9,4 +9,4 @@ export default defineConfig({
         root: { label: 'Русский', ...ru },
         en: { label: 'English', ...en },
     }
-})
+})  
