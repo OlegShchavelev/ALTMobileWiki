@@ -102,3 +102,16 @@
     --vp-custom-block-details-border: var(--vp-c-divider);
     --vp-custom-block-details-bg: var(--vp-c-bg-soft-up);
 }
+
+/**
+ * VPHomeSponsors
+ * -------------------------------------------------------------------------- */
+
+ .vp-sponsor-grid.big .vp-sponsor-grid-image {
+    max-width: 170px;
+    max-height: 120px;
+  }
+  
+  .VPHomeSponsors .message {
+    max-width: 800px;
+  }
