@@ -30,9 +30,9 @@ sponsors:
       size: big
       items: 
         - name: ALT Linux Team
-          img: ./alt-linux-team.png
-          url: https://packages.altlinux.org/ru/sisyphus
+          img: ../alt-linux-team.png
+          url: https://packages.altlinux.org/en/sisyphus/
         - name: BaseALT
-          img: ./basealt.png
-          url: https://www.basealt.ru
+          img: ../basealt.png
+          url: https://www.basealt.ru/en/
 ---
