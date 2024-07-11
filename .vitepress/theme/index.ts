@@ -1,4 +1,3 @@
-// https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
@@ -19,6 +18,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './styles/style.css' 
 import './styles/theme.css'
+import 'uno.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css"
 import { ERlocales } from '../data/lexicon'

@@ -4,7 +4,7 @@ export interface Keywords {
     type: string
 }
 
-const props = defineProps<{
+defineProps<{
     keywords: Keywords[]
 }>();
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { type Ref, computed } from 'vue'
-import { mergeConfig, useData } from 'vitepress'
+import { useData } from 'vitepress'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue';
 
 import { getThumb, getDeveloper, getKeywords,  getLists, getLinks } from '../composables/asidemeta'

@@ -8,7 +8,7 @@ export interface Lists {
     link: string;
 }
 
-const props = defineProps<{
+defineProps<{
     lists: Lists[]
 }>();
 

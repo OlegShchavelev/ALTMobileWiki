@@ -1,6 +1,7 @@
 import { defineConfigWithTheme } from 'vitepress'
 import markdownTimeline from "vitepress-markdown-timeline"
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import UnoCSS from 'unocss/vite'
 
 export const shared = defineConfigWithTheme({
   title: "ALT Mobile Wiki",
@@ -8,12 +9,16 @@ export const shared = defineConfigWithTheme({
   base: '/ALTMobileWiki/',
   srcDir: './docs',
   vite: {
+    plugins: [
+      UnoCSS()
+    ],
     optimizeDeps: {
       exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
     },
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/ui'
       ]
     }
   },

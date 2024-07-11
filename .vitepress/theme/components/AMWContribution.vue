@@ -6,7 +6,7 @@ import { useData } from 'vitepress'
 const { frontmatter } = useData();
 
 
-const { members, size } = defineProps({
+const { members } = defineProps({
     size: {
         type: String,
         default: 'medium',

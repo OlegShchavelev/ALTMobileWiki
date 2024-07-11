@@ -8,7 +8,7 @@ export interface Links {
     style: string;
 }
 
-const props = defineProps<{
+defineProps<{
     links: Links[]
 }>();
 
