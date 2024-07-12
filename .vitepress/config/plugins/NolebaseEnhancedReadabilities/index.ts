@@ -1,4 +1,5 @@
-export const ERlocales = {
+export const NolebaseEnhancedReadabilitiesOptions = {
+  locales: {
     'ru-RU': {
       title: {
         title: 'Повышенная читаемость'
@@ -76,3 +77,4 @@ export const ERlocales = {
       }
     }
   }
+}  

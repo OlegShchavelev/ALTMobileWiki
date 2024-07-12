@@ -7,6 +7,8 @@ import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWVideo from './components/AMWVideo.vue'
 
+import { NolebaseEnhancedReadabilitiesOptions } from '../config/plugins/index'
+
 import { 
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu
@@ -19,7 +21,6 @@ import {
   NolebaseGitChangelogPlugin 
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 
-
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './styles/style.css' 
@@ -28,7 +29,6 @@ import 'uno.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import "vitepress-markdown-timeline/dist/theme/index.css"
-import { ERlocales } from '../data/lexicon'
 
 export default {
   extends: DefaultTheme,
@@ -41,7 +41,7 @@ export default {
     })
   },
   enhanceApp({ app }) {
-    app.use(NolebaseEnhancedReadabilitiesPlugin, {locales: ERlocales} as Options)
+    app.use(NolebaseEnhancedReadabilitiesPlugin, NolebaseEnhancedReadabilitiesOptions as Options)
     app.use(NolebaseGitChangelogPlugin)  
     app.component('contribution', AMWContribution)
     app.component('Video', AMWVideo)
