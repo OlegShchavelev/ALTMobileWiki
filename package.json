@@ -6,7 +6,10 @@
     "@types/node": "^20.14.8",
     "vitepress": "^1.0.2",
     "vitepress-markdown-timeline": "^1.2.1",
-    "vitepress-plugin-tabs": "^0.5.0"
+    "vitepress-plugin-tabs": "^0.5.0",
+    "@digitak/esrun": "^3.2.26",
+    "yargs": "^17.7.2",
+    "@octokit/core": "^6.1.2"
   },
   "dependencies": {
     "unocss": "^0.58.6"
@@ -14,6 +17,7 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "history:build": "npx esrun ./.tools/gitlog.ts"
   }
 }

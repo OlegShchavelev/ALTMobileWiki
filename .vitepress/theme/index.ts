@@ -2,10 +2,11 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
-import AMWContribution from './components/AMWContribution.vue'
 import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWVideo from './components/AMWVideo.vue'
+import AMWTeamPage from './components/AMWTeamPage.vue'
+import AMWHomeTeam from './components/AMWHomeTeam.vue'
 
 import {
   NolebaseEnhancedReadabilitiesOptions,
@@ -23,6 +24,7 @@ import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import {
   NolebaseGitChangelogPlugin
 } from '@nolebase/vitepress-plugin-git-changelog/client'
+import { data as team } from './loaders/gitlogDataLoader.data'
 
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
@@ -40,13 +42,14 @@ export default {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AMWDocsAsideMeta),
-      'home-features-after': () => h(AMWHomeSponsors)
+      'home-features-after': () => [h(AMWHomeTeam), h(AMWHomeSponsors)]
     })
   },
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin, NolebaseEnhancedReadabilitiesOptions as Options)
-    app.use(NolebaseGitChangelogPlugin, NolebaseGitChangelogOptions)
-    app.component('contribution', AMWContribution)
+    app.use(NolebaseGitChangelogPlugin, { locales: NolebaseGitChangelogOptions.locales, mapAuthors: team })
+    app.component('Contribution', AMWTeamPage)
+
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
   }
