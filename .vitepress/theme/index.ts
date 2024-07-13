@@ -7,9 +7,12 @@ import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWVideo from './components/AMWVideo.vue'
 
-import { NolebaseEnhancedReadabilitiesOptions } from '../config/plugins/index'
+import {
+  NolebaseEnhancedReadabilitiesOptions,
+  NolebaseGitChangelogOptions
+} from '../config/plugins/index'
 
-import { 
+import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
@@ -17,13 +20,13 @@ import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
-import { 
-  NolebaseGitChangelogPlugin 
+import {
+  NolebaseGitChangelogPlugin
 } from '@nolebase/vitepress-plugin-git-changelog/client'
 
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
-import './styles/style.css' 
+import './styles/style.css'
 import './styles/theme.css'
 import 'uno.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
@@ -42,7 +45,7 @@ export default {
   },
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin, NolebaseEnhancedReadabilitiesOptions as Options)
-    app.use(NolebaseGitChangelogPlugin)  
+    app.use(NolebaseGitChangelogPlugin, NolebaseGitChangelogOptions)
     app.component('contribution', AMWContribution)
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
