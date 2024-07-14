@@ -29,7 +29,7 @@ const cardProps = computed(() => {
     icon: icon,
     name: name,
     summary: summary,
-    links: getLinks({ ...repos, ...{ about_app: withBase(`/${localeIndex.value}/${props.app.about_app}`) }, snap: undefined }, config.links),
+    links: getLinks({ ...repos, ...{ about_app: withBase(`${localeIndex.value!=='root'?'/'+localeIndex.value+'/':''}${props.app.about_app}`) }, snap: undefined }, config.links),
     keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords)
   }
 })
