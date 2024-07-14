@@ -2,6 +2,7 @@ export const nav = {
     'root': [
         { text: 'Главная', link: '/' },
         { text: 'Документация', link: '/wiki/' },
+        { text: 'Приложения GNOME', link: '/system/apps-gnome/' },
         {
             text: 'О проекте', items: [
                 { text: 'О проекте', link: '/projects/about/' },
@@ -12,6 +13,7 @@ export const nav = {
     'en': [
         { text: 'Home', link: '/en/' },
         { text: 'Documentation', link: '/en/wiki/' },
+        { text: 'GNOME Apps', link: '/en/system/apps-gnome/' },
         {
             text: 'About project', items: [
                 { text: 'About project', link: '/en/projects/about/' },

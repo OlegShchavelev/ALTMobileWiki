@@ -85,6 +85,12 @@ export const ru = defineConfigWithTheme({
                     target: '_blank',
                     baseUrl: '//flathub.org/ru/apps/',
                     style: '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
+                },
+                about_app: {
+                  anchor: 'Подробнее',
+                  target: '_blank',
+                  style:
+                    '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
                 }
             }
         }
