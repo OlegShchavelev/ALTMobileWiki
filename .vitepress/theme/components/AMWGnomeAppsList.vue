@@ -27,7 +27,7 @@ const getAppsList = () => {
   rawWikiApps.forEach((app) => {
     Apps.push({
       ...app.frontmatter,
-      ...{ about_app: app.url.split('/')[2] }
+      ...{ about_app: app.url }
     })
   })
 
