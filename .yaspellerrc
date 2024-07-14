@@ -2,11 +2,11 @@
   "format": "plain",
   "checkYo": true,
   "fileExtensions": [".md"],
-  "lang": "ru,en",
+  "excludeFiles": ["docs/en"],
   "ignoreText": [
     ["```.+```", "gsm"],
     ["^  *", "gsm"],
-    ["\\- src:.*$", "gsm"],
+    ["src:.*$", "gsm"],
     " ?`.+`",
     "`.+` ?",
     "#+ ",

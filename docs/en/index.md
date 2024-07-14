@@ -6,8 +6,8 @@ hero:
   name: "ALT Mobile Wiki"
   tagline: the knowledge library of the ALT Mobile operating system
   image:
-      src: /hero.png
-      alt: GNOME
+    src: /hero.png
+    alt: GNOME
   actions:
     - theme: brand
       text: Download
@@ -22,7 +22,7 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-teams: 
+teams:
   title: Contributions
   moreText: All contributions
   moreLink: projects/contributions/
@@ -31,7 +31,7 @@ sponsors:
   collections:
     - tier: Organizational structure
       size: big
-      items: 
+      items:
         - name: ALT Linux Team
           img: ../alt-linux-team.png
           url: https://packages.altlinux.org/en/sisyphus/

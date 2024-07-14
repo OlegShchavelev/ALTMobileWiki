@@ -4,8 +4,7 @@
 
 ### Downloading the ALT Mobile Image
 
-The ALT Mobile operating system image can be downloaded from:
-[ftp](http://beta.altlinux.org/mobile/latest/)
+The ALT Mobile operating system image can be downloaded from [ftp](http://beta.altlinux.org/mobile/latest/)
 
 Please select the image format as:
 
@@ -22,12 +21,14 @@ Extract the downloaded image to a convenient location, for example:
 #### With Acceleration (Qemu-KVM)
 
 1. Install Qemu-KVM:
-```Shell
+
+```shell
 apt-get install /usr/bin/qemu-kvm
 ```
 
 2. Start the system as a regular user (not as root):
-```Shell
+
+```shell
 kvm -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img
 ```
 
@@ -38,12 +39,11 @@ Here:
 - `-k en-gb` - an English keyboard layout will be used
 - `-hda /home/user/images/phosh-20231004-x86_64.img` - path to our image
 
-Instructions for running images for
-[aarch64](https://www.altlinux.org/Ports/aarch64/QEMU)
-and [riscv64](https://www.altlinux.org/Ports/riscv64/QEMU)
+Instructions for running images for [aarch64](https://www.altlinux.org/Ports/aarch64/QEMU) and [riscv64](https://www.altlinux.org/Ports/riscv64/QEMU)
 
 3. To work with the graphical interface, install and use remote-viewer:
-```Shell
+
+```shell
 apt-get install /usr/bin/remote-viewer
 remote-viewer vnc://localhost:5900
 ```
@@ -51,13 +51,17 @@ remote-viewer vnc://localhost:5900
 #### Without Acceleration
 
 1. Install Qemu and the SDL interface:
-```Shell
+
+```shell
 apt-get install qemu-system-x86 qemu-ui-sdl
 ```
+
 2. Start the system as a regular user:
-```Shell
+
+```shell
 qemu-system-x86_64 -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img -smp cpus=4 -net user
 ```
+
 Here:
 
 - `qemu-system-x86_64` - indicates that we are emulating an x86_64 computer
@@ -75,5 +79,6 @@ After launching the system in QEMU, you will be able to control the ALT Mobile i
 
 ### Standard Account Information
 
-- Default logins: root: `root`, password: `altlinux`; user: `altlinux`,
-  password: `271828`.
+- Default logins:
+  root: `root`, password: `altlinux`;
+  user: `altlinux`, password: `271828`.
