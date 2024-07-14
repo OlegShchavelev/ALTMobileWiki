@@ -5,6 +5,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import ora from 'ora'
 import { cyan, gray, red } from 'colorette'
+import { transliterate as tr } from 'transliteration';
 
 /*
     CLI Arguments
@@ -17,7 +18,10 @@ const args = yargs(process.argv)
   })
   .parse()
 
-const authors = []
+const authors = {
+  'root': [],
+  'en': []
+}
 
 /*
     Net + Local Mapping
@@ -87,7 +91,10 @@ for await (const gitter of await contributorsRawBase().then((response) => respon
   const author = {
     mapByNameAliases: [gitter.author.login],
     name: userMore.name,
-    title: 'Участник',
+    title: {
+      root: 'Участник',
+      en: 'Member'
+    },
     avatar: gitter.author.avatar_url,
     summary: {
       commits: gitter.total,
@@ -113,23 +120,30 @@ for await (const gitter of await contributorsRawBase().then((response) => respon
     author.lastMonthActive.commits += week.c
   })
 
-  contributions.forEach((memberRaw) => {
+  contributions.root.forEach((memberRaw) => {
     if (
       memberRaw.name == userMore.name ||
       Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] ||
-      (memberRaw.nameAliases && memberRaw.nameAliases.includes(gitter.author.login))
+      (memberRaw.mapByNameAliases && memberRaw.mapByNameAliases.includes(gitter.author.login))
     ) {
       Object.keys(memberRaw).forEach((key) => {
         key == 'mapByNameAliases'
           ? memberRaw[key].forEach((alias) => {
               author[key].push(alias)
             })
-          : (author[key] = memberRaw[key])
+          : key == 'title'
+            ? author[key].root = memberRaw[key]
+              : (author[key] = memberRaw[key])
       })
     }
   })
 
-  authors.push(author)
+  console.log(author.title)
+  author.title.root.includes('Разработчик') ? author.title.en = 'Developer, Member' : ''
+  author.name? '' : author.name = gitter.author.login
+
+  authors.en.push({...author, ...{title: author.title.en , name: tr(author.name)}})
+  authors.root.push({...author, ...{title: author.title.root}})
 }
 
 fs.writeFile(
