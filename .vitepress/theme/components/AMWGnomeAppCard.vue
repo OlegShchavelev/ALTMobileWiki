@@ -8,8 +8,6 @@ const { localeIndex, theme } = useData()
 const config = theme.value.asideMeta
 import { getLinks, getKeywords } from '../composables/asidemeta'
 
-console.log(localeIndex.value)
-
 const props = defineProps({
   app: Object
 })
@@ -29,7 +27,7 @@ const cardProps = computed(() => {
     icon: icon,
     name: name,
     summary: summary,
-    links: getLinks({ ...repos, ...{ about_app: withBase(`${localeIndex.value!=='root'?'/'+localeIndex.value+'/':''}${props.app.about_app}`) }, snap: undefined }, config.links),
+    links: getLinks({ ...repos, ...{ about_app: withBase(props.app.about_app) }, snap: undefined }, config.links),
     keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords)
   }
 })

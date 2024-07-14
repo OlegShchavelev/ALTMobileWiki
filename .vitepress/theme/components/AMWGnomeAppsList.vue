@@ -1,16 +1,23 @@
 <script setup>
 import { useData } from 'vitepress'
 import AGWGnomeAppCard from './AMWGnomeAppCard.vue'
-import { data as apps } from '../loaders/appsGnomeDataLoader.data.ts'
+import { data as appsRoot } from '../loaders/appsGnomeRootDataLoader.data.ts'
+import { data as appsEN } from '../loaders/appsGnomeEnDataLoader.data.ts'
 
-const { frontmatter } = useData()
+
+const { frontmatter, localeIndex } = useData()
 
 const props = defineProps({
   category: String
 })
 
+const apps = {
+  'root': appsRoot,
+  'en': appsEN
+}
+
 const getAppsList = () => {
-  const rawWikiApps = apps.filter((app) => {
+  const rawWikiApps = apps[localeIndex.value].filter((app) => {
     return app?.frontmatter?.appstream?.keywords?.includes(props?.category)
   })
 
@@ -20,7 +27,7 @@ const getAppsList = () => {
   rawWikiApps.forEach((app) => {
     Apps.push({
       ...app.frontmatter,
-      ...{ about_app: app.url }
+      ...{ about_app: app.url.split('/')[2] }
     })
   })
 
