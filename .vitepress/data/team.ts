@@ -79,12 +79,14 @@ export const contributions = {
     {
       name: 'Владимир Васьков',
       mapByNameAliases: ['Rirusha', 'Vladimir Vaskov'],
+      title: 'Участник',
       avatar: 'https://github.com/Rirusha.png',
       links: [{ icon: 'github', link: 'https://github.com/Rirusha'}]
     },
     {
       name: 'Артём Быстров',
       mapByNameAliases: ['Ubuntigroid'],
+      title: 'Участник',
       avatar: 'https://github.com/Ubuntigroid.png',
       links: [{ icon: 'github', link: 'https://github.com/Ubuntigroid'}]
     }

@@ -48,7 +48,7 @@ export default {
   },
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin, NolebaseEnhancedReadabilitiesOptions as Options)
-    app.use(NolebaseGitChangelogPlugin, { locales: NolebaseGitChangelogOptions.locales, mapAuthors: team })
+    app.use(NolebaseGitChangelogPlugin, { locales: NolebaseGitChangelogOptions.locales, mapAuthors: team['root'] })
     app.component('Contribution', AMWTeamPage)
     app.component('GnomeAppsList', AGWGnomeAppsList)
 
