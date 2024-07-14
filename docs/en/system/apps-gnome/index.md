@@ -740,7 +740,7 @@ All of the applications in this review are designed with the GNOME philosophy in
 
 ## Core applications
 
-GNOME Core applications are designed to perform common tasks on the GNOME desktop. They are usually pre-installed on your ALT Regular Gnome system.
+GNOME Core applications are designed to perform common tasks on the GNOME desktop. They are usually pre-installed on your ALT Mobile system.
 
 <GnomeAppsList category="core"/>
 
