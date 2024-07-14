@@ -67,6 +67,12 @@ export const en = defineConfigWithTheme({
             baseUrl: '//flathub.org/apps/',
             style: '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
           },
+          about_app: {
+            anchor: 'More',
+            target: '_blank',
+            style:
+              '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
+          }
         }
       }
     },

@@ -7,6 +7,7 @@ import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWVideo from './components/AMWVideo.vue'
 import AMWTeamPage from './components/AMWTeamPage.vue'
 import AMWHomeTeam from './components/AMWHomeTeam.vue'
+import AGWGnomeAppsList from './components/AMWGnomeAppsList.vue'
 
 import {
   NolebaseEnhancedReadabilitiesOptions,
@@ -49,6 +50,7 @@ export default {
     app.use(NolebaseEnhancedReadabilitiesPlugin, NolebaseEnhancedReadabilitiesOptions as Options)
     app.use(NolebaseGitChangelogPlugin, { locales: NolebaseGitChangelogOptions.locales, mapAuthors: team })
     app.component('Contribution', AMWTeamPage)
+    app.component('GnomeAppsList', AGWGnomeAppsList)
 
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)

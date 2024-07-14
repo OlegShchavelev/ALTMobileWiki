@@ -38,6 +38,13 @@ export const contributions = [
     ]
   },
   {
+    avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
+    name: 'Антон Политов',
+    mapByNameAliases: ['Ampernic', 'Антон Политов', 'Anton Politov', 'ampernic'],
+    title: 'Разработчик, Участник',
+    links: [{ icon: 'github', link: 'https://github.com/Ampernic' }]
+  },
+  {
     avatar: 'https://avatars.githubusercontent.com/u/57626821?v=4',
     name: 'Семен Фомченков',
     mapByNameAliases: ['Semen Fomchenkov', 'Armatik', 'armatik'],
