@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { useData } from 'vitepress'
 import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
 import { data as team } from '../loaders/gitlogDataLoader.data'
-import { developersSection, membersSection, teamSorting } from '../../data/team.ts'
-import { sortMembers } from '../composables/sorters.ts'
+import { developersSection, membersSection, teamSorting } from '../../data/team'
+import { sortMembers } from '../composables/sorters'
 
-const { frontmatter } = useData()
+const { frontmatter, localeIndex } = useData()
 </script>
 
 <template>
@@ -22,15 +21,15 @@ const { frontmatter } = useData()
       <div v-if="teamSorting.includes('role')">
         <VPTeamPageSection class="team">
           <template #title>
-            {{ developersSection.title }}
+            {{ developersSection[localeIndex].title }}
           </template>
           <template #lead>
-            {{ developersSection.description }}
+            {{ developersSection[localeIndex].description }}
           </template>
           <template #members>
             <VPTeamMembers
               :members="
-                sortMembers(team, teamSorting).filter((member) => member.title.includes('Разработчик'))
+                sortMembers(team[localeIndex], teamSorting).filter((member) => member.title.includes('Разработчик') || member.title.includes('Developer'))
               "
             />
           </template>
@@ -38,15 +37,15 @@ const { frontmatter } = useData()
 
         <VPTeamPageSection class="team">
           <template #title>
-            {{ membersSection.title }}
+            {{ membersSection[localeIndex].title }}
           </template>
           <template #lead>
-            {{ membersSection.description }}
+            {{ membersSection[localeIndex].description }}
           </template>
           <template #members>
             <VPTeamMembers
               :members="
-                sortMembers(team, teamSorting).filter((member) => !member.title.includes('Разработчик'))
+                sortMembers(team[localeIndex], teamSorting).filter((member) => !member.title.includes('Разработчик') && !member.title.includes('Developer'))
               "
             />
           </template>
