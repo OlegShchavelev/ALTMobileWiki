@@ -1,10 +1,15 @@
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useData } from 'vitepress'
 import { VPTeamPage, VPTeamPageTitle, VPButton, VPTeamMembers } from 'vitepress/theme'
 
 import { sortMembers } from '../composables/sorters.ts'
 import { homeSorting, limit } from '../../data/team.ts'
 import { data as team } from '../loaders/gitlogDataLoader.data'
+
+const { frontmatter } = useData()
+const props = computed(() => frontmatter.value.teams ?? {})
 
 </script>
 
@@ -12,11 +17,11 @@ import { data as team } from '../loaders/gitlogDataLoader.data'
   <ClientOnly>
     <VPTeamPage>
       <VPTeamPageTitle>
-        <template #title> Участники </template>
+        <template #title v-if="props.title">{{ props.title }}</template>
       </VPTeamPageTitle>
       <VPTeamMembers :members="sortMembers(team, homeSorting).slice(0, limit)" />
-      <div class="teamButton">
-        <VPButton text="Все участники" class="button" size="big" href="/projects/contributions" />
+      <div class="teamButton" v-if="props.moreLink">
+        <VPButton :text="props.moreText" class="button" size="big" :href="props.moreLink" />
       </div>
     </VPTeamPage>
   </ClientOnly>

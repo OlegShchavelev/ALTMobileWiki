@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 title: Main
 gitChangelog: false
@@ -23,6 +22,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+teams: 
+  title: Contributions
+  moreText: All contributions
+  moreLink: projects/contributions/
 sponsors:
   introtext: This service is a Free Software project and its support and development depends only on our joint activity.
   collections:

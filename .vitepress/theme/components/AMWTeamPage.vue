@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useData } from 'vitepress'
 import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 
 import { data as team } from '../loaders/gitlogDataLoader.data'
 import { developersSection, membersSection, teamSorting } from '../../data/team.ts'
 import { sortMembers } from '../composables/sorters.ts'
 
-import { useData } from 'vitepress'
 const { frontmatter } = useData()
 </script>
 
