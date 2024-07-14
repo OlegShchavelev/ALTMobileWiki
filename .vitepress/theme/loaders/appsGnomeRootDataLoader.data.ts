@@ -1,6 +1,6 @@
 import { createContentLoader } from 'vitepress'
 
-export default createContentLoader('apps/**/*.md', {
+export default createContentLoader('apps/**/index.md', {
   transform(rawData) {
     return rawData.filter((app) => {
       return (
