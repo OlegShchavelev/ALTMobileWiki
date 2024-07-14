@@ -95,7 +95,7 @@ apps:
         keywords:
           - adaptive
         name: Расширения
-        summary: Управление расширениями GNOME Shell
+        summary: Управление расширениями GNOME shell
         icon: https://apps.gnome.org/icons/scalable/org.gnome.Extensions.svg
       about_app: https://apps.gnome.org/ru/Extensions/
     'Characters':
@@ -391,7 +391,7 @@ apps:
         keywords:
           - adaptive
         name: Collision
-        summary: Проверьте хеши ваших файлов
+        summary: Проверьте хеша ваших файлов
         icon: https://apps.gnome.org/icons/scalable/dev.geopjr.Collision.svg
       about_app: https://apps.gnome.org/ru/Collision/
     'Commit':
@@ -429,7 +429,7 @@ apps:
         keywords:
           - adaptive
         name: Elastic
-        summary: Проектирование пружинных анимаций
+        summary: Проектирование пружинной анимации
         icon: https://apps.gnome.org/icons/scalable/app.drey.Elastic.svg
       about_app: https://apps.gnome.org/ru/Elastic/
     'Eyedropper':

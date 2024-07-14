@@ -2,14 +2,14 @@
 layout: home
 title: Главная
 hero:
-  name: "ALT Mobile Wiki"
+  name: 'ALT Mobile Wiki'
   tagline: библиотека знаний операционной системы ALT Mobile
   image:
-        src: /hero.png
-        alt: GNOME
+    src: /hero.png
+    alt: GNOME
   actions:
     - theme: brand
-      text: Cкачать
+      text: Скачать
       link: /download/
     - theme: alt
       text: Документация
@@ -26,11 +26,11 @@ teams:
   moreText: Все участники
   moreLink: projects/contributions/
 sponsors:
-  introtext: Данный сервис является CПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
+  introtext: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   collections:
     - tier: Организационная структура
       size: big
-      items: 
+      items:
         - name: ALT Linux Team
           img: ./alt-linux-team.png
           url: https://packages.altlinux.org/ru/sisyphus

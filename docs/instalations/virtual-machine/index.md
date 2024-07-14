@@ -4,16 +4,13 @@
 
 ### Скачивание образа ALT Mobile
 
-Образ операционной системы ALT Mobile можно скачать с
-[ftp](http://beta.altlinux.org/mobile/latest/)
+Образ операционной системы ALT Mobile можно скачать с [ftp](http://beta.altlinux.org/mobile/latest/)
 
 Выберите образ формата:
 
-- **phosh-20231004-x86\_64.img.xz**
+- **phosh-20231004-x86_64.img.xz**
 
-**Примечание:** Для целей виртуализации требуется образ с архитектурой
-x86_64. Образы для архитектур aarch64 и risc-v также поддерживаются и
-могут быть использованы аналогичным образом.
+**Примечание:** Для целей виртуализации требуется образ с архитектурой x86_64. Образы для архитектур aarch64 и risc-v также поддерживаются и могут быть использованы аналогичным образом.
 
 Распакуйте скачанный образ в удобное для вас место, например:
 
@@ -24,12 +21,14 @@ x86_64. Образы для архитектур aarch64 и risc-v также п
 #### С ускорением (Qemu-KVM)
 
 1. Установите Qemu-KVM:
-```Shell
+
+```shell
 apt-get install /usr/bin/qemu-kvm
 ```
 
 2. Запустите систему от обычного пользователя (не от root):
-```Shell
+
+```shell
 kvm -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img
 ```
 
@@ -40,13 +39,11 @@ kvm -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img
 - `-k en-gb` - будет использоваться английская раскладка
 - `-hda /home/user/images/phosh-20231004-x86\_64.img` - путь к нашему образу
 
-Инструкции по запуску образов для
-[aarch64](https://www.altlinux.org/Ports/aarch64/QEMU)
-и [riscv64](https://www.altlinux.org/Ports/riscv64/QEMU)
+Инструкции по запуску образов для [aarch64](https://www.altlinux.org/Ports/aarch64/QEMU) и [riscv64](https://www.altlinux.org/Ports/riscv64/QEMU)
 
-3. Для работы с графическим интерфейсом установите и используйте
-remote-viewer:
-```Shell
+3. Для работы с графическим интерфейсом установите и используйте remote-viewer:
+
+```shell
 apt-get install /usr/bin/remote-viewer
 remote-viewer vnc://localhost:5900
 ```
@@ -54,17 +51,20 @@ remote-viewer vnc://localhost:5900
 #### Без ускорения
 
 1. Установите Qemu и интерфейс на SDL:
-```Shell
+
+```shell
 apt-get install qemu-system-x86 qemu-ui-sdl
 ```
+
 2. Запустите систему от обычного пользователя:
-```Shell
+
+```shell
 qemu-system-x86_64 -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img -smp cpus=4 -net user
 ```
+
 Здесь:
 
-- `qemu-system-x86\_64`{style="font-family: monospace; color: #003300; background-color: #EEEEEE; font-weight: bold; font-size: normal;"} -
-    указывает, что мы эмулируем x86\_64 компьютер
+- `qemu-system-x86\_64`{style="font-family: monospace; color: #003300; background-color: #EEEEEE; font-weight: bold; font-size: normal;"} - указывает, что мы эмулируем x86_64 компьютер
 - `-m 4G` - для машины будет выделено 4ГБ ОЗУ
 - `-k en-gb` - будет использоваться английская раскладка
 - `-hda /home/user/images/phosh-20231004-x86\_64.img` - путь к нашему образу
@@ -73,17 +73,12 @@ qemu-system-x86_64 -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.i
 
 ### Результат
 
-После запуска системы в QEMU, вы сможете управлять интерфейсом ALT
-Mobile с помощью мыши, имитируя ввод пальцами, а также вводить символы с
-физической клавиатуры. Обратите внимание, что при использовании
-виртуальной машины доступ к аппаратным функциям телефонии, камеры и
-прочих устройств будет ограничен. Тем не менее виртуальная машина -
-отличный инструмент для адаптации и тестирования приложений под
-мобильный интерфейс ALT Mobile.
+После запуска системы в QEMU, вы сможете управлять интерфейсом ALT Mobile с помощью мыши, имитируя ввод пальцами, а также вводить символы с физической клавиатуры. Обратите внимание, что при использовании виртуальной машины доступ к аппаратным функциям телефонии, камеры и прочих устройств будет ограничен. Тем не менее виртуальная машина - отличный инструмент для адаптации и тестирования приложений под мобильный интерфейс ALT Mobile.
 
 ## Дополнительно
 
 ### Стандартные данные учётных записей
 
-- Логины по умолчанию: root: `root`, password: `altlinux`; user: `altlinux`,
-  password: `271828`.
+- Логины по умолчанию:
+  root: `root`, password: `altlinux`;
+  user: `altlinux`, password: `271828`.
