@@ -54,7 +54,7 @@
 
 ## Образы
 
-Образы для `aarch64` оборудования и `qemu` для поддерживаемых архитектур доступны [на странице скачать](download).
+Образы для `aarch64` оборудования и `qemu` для поддерживаемых архитектур доступны [на странице скачать](/download/).
 
 Инструмент сборки образов mkimage-profiles доступен в [git](https://git.altlinux.org/people/antohami/packages/mkimage-profiles.git).
 
@@ -77,9 +77,9 @@ make vm/pinephone-phosh.img ARCH=aarch64 DEBUG=1
 
 Подробнее про установку ALT Mobile на поддерживаемые устройства и виртуальные машины можно прочитать в статье ALT Mobile Wiki:
 
-- [Установка ALT Mobile на PinePhone / PinePhone Pro](instalations/mobile-devices/)
-- [Установка ALT Mobile на портативные приставки Anbernic](instalations/portable-game-consoles/)
-- [ALT Mobile Виртуальная машина](instalations/virtual-machine/)
+- [Установка ALT Mobile на PinePhone / PinePhone Pro](/instalations/mobile-devices/)
+- [Установка ALT Mobile на портативные приставки Anbernic](/instalations/portable-game-consoles/)
+- [ALT Mobile Виртуальная машина](/instalations/virtual-machine/)
 
 ## Использование
 
