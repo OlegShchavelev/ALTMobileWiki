@@ -16,16 +16,16 @@ hero:
       text: Documentation
       link: /en/wiki/
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: An open process to develop
+    details: Any initiatives&#58; document, test, translate and participate in development
+  - title: The customary Alt on mobile devices
+    details: Everything is familiar, from the community to the applications in the operating system.
+  - title: Freedom of choice and free software
+    details: A single infrastructure for building source in the repository Sisyphus
 teams:
   title: Contributions
   moreText: All contributions
-  moreLink: projects/contributions/
+  moreLink: projects/contributions/ 
 sponsors:
   introtext: This service is a Free Software project and its support and development depends only on our joint activity.
   collections:
