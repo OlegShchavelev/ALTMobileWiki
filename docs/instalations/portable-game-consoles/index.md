@@ -22,7 +22,7 @@ apt-get install alt-rootfs-installer
 Скачиваем образ с ядром rocknix:
 
 ```shell
-wget https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-rocknix-ad-20240623-aarch64.img.xz
+wget https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-rocknix-ad-20240625-aarch64.img.xz
 ```
 
 Вставляем адаптер с картой памяти в порт USB
@@ -37,7 +37,7 @@ alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/
 Скачиваем образ с ядром pine:
 
 ```shell
-wget https://beta.altlinux.org/mobile/latest/20240623/alt-mobile-phosh-pine-ad-20240623-aarch64.img.xz
+wget https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-pine-ad-20240625-aarch64.img.xz
 ```
 
 Вставляем адаптер с картой памяти в порт USB
