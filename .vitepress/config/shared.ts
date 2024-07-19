@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import markdownTimeline from "vitepress-markdown-timeline"
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import markdownItTaskLists from 'markdown-it-task-lists'
 import UnoCSS from 'unocss/vite'
 import {
   GitChangelog,
@@ -60,8 +61,9 @@ export const shared = defineConfig({
       detailsLabel: 'DETAILS'
     },
     config: (md) => {
-      md.use(markdownTimeline);
+      md.use(markdownTimeline)
       md.use(tabsMarkdownPlugin)
+      md.use(markdownItTaskLists)
     },
   },
 })

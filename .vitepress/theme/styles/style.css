@@ -152,3 +152,12 @@
   color: var(--vp-c-white);
   background-color: var(--vp-c-success-2);
 }
+
+/**
+ * task-lists
+ * -------------------------------------------------------------------------- */
+
+ .vp-doc .contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
