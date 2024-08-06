@@ -14,6 +14,9 @@ export const shared = defineConfig({
   title: "ALT Mobile Wiki",
   titleTemplate: ':title — ALT Mobile Wiki',
   srcDir: './docs',
+  sitemap: {
+    hostname: 'https://altmobile.org'
+  },
   vite: {
     plugins: [
       UnoCSS(),

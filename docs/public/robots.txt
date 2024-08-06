@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+
+Host: https://altmobile.org
+Sitemap: https://altmobile.org/sitemap.xml
