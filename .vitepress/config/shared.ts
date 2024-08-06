@@ -13,7 +13,6 @@ import { telegram } from '../data/icons'
 export const shared = defineConfig({
   title: "ALT Mobile Wiki",
   titleTemplate: ':title — ALT Mobile Wiki',
-  base: '/ALTMobileWiki/',
   srcDir: './docs',
   vite: {
     plugins: [
