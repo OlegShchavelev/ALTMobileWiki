@@ -45,7 +45,8 @@ export const sidebar = {
           base: '/apps',
           items: [
             { text: 'Текстовый редактор', link: '/text-editor/' },
-            { text: 'Amberol', link: '/amberol/' }
+            { text: 'Amberol', link: '/amberol/' },
+            { text: 'Moonlight', link: '/moonlight/' }
           ],
           collapsed: true
         },
@@ -86,7 +87,8 @@ export const sidebar = {
           base: '/en/apps',
           items: [
             { text: 'Amberol', link: '/amberol/' },
-            { text: 'Text Editor', link: '/text-editor/' }
+            { text: 'Text Editor', link: '/text-editor/' },
+            { text: 'Moonlight', link: '/moonlight/' }
           ],
           collapsed: true
         },
