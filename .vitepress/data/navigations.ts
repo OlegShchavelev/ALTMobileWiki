@@ -51,6 +51,23 @@ export const sidebar = {
           collapsed: true
         },
         {
+          text: 'Руководство пользователя ALT Mobile',
+          base: '/guide-users',
+          items: [
+            {
+              text: 'Игры',
+              items: [
+                {
+                  text: 'Стриминг игр с компьютора на Anbernic',
+                  link: '/games/game-steaming/'
+                }
+              ],
+              collapsed: true
+            }
+          ],
+          collapsed: true
+        },
+        {
           text: 'Пакетные менеджеры',
           base: '/package-managers',
           items: [
@@ -89,6 +106,23 @@ export const sidebar = {
             { text: 'Amberol', link: '/amberol/' },
             { text: 'Text Editor', link: '/text-editor/' },
             { text: 'Moonlight', link: '/moonlight/' }
+          ],
+          collapsed: true
+        },
+        {
+          text: 'Guide ALT Mobile',
+          base: '/en/guide-users',
+          items: [
+            {
+              text: 'Игры',
+              items: [
+                {
+                  text: 'Стриминг игр с компьютора на Anbernic',
+                  link: '/games/game-steaming/'
+                }
+              ],
+              collapsed: true
+            }
           ],
           collapsed: true
         },
