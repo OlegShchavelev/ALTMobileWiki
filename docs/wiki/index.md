@@ -31,13 +31,13 @@
 Поддерживается оборудование на базе СнК Rockchip aarch64, для которых есть devicetree и драйвера для периферии. В частности:
 
 **rk3399** \
-Игровая приставка Anbernic 552
+Игровая приставка **Anbernic RG552**
 
 **rk3399s** \
-Телефон Pinephone Pro и совместимая модель от F+ tech.
+Телефон **Pinephone Pro**
 
 **rk3566** \
-Планшет Pinetab2, игровые приставки Anbernic Rg Arc D / S, RG 353M.
+Планшет **Pinetab2**, игровые приставки **ANBERNIC RG ARC-D/RG ARC-S**, **Anbernic RG353M**
 
 #### Скиф
 
