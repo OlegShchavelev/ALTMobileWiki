@@ -37,6 +37,9 @@ export const shared = defineConfig({
     }
   },
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/logo.svg', width: 36, height: 36, alt: 'ALT Mobile Wike' },
     socialLinks: [
