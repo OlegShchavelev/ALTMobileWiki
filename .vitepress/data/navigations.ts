@@ -35,7 +35,10 @@ export const sidebar = {
           items: [
             { text: 'Загрузчик', link: '/booting/' },
             { text: 'Мобильные устройства', link: '/mobile-devices/' },
-            { text: 'Портативные игровые приставки', link: '/portable-game-consoles/' },
+            {
+              text: 'Портативные игровые приставки',
+              link: '/portable-game-consoles/'
+            },
             { text: 'Виртуальная машина', link: '/virtual-machine/' }
           ],
           collapsed: true
@@ -94,7 +97,10 @@ export const sidebar = {
           items: [
             { text: 'The loader', link: '/booting/' },
             { text: 'Mobile devices', link: '/mobile-devices/' },
-            { text: 'Portable Game Consoles', link: '/portable-game-consoles/' },
+            {
+              text: 'Portable Game Consoles',
+              link: '/portable-game-consoles/'
+            },
             { text: 'Virtual machine', link: '/virtual-machine/' }
           ],
           collapsed: true

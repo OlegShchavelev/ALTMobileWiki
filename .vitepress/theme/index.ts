@@ -22,9 +22,7 @@ import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
-import {
-  NolebaseGitChangelogPlugin
-} from '@nolebase/vitepress-plugin-git-changelog/client'
+import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 import { data as team } from './loaders/gitlogDataLoader.data'
 
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
@@ -34,21 +32,28 @@ import './styles/theme.css'
 import 'uno.css'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-import "vitepress-markdown-timeline/dist/theme/index.css"
+import 'vitepress-markdown-timeline/dist/theme/index.css'
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
-      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+      'nav-screen-content-after': () =>
+        h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AMWDocsAsideMeta),
       'home-features-after': () => [h(AMWHomeTeam), h(AMWHomeSponsors)]
     })
   },
   enhanceApp({ app }) {
-    app.use(NolebaseEnhancedReadabilitiesPlugin, NolebaseEnhancedReadabilitiesOptions as Options)
-    app.use(NolebaseGitChangelogPlugin, { locales: NolebaseGitChangelogOptions.locales, mapAuthors: team['root'] })
+    app.use(
+      NolebaseEnhancedReadabilitiesPlugin,
+      NolebaseEnhancedReadabilitiesOptions as Options
+    )
+    app.use(NolebaseGitChangelogPlugin, {
+      locales: NolebaseGitChangelogOptions.locales,
+      mapAuthors: team['root']
+    })
     app.component('Contribution', AMWTeamPage)
     app.component('GnomeAppsList', AGWGnomeAppsList)
 

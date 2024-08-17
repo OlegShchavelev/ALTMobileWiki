@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import { VPTeamPage, VPTeamPageTitle, VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamPageSection,
+  VPTeamMembers
+} from 'vitepress/theme'
 
 import { data as team } from '../loaders/gitlogDataLoader.data'
 import { developersSection, membersSection, teamSorting } from '../../data/team'
@@ -29,7 +34,11 @@ const { frontmatter, localeIndex } = useData()
           <template #members>
             <VPTeamMembers
               :members="
-                sortMembers(team[localeIndex], teamSorting).filter((member) => member.title.includes('Разработчик') || member.title.includes('Developer'))
+                sortMembers(team[localeIndex], teamSorting).filter(
+                  (member) =>
+                    member.title.includes('Разработчик') ||
+                    member.title.includes('Developer')
+                )
               "
             />
           </template>
@@ -45,7 +54,11 @@ const { frontmatter, localeIndex } = useData()
           <template #members>
             <VPTeamMembers
               :members="
-                sortMembers(team[localeIndex], teamSorting).filter((member) => !member.title.includes('Разработчик') && !member.title.includes('Developer'))
+                sortMembers(team[localeIndex], teamSorting).filter(
+                  (member) =>
+                    !member.title.includes('Разработчик') &&
+                    !member.title.includes('Developer')
+                )
               "
             />
           </template>

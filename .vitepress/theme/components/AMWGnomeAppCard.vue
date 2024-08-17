@@ -19,15 +19,26 @@ const cardProps = computed(() => {
       return repo1[0] == 'sisyphus' ? -1 : 1
     })
   )
-  
-  const is_adaptive = props.app.appstream?.keywords?.includes('adaptive') ? ['adaptive'] : []
-  const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes') ? ['dontthemes'] : []
+
+  const is_adaptive = props.app.appstream?.keywords?.includes('adaptive')
+    ? ['adaptive']
+    : []
+  const is_donttheme = props.app.appstream?.keywords?.includes('dontthemes')
+    ? ['dontthemes']
+    : []
 
   return {
     icon: icon,
     name: name,
     summary: summary,
-    links: getLinks({ ...repos, ...{ about_app: withBase(props.app.about_app) }, snap: undefined }, config.links),
+    links: getLinks(
+      {
+        ...repos,
+        ...{ about_app: withBase(props.app.about_app) },
+        snap: undefined
+      },
+      config.links
+    ),
     keywords: getKeywords([...is_adaptive, ...is_donttheme], config.keywords)
   }
 })

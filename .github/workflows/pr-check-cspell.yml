@@ -1,4 +1,4 @@
-name: 'Check: Markdown Spell Check (CSpell)'
+name: "Check: Markdown Spell Check (CSpell)"
 
 on:
   pull_request:

@@ -5,40 +5,47 @@ import { gitflic, gitverse } from './icons'
 const homeSorting = 'month, commits'
 const teamSorting = 'role, commits, month'
 const leader = {
-  'root': 'Олег Щавелев',
-  'en': 'Oleg Shchavelev'
+  root: 'Олег Щавелев',
+  en: 'Oleg Shchavelev'
 }
 const limit = 6
 const developersSection = {
-  'root': {
+  root: {
     title: 'Разработчики',
     description:
       'Люди, которые активно участвуют не только в расширении базы знаний, но и в улучшении её функционала.'
   },
-  'en': {
+  en: {
     title: 'Developers',
     description:
-    'People who are actively involved not only in expanding the knowledge base, but also in improving its functionality.'
+      'People who are actively involved not only in expanding the knowledge base, but also in improving its functionality.'
   }
 }
 const membersSection = {
-  'root': {
+  root: {
     title: 'Авторы',
     description: 'Люди, которые участвуют в улучшении и создании новых статей.'
   },
-  'en': {
+  en: {
     title: 'Authors',
-    description: 'People who are involved in improving and creating new articles.'
+    description:
+      'People who are involved in improving and creating new articles.'
   }
 }
 
-export { homeSorting, teamSorting, leader, limit, membersSection, developersSection }
-
+export {
+  homeSorting,
+  teamSorting,
+  leader,
+  limit,
+  membersSection,
+  developersSection
+}
 
 /* Информация об участниках */
 
 export const contributions = {
-  'root': [
+  root: [
     {
       avatar: 'https://github.com/OlegShchavelev.png',
       name: 'Олег Щавелев',
@@ -57,7 +64,12 @@ export const contributions = {
     {
       avatar: 'https://avatars.githubusercontent.com/u/44705058?v=4',
       name: 'Антон Политов',
-      mapByNameAliases: ['Ampernic', 'Антон Политов', 'Anton Politov', 'ampernic'],
+      mapByNameAliases: [
+        'Ampernic',
+        'Антон Политов',
+        'Anton Politov',
+        'ampernic'
+      ],
       title: 'Разработчик, Участник',
       links: [{ icon: 'github', link: 'https://github.com/Ampernic' }]
     },
@@ -81,14 +93,14 @@ export const contributions = {
       mapByNameAliases: ['Rirusha', 'Vladimir Vaskov'],
       title: 'Участник',
       avatar: 'https://github.com/Rirusha.png',
-      links: [{ icon: 'github', link: 'https://github.com/Rirusha'}]
+      links: [{ icon: 'github', link: 'https://github.com/Rirusha' }]
     },
     {
       name: 'Артём Быстров',
       mapByNameAliases: ['Ubuntigroid'],
       title: 'Участник',
       avatar: 'https://github.com/Ubuntigroid.png',
-      links: [{ icon: 'github', link: 'https://github.com/Ubuntigroid'}]
+      links: [{ icon: 'github', link: 'https://github.com/Ubuntigroid' }]
     }
   ]
 }

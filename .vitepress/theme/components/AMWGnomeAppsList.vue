@@ -4,7 +4,6 @@ import AGWGnomeAppCard from './AMWGnomeAppCard.vue'
 import { data as appsRoot } from '../loaders/appsGnomeRootDataLoader.data.ts'
 import { data as appsEN } from '../loaders/appsGnomeEnDataLoader.data.ts'
 
-
 const { frontmatter, localeIndex } = useData()
 
 const props = defineProps({
@@ -12,8 +11,8 @@ const props = defineProps({
 })
 
 const apps = {
-  'root': appsRoot,
-  'en': appsEN
+  root: appsRoot,
+  en: appsEN
 }
 
 const getAppsList = () => {
@@ -22,7 +21,6 @@ const getAppsList = () => {
   })
 
   const Apps = []
-  
 
   rawWikiApps.forEach((app) => {
     Apps.push({
@@ -32,7 +30,9 @@ const getAppsList = () => {
   })
 
   Object.entries(frontmatter?.value?.apps?.[props.category]).forEach((app) => {
-    Apps.find((appFound) => appFound.appstream.name == app[1].appstream.name) ? '' : Apps.push({ ...app[1] })
+    Apps.find((appFound) => appFound.appstream.name == app[1].appstream.name)
+      ? ''
+      : Apps.push({ ...app[1] })
   })
 
   return Apps

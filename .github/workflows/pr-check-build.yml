@@ -1,4 +1,4 @@
-name: 'Test: Build Vitepress'
+name: "Test: Build Vitepress"
 
 on:
   pull_request:

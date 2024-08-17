@@ -5,7 +5,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import ora from 'ora'
 import { cyan, gray, red } from 'colorette'
-import { transliterate as tr } from 'transliteration';
+import { transliterate as tr } from 'transliteration'
 
 /*
     CLI Arguments
@@ -13,14 +13,17 @@ import { transliterate as tr } from 'transliteration';
 const args = yargs(process.argv)
   .options({
     key: { type: 'string', default: '' },
-    repoUrl: { type: 'string', default: 'https://github.com/OlegShchavelev/ALTMobileWiki' },
+    repoUrl: {
+      type: 'string',
+      default: 'https://github.com/OlegShchavelev/ALTMobileWiki'
+    },
     debug: { type: 'boolean', default: false }
   })
   .parse()
 
 const authors = {
-  'root': [],
-  'en': []
+  root: [],
+  en: []
 }
 
 /*
@@ -79,7 +82,9 @@ const userGetMore = async (user) => {
     )
 }
 
-for await (const gitter of await contributorsRawBase().then((response) => response)) {
+for await (const gitter of await contributorsRawBase().then(
+  (response) => response
+)) {
   const userMore = await userGetMore(gitter.author.login)
     .then((response) => response.data)
     .catch((err) =>
@@ -123,8 +128,10 @@ for await (const gitter of await contributorsRawBase().then((response) => respon
   contributions.root.forEach((memberRaw) => {
     if (
       memberRaw.name == userMore.name ||
-      Object.values(memberRaw.links[0])[1] == Object.values(author.links[0])[1] ||
-      (memberRaw.mapByNameAliases && memberRaw.mapByNameAliases.includes(gitter.author.login))
+      Object.values(memberRaw.links[0])[1] ==
+        Object.values(author.links[0])[1] ||
+      (memberRaw.mapByNameAliases &&
+        memberRaw.mapByNameAliases.includes(gitter.author.login))
     ) {
       Object.keys(memberRaw).forEach((key) => {
         key == 'mapByNameAliases'
@@ -132,18 +139,23 @@ for await (const gitter of await contributorsRawBase().then((response) => respon
               author[key].push(alias)
             })
           : key == 'title'
-            ? author[key].root = memberRaw[key]
-              : (author[key] = memberRaw[key])
+            ? (author[key].root = memberRaw[key])
+            : (author[key] = memberRaw[key])
       })
     }
   })
 
   console.log(author.title)
-  author.title.root.includes('Разработчик') ? author.title.en = 'Developer, Member' : ''
-  author.name? '' : author.name = gitter.author.login
+  author.title.root.includes('Разработчик')
+    ? (author.title.en = 'Developer, Member')
+    : ''
+  author.name ? '' : (author.name = gitter.author.login)
 
-  authors.en.push({...author, ...{title: author.title.en , name: tr(author.name)}})
-  authors.root.push({...author, ...{title: author.title.root}})
+  authors.en.push({
+    ...author,
+    ...{ title: author.title.en, name: tr(author.name) }
+  })
+  authors.root.push({ ...author, ...{ title: author.title.root } })
 }
 
 fs.writeFile(

@@ -12,13 +12,18 @@ export const NolebaseEnhancedReadabilitiesOptions = {
         optionFullWidthAriaLabel: 'Полноэкранный',
         titleScreenNavWarningMessage:
           'Изменить внешний вид страницы недоступен на экране мобильного устройства',
-        optionFullWidthHelpMessage: 'Боковая панель и область содержимого занимают всю ширину экрана.',
-        optionSidebarWidthAdjustableOnly: 'Боковая панель с пользовательской настройкой',
-        optionSidebarWidthAdjustableOnlyAriaLabel: 'Боковая панель с пользовательской настройкой',
+        optionFullWidthHelpMessage:
+          'Боковая панель и область содержимого занимают всю ширину экрана.',
+        optionSidebarWidthAdjustableOnly:
+          'Боковая панель с пользовательской настройкой',
+        optionSidebarWidthAdjustableOnlyAriaLabel:
+          'Боковая панель с пользовательской настройкой',
         optionSidebarWidthAdjustableOnlyHelpMessage:
           'Увеличьте ширину боковой панели, максимальная ширина боковой панели может изменяться, но ширина области содержимого останется прежней.',
-        optionBothWidthAdjustable: 'Полноэрканный с пользовательской настройкой',
-        optionBothWidthAdjustableAriaLabel: 'Полноэрканный с пользовательской настройкой',
+        optionBothWidthAdjustable:
+          'Полноэрканный с пользовательской настройкой',
+        optionBothWidthAdjustableAriaLabel:
+          'Полноэрканный с пользовательской настройкой',
         optionBothWidthAdjustableHelpMessage:
           'Управляется шириной боковой панели, и шириной содержания документа. Настройте желаемую ширину максимальной ширины боковой панели и содержимого документа.',
         optionOriginalWidth: 'Оригинальная ширина',
@@ -55,7 +60,8 @@ export const NolebaseEnhancedReadabilitiesOptions = {
         titleAriaLabel: 'Фокус',
         titleHelpMessage:
           'Выделите строку, на которой в данный момент находится курсор мыши, в содержимом, для удобства пользователей, у которых могут возникнуть трудности с чтением и фокусировкой.',
-        titleScreenNavWarningMessage: 'Фокус недоступен на экране мобильного устройства.',
+        titleScreenNavWarningMessage:
+          'Фокус недоступен на экране мобильного устройства.',
         optionOn: 'Включить',
         optionOnAriaLabel: 'Включить',
         optionOnHelpMessage: 'Включите фокус.',
@@ -77,4 +83,4 @@ export const NolebaseEnhancedReadabilitiesOptions = {
       }
     }
   }
-}  
+}

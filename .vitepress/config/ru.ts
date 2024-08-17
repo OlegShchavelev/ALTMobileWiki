@@ -12,7 +12,8 @@ export const ru = defineConfigWithTheme({
       next: 'Следующая страница'
     },
     editLink: {
-      pattern: 'https://github.com/OlegShchavelev/ALTMobileWiki/tree/main/docs/:path',
+      pattern:
+        'https://github.com/OlegShchavelev/ALTMobileWiki/tree/main/docs/:path',
       text: 'Предложить изменения на этой странице'
     },
     lastUpdated: {
@@ -23,7 +24,8 @@ export const ru = defineConfigWithTheme({
     outlineTitle: 'Оглавление',
     notFound: {
       title: 'Страница не найдена',
-      quote: 'Похоже, что вы перешли по неверной или устаревшей ссылке. Вы можете воспользоваться поиском.',
+      quote:
+        'Похоже, что вы перешли по неверной или устаревшей ссылке. Вы можете воспользоваться поиском.',
       linkText: 'Вернуться на главную'
     },
     footer: {
