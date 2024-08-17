@@ -1,13 +1,13 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from '../data/navigations'
 import { packages } from '../../package-lock.json'
-import { vitepressSearchOptionsRU } from './plugins/vitepress-search'
+import { VitePressSearchOptions } from './plugins'
 
 export const ru = defineConfigWithTheme({
   lang: 'ru-RU',
   themeConfig: {
     search: {
-      options: vitepressSearchOptionsRU
+      options: VitePressSearchOptions
     },
     nav: nav.root,
     sidebar: sidebar.root,

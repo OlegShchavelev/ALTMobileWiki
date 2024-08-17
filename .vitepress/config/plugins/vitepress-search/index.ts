@@ -1,5 +1,4 @@
-
-export const vitepressSearchOptionsRU = {
+export const VitePressSearchOptions = {
   locales: {
     root: {
       translations: {
