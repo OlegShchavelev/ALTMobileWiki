@@ -1,4 +1,4 @@
-# Список задач 
+# Список задач
 
 Перечень задач по ALT Mobile
 
@@ -50,7 +50,7 @@ Chromium и Firefox не влезают в вертикальной ориент
 #### Будильник
 
 - [ ] waked
-- [ ] gnome-clocks: нужно патчить для поддержки waked (патч есть) 
+- [ ] gnome-clocks: нужно патчить для поддержки waked (патч есть)
 
 ### Образ
 
@@ -275,7 +275,7 @@ telegram
 
 - [x] Тяжелые приложения долго грузятся и могут вовсе не загрузиться при запуске с основного экрана. При этом всегда загружаются из консоли (VT). Нужно разобраться что из прибивает, возможно, где-то timeout в phosh. Длительность загрузки связана с таском [Медленный i/o](#медленныи-i-o/), но это не объясняет прерывание процесса запуска
 - [x] Апстримный баг [GNOME](https://gitlab.gnome.org/GNOME/xdg-desktop-portal-gnome/-/issues/86) и [flatpak](https://github.com/flatpak/xdg-desktop-portal/issues/986), [решение в arch](https://bbs.archlinux.org/viewtopic.php?id=285590), апстримны [патч](https://github.com/flatpak/xdg-desktop-portal/pull/985), который не помог
-[x] Решено серией правок: [BZ46978](http://bugzilla.altlinux.org/46978), [BZ46895](http://bugzilla.altlinux.org/46014) [BZ46014](http://bugzilla.altlinux.org/46014) [BZ47681](http://bugzilla.altlinux.org/47681)
+      [x] Решено серией правок: [BZ46978](http://bugzilla.altlinux.org/46978), [BZ46895](http://bugzilla.altlinux.org/46014) [BZ46014](http://bugzilla.altlinux.org/46014) [BZ47681](http://bugzilla.altlinux.org/47681)
 
 #### Энергосбережение
 

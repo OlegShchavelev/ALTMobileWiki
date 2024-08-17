@@ -80,7 +80,7 @@ npm run docs:dev
 
 ## Активность проекта ALT Mobile Wiki
 
-![Статистика активности участников проекта ALT Mobile Wiki](https://repobeats.axiom.co/api/embed/02b02ba7dae626566a4b2737c0c2b1ab6714fac5.svg "Repobeats analytics image")
+![Статистика активности участников проекта ALT Mobile Wiki](https://repobeats.axiom.co/api/embed/02b02ba7dae626566a4b2737c0c2b1ab6714fac5.svg 'Repobeats analytics image')
 
 ## Как помочь проекту ALT Mobile Wiki
 

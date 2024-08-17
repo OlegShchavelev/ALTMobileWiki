@@ -11,36 +11,37 @@
 Возможность запуска была протестирована на следующих моделях приставок:
 
 ::: details на базе RK3399
+
 - Anbernic RG 552
-:::
+  :::
 
 ::: details на базе RK3566
+
 - Anbernic RG 353M
 - Anbernic RG Arc D и S
-:::
+  :::
 
 ### Статус поддержки компонентов игровых приставок
 
-|  | RG 552	| RG 353M | RG Arc D | RG Arc C |	
-| :--- | :---: | :---: | :---: | :---: |  
-| Дисплей | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Сенсорная панель | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
-| Wi-Fi | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Bluetooth | :white_circle: | :green_circle: | :green_circle: | :green_circle: |
-| GPU | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| Управление | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| OTG | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| MiniHDMI | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
-| eMMC | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
+|                   |     RG 552     |    RG 353M     |    RG Arc D    |    RG Arc C    |
+| :---------------- | :------------: | :------------: | :------------: | :------------: |
+| Дисплей           | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Сенсорная панель  | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
+| Wi-Fi             | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Bluetooth         | :white_circle: | :green_circle: | :green_circle: | :green_circle: |
+| GPU               | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Управление        | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| OTG               | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| MiniHDMI          | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| eMMC              | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
 | Слоты карт памяти | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 
 :::details Условные обозначения
-  :green_circle: `Работает` - работает в полном объеме \
-  :yellow_circle: `Частично` - работает частично \
-  :red_circle: `Не работает` - не работает \
-  :white_circle: `Отсутствует` - не предусмотрено спецификацией
+:green_circle: `Работает` - работает в полном объеме \
+ :yellow_circle: `Частично` - работает частично \
+ :red_circle: `Не работает` - не работает \
+ :white_circle: `Отсутствует` - не предусмотрено спецификацией
 :::
- 
 
 ## Подготовка карты памяти
 
@@ -215,12 +216,13 @@ dd if=/mnt/android_rg552.img of=/dev/mmcblkX oflag=direct,sync iflag=fullblock b
 :::info Инструменты
 
 Для проведения профилактики нам понадобятся:
+
 - Отвёртки с наконечниками +1,5 и Т6;
 - Спиртовые салфетки или изопропиловый спирт и плотные салфетки, не оставляющие ворсинок (чтобы очистить поверхность чипов);
 - Пластиковая карта, медиатор или набор для наклейки экрана смартфона;
 - Термопрокладка толщиной 1,5 мм (под давлением она сожмётся и оформит плотный контакт между чипами и радиатором);
 - Термопаста для процессора;
-:::
+  :::
 
 #### Процесс разбора
 

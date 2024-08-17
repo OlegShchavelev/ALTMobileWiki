@@ -3,7 +3,7 @@ layout: home
 title: Main
 gitChangelog: false
 hero:
-  name: "ALT Mobile Wiki"
+  name: 'ALT Mobile Wiki'
   tagline: the knowledge library of the ALT Mobile operating system
   image:
     src: /hero.png
@@ -25,7 +25,7 @@ features:
 teams:
   title: Contributions
   moreText: All contributions
-  moreLink: projects/contributions/ 
+  moreLink: projects/contributions/
 sponsors:
   introtext: This service is a Free Software project and its support and development depends only on our joint activity.
   collections:

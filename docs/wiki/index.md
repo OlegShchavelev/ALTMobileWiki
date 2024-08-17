@@ -64,6 +64,7 @@
 ```shell
 make vm/pinephone-phosh.img ARCH=aarch64 DEBUG=1
 ```
+
 :::info
 Кросс-компиляция образов не поддерживается.
 :::

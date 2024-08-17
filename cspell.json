@@ -19,7 +19,12 @@
       "pattern": "/^\\s*<<!--[\\s\\S]*?^\\s*-->>/gs"
     }
   ],
-  "ignoreRegExpList": [["code-block"], ["frontmatter-block"], ["html-comment-block"], ["frontmatter-inter"]],
+  "ignoreRegExpList": [
+    ["code-block"],
+    ["frontmatter-block"],
+    ["html-comment-block"],
+    ["frontmatter-inter"]
+  ],
   "dictionaryDefinitions": [
     {
       "name": "apps & companies",
