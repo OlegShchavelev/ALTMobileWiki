@@ -14,6 +14,7 @@ export const shared = defineConfig({
   title: 'ALT Mobile Wiki',
   titleTemplate: ':title — ALT Mobile Wiki',
   srcDir: './docs',
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://altmobile.org'
   },
