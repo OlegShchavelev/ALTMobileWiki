@@ -2,7 +2,7 @@
 
 Доступны несколько наборов образов, специфичных для конкретных сред/архитектур.
 
-## Скачать ALT Regular Gnome из репозитория производителя Альт
+## Скачать ALT Mobile из репозитория производителя Альт
 
 - [ALT Mobile <Badge type="info" text="lt11i" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-lt11i-ad-20240625-aarch64.img.xz)
 - [ALT Mobile <Badge type="info" text="mp" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-mp-ad-20240625-aarch64.img.xz)
