@@ -6,4 +6,4 @@ If you have the Flatpak package, you can install **«{{ $frontmatter?.appstream?
 flatpak install flathub {{ $frontmatter?.aggregation?.flatpak }}
 ```
 
-<!--@include: @en/apps/_parts/install/software-flatpak.md-->
+<!--@include: @en/apps/.parts/install/software-flatpak.md-->

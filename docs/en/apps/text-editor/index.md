@@ -24,5 +24,5 @@ appstream:
 
 GNOME Text Editor is a simple text editor focused on a pleasing default experience.
 
-<!--@include: @en/apps/_parts/install/content-repo.md-->
-<!--@include: @en/apps/_parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-repo.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->

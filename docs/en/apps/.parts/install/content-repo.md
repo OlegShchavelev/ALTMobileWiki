@@ -2,7 +2,7 @@
 
 There are several ways to install **«{{ $frontmatter?.appstream?.name }}»** on ALT Mobile:
 
-<!--@include: @en/apps/_parts/install/software-repo.md-->
+<!--@include: @en/apps/.parts/install/software-repo.md-->
 
 **Installation via the terminal**
 

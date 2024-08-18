@@ -4,4 +4,4 @@ aside: false
 
 # Documentation
 
-<!--@include: ./../parts/blocks/constructing.md-->
+<!--@include: @en/.parts/blocks/constructing.md-->

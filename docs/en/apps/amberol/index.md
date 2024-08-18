@@ -27,5 +27,5 @@ Amberol strives to be as compact, unobtrusive and simple as possible. It does no
 
 Amberol plays music and nothing else.
 
-<!--@include: @en/apps/_parts/install/content-repo.md-->
-<!--@include: @en/apps/_parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-repo.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->

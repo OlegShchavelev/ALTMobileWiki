@@ -26,4 +26,4 @@ Moonlight (formerly Limelight) is an open source implementation of NVIDIA's Game
 
 You can stream your collection of PC games from your GameStream-compatible PC to any supported device and play them remotely. Moonlight is perfect for gaming on the go without sacrificing the graphics and game selection available on PC.
 
-<!--@include: @en/apps/_parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->
