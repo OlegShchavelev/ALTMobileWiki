@@ -9,16 +9,12 @@ import AMWTeamPage from './components/AMWTeamPage.vue'
 import AMWHomeTeam from './components/AMWHomeTeam.vue'
 import AGWGnomeAppsList from './components/AMWGnomeAppsList.vue'
 
-import {
-  NolebaseEnhancedReadabilitiesOptions,
-  NolebaseGitChangelogOptions
-} from '../config/plugins/index'
+import { NolebaseGitChangelogOptions } from '../config/plugins/index'
 
 import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
@@ -46,10 +42,7 @@ export default {
     })
   },
   enhanceApp({ app }) {
-    app.use(
-      NolebaseEnhancedReadabilitiesPlugin,
-      NolebaseEnhancedReadabilitiesOptions as Options
-    )
+    app.use(NolebaseEnhancedReadabilitiesPlugin)
     app.use(NolebaseGitChangelogPlugin, {
       locales: NolebaseGitChangelogOptions.locales,
       mapAuthors: team['root']
