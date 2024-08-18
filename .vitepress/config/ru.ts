@@ -1,13 +1,28 @@
 import { defineConfigWithTheme } from 'vitepress'
 import { nav, sidebar } from '../data/navigations'
 import { packages } from '../../package-lock.json'
-import { VitePressSearchOptions } from './plugins'
 
 export const ru = defineConfigWithTheme({
   lang: 'ru-RU',
   themeConfig: {
     search: {
-      options: VitePressSearchOptions
+      options: {
+        translations: {
+          button: {
+            buttonText: 'Поиск',
+            buttonAriaLabel: 'Поиск'
+          },
+          modal: {
+            noResultsText: 'Нет результатов по запросу',
+            resetButtonTitle: 'Сбросить',
+            footer: {
+              selectText: 'для выбора',
+              navigateText: 'для навигации',
+              closeText: 'закрыть'
+            }
+          }
+        }
+      }
     },
     nav: nav.root,
     sidebar: sidebar.root,
