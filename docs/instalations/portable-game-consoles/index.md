@@ -13,17 +13,19 @@
 ::: details на базе RK3399
 
 - Anbernic RG 552
-  :::
+
+:::
 
 ::: details на базе RK3566
 
 - Anbernic RG 353M
 - Anbernic RG Arc D и S
-  :::
+
+:::
 
 ### Статус поддержки компонентов игровых приставок
 
-|                   |     RG 552     |    RG 353M     |    RG Arc D    |    RG Arc C    |
+|                   |     RG 552     |    RG 353M     |    RG Arc D    |    RG Arc S    |
 | :---------------- | :------------: | :------------: | :------------: | :------------: |
 | Дисплей           | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 | Сенсорная панель  | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
@@ -37,10 +39,12 @@
 | Слоты карт памяти | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 
 :::details Условные обозначения
-:green_circle: `Работает` - работает в полном объеме \
- :yellow_circle: `Частично` - работает частично \
- :red_circle: `Не работает` - не работает \
- :white_circle: `Отсутствует` - не предусмотрено спецификацией
+
+:green_circle: `Работает` - работает в полном объёме
+:yellow_circle: `Частично` - работает частично
+:red_circle: `Не работает` - не работает
+:white_circle: `Отсутствует` - не предусмотрено спецификацией
+
 :::
 
 ## Подготовка карты памяти
