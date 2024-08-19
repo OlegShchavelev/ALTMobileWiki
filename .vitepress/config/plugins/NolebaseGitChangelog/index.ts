@@ -1,28 +1,15 @@
+import { default as map } from '../../../data/fullteam.json'
+
 export const NolebaseGitChangelogOptions = {
   plugin: {
     maxGitLogCount: 20000,
-    repoURL: 'https://github.com/OlegShchavelev/ALTKDEWiki'
+    repoURL: 'https://github.com/OlegShchavelev/ALTMobileWiki',
+    mapAuthors: map['root']
   },
   pluginSections: {
     sections: {
       disableChangelog: false,
       disableContributors: false
-    }
-  },
-  locales: {
-    'ru-RU': {
-      changelog: {
-        title: 'История изменений',
-        noData: 'Нет изменений',
-        lastEdited: 'Последнее редактирование: {{daysAgo}}',
-        lastEditedDateFnsLocaleName: 'ru',
-        viewFullHistory: 'Показать историю',
-        committedOn: ' от {{date}}'
-      },
-      contributors: {
-        title: 'Авторы',
-        noData: 'Нет информации'
-      }
     }
   }
 }

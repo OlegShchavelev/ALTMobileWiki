@@ -101,6 +101,16 @@ export const contributions = {
       title: 'Участник',
       avatar: 'https://github.com/Ubuntigroid.png',
       links: [{ icon: 'github', link: 'https://github.com/Ubuntigroid' }]
+    },
+    {
+      avatar: 'https://github.com/X1Z53.png',
+      name: 'Давид Султаниязов',
+      mapByNameAliases: ['X1Z53', 'x1z53', 'Sultaniiazov David'],
+      title: 'Разработчик, Участник',
+      links: [
+        { icon: 'github', link: 'https://github.com/X1Z53' },
+        { icon: { svg: gitverse }, link: 'https://gitverse.ru/x1z53' }
+      ]
     }
   ]
 }

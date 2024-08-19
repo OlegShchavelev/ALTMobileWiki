@@ -19,15 +19,13 @@ import { NolebaseEnhancedReadabilitiesPlugin } from '@nolebase/vitepress-plugin-
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
 import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
-import { data as team } from './loaders/gitlogDataLoader.data'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './styles/style.css'
 import './styles/theme.css'
 import 'uno.css'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import 'vitepress-markdown-timeline/dist/theme/index.css'
 
 export default {
@@ -43,10 +41,7 @@ export default {
   },
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin)
-    app.use(NolebaseGitChangelogPlugin, {
-      locales: NolebaseGitChangelogOptions.locales,
-      mapAuthors: team['root']
-    })
+    app.use(NolebaseGitChangelogPlugin)
     app.component('Contribution', AMWTeamPage)
     app.component('GnomeAppsList', AGWGnomeAppsList)
 

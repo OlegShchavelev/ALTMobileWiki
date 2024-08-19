@@ -29,7 +29,7 @@
     ]
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "docs:dev": "npm run history:build -- --dev && vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "docs:check": "npm run docs:spell-check && docs:remark-full",

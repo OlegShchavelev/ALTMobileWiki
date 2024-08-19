@@ -7,6 +7,7 @@ import {
   GitChangelog,
   GitChangelogMarkdownSection
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+import { NolebaseGitChangelogOptions } from './plugins'
 
 import { telegram } from '../data/icons'
 
@@ -21,11 +22,8 @@ export const shared = defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
-      GitChangelog({
-        // Fill in your repository URL here
-        repoURL: () => 'https://github.com/OlegShchavelev/ALTMobileWiki'
-      }),
-      GitChangelogMarkdownSection()
+      GitChangelog(NolebaseGitChangelogOptions.plugin),
+      GitChangelogMarkdownSection(NolebaseGitChangelogOptions.pluginSections)
     ],
     optimizeDeps: {
       exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
