@@ -120,10 +120,10 @@ export const sidebar = {
           base: '/en/guide-users',
           items: [
             {
-              text: 'Игры',
+              text: 'Game',
               items: [
                 {
-                  text: 'Стриминг игр с компьютора на Anbernic',
+                  text: 'Game steaming from a computer on Ambernic',
                   link: '/games/game-steaming/'
                 }
               ],
@@ -134,7 +134,7 @@ export const sidebar = {
         },
         {
           text: 'Package Managers',
-          base: '/package-managers',
+          base: '/en/package-managers',
           items: [
             {
               text: 'Flatpak',
