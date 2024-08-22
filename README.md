@@ -10,6 +10,8 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/OlegShchavelev/ALTMobileWiki)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/OlegShchavelev/ALTMobileWiki)
 ![GitHub deployments](https://img.shields.io/github/deployments/OlegShchavelev/ALTMobileWiki/github-pages?label=Last%20Deploy)
+![Status](https://status.alt-gnome.ru/api/badge/15/status)
+![Uptime](https://status.alt-gnome.ru/api/badge/15/uptime)
 
 [![Telegram](https://img.shields.io/badge/Group-%235AA9E6?logo=telegram&label=Telegram)](https://t.me/altmobile_channel)
 
