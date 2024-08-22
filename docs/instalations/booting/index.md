@@ -44,7 +44,7 @@ dd if=spi.installer.img of=/dev/XXX bs=1M oflag=direct,sync status=progress
 
 <Video id="7piXOM8G2uQ" />
 
-# Дополнительно
+## Дополнительно
 
 ### Стандартные данные учётных записей
 

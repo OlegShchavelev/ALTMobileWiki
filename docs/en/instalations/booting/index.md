@@ -44,7 +44,7 @@ Erasing the storage before installation is not required. The erasing option can 
 
 <Video id="7piXOM8G2uQ" />
 
-# Additional
+## Additional
 
 ### Default Account Data
 
