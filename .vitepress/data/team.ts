@@ -12,24 +12,29 @@ const limit = 6
 const developersSection = {
   root: {
     title: 'Разработчики',
+    subtitle: 'проекта ALT Mobile Wiki',
     description:
-      'Люди, которые активно участвуют не только в расширении базы знаний, но и в улучшении её функционала.'
+      'Список участников, которые не только внесли свой вклад в расширение базы знаний проекта ALT Mobile Wiki, но и помогли улучшить его внешний вид и функциональность.'
   },
   en: {
     title: 'Developers',
+    subtitle: 'project ALT Mobile Wiki',
     description:
-      'People who are actively involved not only in expanding the knowledge base, but also in improving its functionality.'
+      "A list of contributors who have not only contributed to the expansion of the ALT Mobile Wiki project's knowledge base, but have also helped improve its appearance and functionality."
   }
 }
 const membersSection = {
   root: {
     title: 'Авторы',
-    description: 'Люди, которые участвуют в улучшении и создании новых статей.'
+    subtitle: 'проекта ALT Mobile Wiki',
+    description:
+      'Список участников, которые внесли вклад в улучшение содержания библиотеки знаний ALT Mobile Wiki.'
   },
   en: {
     title: 'Authors',
+    subtitle: 'project ALT Mobile Wiki',
     description:
-      'People who are involved in improving and creating new articles.'
+      'List of contributors who have contributed to improving the content of the ALT Mobile Wiki knowledge library.'
   }
 }
 

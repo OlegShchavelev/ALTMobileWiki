@@ -27,6 +27,12 @@ const { frontmatter, localeIndex } = useData()
         <VPTeamPageSection class="team">
           <template #title>
             {{ developersSection[localeIndex].title }}
+            <span
+              if="developersSection[localeIndex].subtitle"
+              style="display: block"
+            >
+              {{ developersSection[localeIndex].subtitle }}
+            </span>
           </template>
           <template #lead>
             {{ developersSection[localeIndex].description }}
@@ -47,6 +53,12 @@ const { frontmatter, localeIndex } = useData()
         <VPTeamPageSection class="team">
           <template #title>
             {{ membersSection[localeIndex].title }}
+            <span
+              if="developersSection[localeIndex].subtitle"
+              style="display: block"
+            >
+              {{ membersSection[localeIndex].subtitle }}
+            </span>
           </template>
           <template #lead>
             {{ membersSection[localeIndex].description }}
@@ -86,6 +98,15 @@ const { frontmatter, localeIndex } = useData()
   font-size: 20px;
   font-weight: 500;
   background-color: var(--vp-c-bg);
+}
+
+.VPTeamPageSection:deep(.title-line) {
+  height: 2px;
+  top: calc(50% - calc(2px / 2));
+}
+
+.VPTeamPageSection:deep(.lead) {
+  max-width: 800px;
 }
 
 .team {
