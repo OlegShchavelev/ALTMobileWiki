@@ -76,7 +76,7 @@ npm run docs:dev
 
 ## Участники проекта ALT Mobile Wiki
 
-Список людей внесших вклад в проект:
+Список участников, которые внесли свой вклад в проект ALT Mobile Wiki:
 
 [![Участники](https://contrib.rocks/image?repo=OlegShchavelev/ALTMobileWiki)](https://github.com/OlegShchavelev/ALTMobileWiki/graphs/contributors)
 

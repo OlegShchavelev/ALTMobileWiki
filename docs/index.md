@@ -22,7 +22,7 @@ features:
   - title: Свобода выбора и открытого ПО
     details: Единая инфраструктура для сборки программного обеспечения в общем репозитории «Сизиф»
 teams:
-  title: Участники
+  title: Участники проекта ALT Mobile Wiki
   moreText: Все участники
   moreLink: projects/contributions/
 sponsors:

@@ -23,7 +23,7 @@ features:
   - title: Freedom of choice and free software
     details: A single infrastructure for building source in the repository Sisyphus
 teams:
-  title: Contributions
+  title: Contributions of the ALT Mobile Wiki project's
   moreText: All contributions
   moreLink: projects/contributions/
 sponsors:
