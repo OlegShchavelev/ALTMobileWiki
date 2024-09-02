@@ -7,6 +7,10 @@ export const nav = {
       text: 'О проекте',
       items: [
         { text: 'О проекте', link: '/projects/about/' },
+        {
+          text: 'Участие в проекте',
+          link: '/projects/guide-wiki/pages/alteration/'
+        },
         { text: 'Участники', link: '/projects/contributions/' }
       ]
     }
@@ -19,13 +23,17 @@ export const nav = {
       text: 'About project',
       items: [
         { text: 'About project', link: '/en/projects/about/' },
+        {
+          text: 'Contributing to a project',
+          link: '/en/projects/guide-wiki/pages/alteration'
+        },
         { text: 'Contributions', link: '/en/projects/contributions/' }
       ]
     }
   ]
 }
 
-export const sidebar = {
+export const sidebarDocs = {
   root: [
     {
       items: [
@@ -149,4 +157,64 @@ export const sidebar = {
       ]
     }
   ]
+}
+
+const sidebarGuideWiki: any = {
+  root: [
+    {
+      text: 'Создание страниц',
+      base: '/projects/guide-wiki/pages',
+      items: [
+        { text: 'Внесение изменений', link: '/alteration/' },
+        { text: 'Возможности Markdown', link: '/markdown/' },
+        { text: 'Возможности VitePress', link: '/vitepress/' },
+        { text: 'Условия и правила размещения', link: '/moderation/' }
+      ],
+      collapsed: false
+    },
+    {
+      text: 'Макеты',
+      base: '/projects/guide-wiki/layouts',
+      items: [
+        {
+          text: 'Програмное обеспечение',
+          link: '/apps/'
+        }
+      ]
+    }
+  ],
+  en: [
+    {
+      text: 'Creating pages',
+      base: '/en/projects/guide-wiki/pages',
+      items: [
+        { text: 'Alteration', link: '/alteration/' },
+        { text: 'Markdown Features', link: '/markdown/' },
+        { text: 'VitePress Features', link: '/vitepress/' },
+        { text: 'Terms and conditions', link: '/moderation/' }
+      ],
+      collapsed: false
+    },
+    {
+      text: 'Layout',
+      base: '/en/projects/guide-wiki/layouts',
+      items: [
+        {
+          text: 'Software',
+          link: '/apps/'
+        }
+      ]
+    }
+  ]
+}
+
+export const sidebar = {
+  root: {
+    '/': sidebarDocs.root,
+    '/projects/guide-wiki/': sidebarGuideWiki.root
+  },
+  en: {
+    'en/': sidebarDocs.en,
+    'en/projects/guide-wiki/': sidebarGuideWiki.en
+  }
 }
