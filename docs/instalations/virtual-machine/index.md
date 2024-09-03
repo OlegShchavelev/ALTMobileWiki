@@ -4,7 +4,7 @@
 
 ### Скачивание образа ALT Mobile
 
-Образ операционной системы ALT Mobile можно скачать с [ftp](http://beta.altlinux.org/mobile/latest/)
+Образ операционной системы ALT Mobile можно скачать с [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/)
 
 Выберите образ формата:
 
