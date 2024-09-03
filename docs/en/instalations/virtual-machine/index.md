@@ -4,7 +4,7 @@
 
 ### Downloading the ALT Mobile Image
 
-The ALT Mobile operating system image can be downloaded from [ftp](http://beta.altlinux.org/mobile/latest/)
+The ALT Mobile operating system image can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/)
 
 Please select the image format as:
 

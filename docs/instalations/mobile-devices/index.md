@@ -4,7 +4,7 @@
 
 ## Скачивание образа ALT Mobile
 
-- Образ ALT Mobile можно скачать c [ftp](http://beta.altlinux.org/mobile/latest/), нам необходимы образы начинающиеся с pinephone, к примеру `pinephone-phosh-20231123-aarch64.img.xz`.
+- Образ ALT Mobile можно скачать c [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/), нам необходимы образы начинающиеся с pinephone, к примеру `pinephone-phosh-20231123-aarch64.img.xz`.
 
 ## Установка на внутреннюю память (emmc)
 

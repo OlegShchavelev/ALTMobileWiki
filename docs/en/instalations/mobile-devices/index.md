@@ -6,7 +6,7 @@ This section is dedicated to the installation of the ALT Mobile system on device
 
 ### Downloading ALT Mobile Image
 
-- The ALT Mobile image can be downloaded from [ftp](http://beta.altlinux.org/mobile/latest/). We need images starting with "pinephone", for example, `pinephone-phosh-20231123-aarch64.img.xz`.
+- The ALT Mobile image can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/). We need images starting with "pinephone", for example, `pinephone-phosh-20231123-aarch64.img.xz`.
 
 ### Installing on Internal Memory (emmc)
 
