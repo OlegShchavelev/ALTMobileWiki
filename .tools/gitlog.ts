@@ -171,7 +171,7 @@ if (!args.dev) {
 } else {
   spiner.warn(`${toolname} Активен режим разработки. Создаем пустышку...\n`)
   fs.writeFile(
-    path.join(__dirname, '../_data/fullteam.json'),
+    path.join(__dirname, '../.vitepress/data/fullteam.json'),
     JSON.stringify(contributions),
     (err) => err && spiner.fail(err.toString())
   )
