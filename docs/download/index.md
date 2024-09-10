@@ -2,11 +2,31 @@
 
 Доступны несколько наборов образов, специфичных для конкретных сред/архитектур.
 
-## Скачать ALT Mobile из репозитория производителя Альт
+## Скачать бета-версию образа ALT Mobile для `sisyphus` от августа 2024 года
 
-- [ALT Mobile <Badge type="info" text="lt11i" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-lt11i-ad-20240625-aarch64.img.xz)
-- [ALT Mobile <Badge type="info" text="mp" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-mp-ad-20240625-aarch64.img.xz)
-- [ALT Mobile <Badge type="info" text="pine" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-pine-ad-20240625-aarch64.img.xz)
-- [ALT Mobile <Badge type="info" text="rocknix" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-rocknix-ad-20240625-aarch64.img.xz)
-- [ALT Mobile <Badge type="info" text="un-def" /><Badge type="tip" text="aarch64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-un-def-ad-20240625-aarch64.img.xz)
-- [ALT Mobile <Badge type="info" text="un-def" /><Badge type="tip" text="x86_64" />](https://beta.altlinux.org/mobile/latest/alt-mobile-phosh-un-def-ad-20240625-x86_64.img.xz)
+- [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-lt11i-20240822-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="mp" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-mp-20240816-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-pine-20240821-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="rocknix" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-20240821-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240821-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="x86_64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240821-x86_64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="riscv64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240822-riscv64.img.xz)
+
+:::info
+Проверьте загруженную информацию на наличие ошибок и повреждений, используя соответствующий [файл контрольной суммы](https://beta.altlinux.org/mobile/sisyphus/latest/SHA512SUM).
+
+Если вы видите, что загрузка действительна, то это означает, что контрольная сумма SHA512 совпадает с контрольной суммой, указанной в подписи одного из ключей ALT Mobile.
+:::
+
+## Скачать альфа-версию образа ALT Mobile для `p11` от августа 2024 года
+
+- [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-un-def-11.0-alpha1-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="x86_64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-un-def-11.0-alpha1-x86_64.img.xz)
+
+:::info
+Проверьте загруженную информацию на наличие ошибок и повреждений, используя соответствующий [файл контрольной суммы](https://beta.altlinux.org/mobile/p11/latest/).
+
+Если вы видите, что загрузка действительна, то это означает, что контрольная сумма SHA512 совпадает с контрольной суммой, указанной в подписи одного из ключей ALT Mobile.
+:::

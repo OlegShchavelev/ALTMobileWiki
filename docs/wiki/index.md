@@ -54,7 +54,7 @@
 
 ## Образы
 
-Образы для `aarch64` оборудования и `qemu` для поддерживаемых архитектур доступны [на странице скачать](/download/).
+Образы для aarch64 оборудования и qemu для поддерживаемых архитектур доступны на ftp для [sisyphus](http://beta.altlinux.org/mobile/sisyphus/latest/) и [p11](http://beta.altlinux.org/mobile/p11/latest/).
 
 Инструмент сборки образов `mkimage-profiles` доступен в [git](https://git.altlinux.org/people/antohami/packages/mkimage-profiles.git).
 
