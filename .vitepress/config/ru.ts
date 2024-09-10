@@ -4,6 +4,27 @@ import { packages } from '../../package-lock.json'
 
 export const ru = defineConfigWithTheme({
   lang: 'ru-RU',
+  description: 'библиотека знаний операционной системы ALT Mobile',
+  head: [
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'ru-RU' }],
+    ['meta', { name: 'og:site_name', content: 'ALT Mobile Wiki' }],
+    [
+      'meta',
+      {
+        name: 'og:image',
+        content: 'https://altmobile.org/og-ru-alt-mobile-wiki.jpg'
+      }
+    ],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: 'https://altmobile.org/og-ru-alt-mobile-wiki.jpg'
+      }
+    ]
+  ],
   themeConfig: {
     search: {
       options: {

@@ -4,6 +4,27 @@ import { packages } from '../../package-lock.json'
 
 export const en = defineConfigWithTheme({
   lang: 'en',
+  description: 'the knowledge library of the ALT Mobile operating system',
+  head: [
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'en' }],
+    ['meta', { name: 'og:site_name', content: 'ALT Mobile Wiki' }],
+    [
+      'meta',
+      {
+        name: 'og:image',
+        content: 'https://altmobile.org/og-en-alt-mobile-wiki.jpg'
+      }
+    ],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: 'https://altmobile.org/og-en-alt-mobile-wiki.jpg'
+      }
+    ]
+  ],
   themeConfig: {
     nav: nav.en,
     sidebar: sidebar.en,
