@@ -66,6 +66,15 @@ export const sidebar = {
                 }
               ],
               collapsed: true
+            },
+            {
+              text: 'Cети',
+              items: [
+                {
+                  text: 'Мобильный интернет',
+                  link: '/net/mobile-internet/'
+                }
+              ]
             }
           ],
           collapsed: true
