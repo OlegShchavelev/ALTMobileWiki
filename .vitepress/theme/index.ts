@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 
 import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
+import AMWHomeCategories from './components/AMWHomeCategories.vue'
 import AMWVideo from './components/AMWVideo.vue'
 import AMWTeamPage from './components/AMWTeamPage.vue'
 import AMWHomeTeam from './components/AMWHomeTeam.vue'
@@ -36,7 +37,11 @@ export default {
       'nav-screen-content-after': () =>
         h(NolebaseEnhancedReadabilitiesScreenMenu),
       'aside-outline-after': () => h(AMWDocsAsideMeta),
-      'home-features-after': () => [h(AMWHomeTeam), h(AMWHomeSponsors)]
+      'home-features-after': () => [
+        h(AMWHomeCategories),
+        h(AMWHomeTeam),
+        h(AMWHomeSponsors)
+      ]
     })
   },
   enhanceApp({ app }) {
