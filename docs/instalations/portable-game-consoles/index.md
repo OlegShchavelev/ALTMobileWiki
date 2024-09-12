@@ -116,7 +116,7 @@ su -
 1. Устанавливаем `android-tools`:
 
 ```shell
-apt-get install andriod-tools
+apt-get install android-tools
 ```
 
 2. Вводим одну за другой команды, дожидаясь завершения выполнения каждой из них.
