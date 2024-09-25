@@ -1,7 +1,9 @@
-import { defineConfig } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
+import { type AMWTheme } from '../theme/types/index'
 import markdownTimeline from 'vitepress-markdown-timeline'
 import { tabsMarkdownPlugin as markdownItTabs } from 'vitepress-plugin-tabs'
 import markdownItTaskLists from 'markdown-it-task-lists'
+
 import UnoCSS from 'unocss/vite'
 import {
   GitChangelog,
@@ -9,9 +11,7 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { NolebaseGitChangelogOptions } from './plugins'
 
-import { telegram } from '../data/icons'
-
-export const shared = defineConfig({
+export const shared = defineConfigWithTheme<AMWTheme.Config>({
   title: 'ALT Mobile Wiki',
   titleTemplate: ':title — ALT Mobile Wiki',
   srcDir: './docs',
@@ -47,9 +47,7 @@ export const shared = defineConfig({
         link: 'https://github.com/OlegShchavelev/ALTMobileWiki'
       },
       {
-        icon: {
-          svg: telegram
-        },
+        icon: 'telegram',
         link: 'https://t.me/altmobile_channel'
       }
     ],

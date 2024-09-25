@@ -24,6 +24,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 import './styles/style.css'
 import './styles/theme.css'
+import './styles/icons.css'
 import 'uno.css'
 import 'vitepress-markdown-timeline/dist/theme/index.css'
 
