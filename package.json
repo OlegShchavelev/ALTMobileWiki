@@ -29,7 +29,7 @@
     ]
   },
   "scripts": {
-    "docs:dev": "npm run history:build -- --dev && vitepress dev",
+    "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "docs:check": "npm run docs:spell-check && docs:remark-full",
@@ -39,7 +39,6 @@
     "docs:cspell-full": "npx cspell --show-context --show-suggestions --color ./docs/**/*.md",
     "docs:cspell": "npx cspell --show-context --show-suggestions --color",
     "docs:remark-full": "remark ./docs --frail",
-    "docs:remark": "remark",
-    "history:build": "npx esrun ./.tools/gitlog.ts"
+    "docs:remark": "remark"
   }
 }

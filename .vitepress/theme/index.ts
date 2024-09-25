@@ -6,11 +6,9 @@ import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
 import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWHomeCategories from './components/AMWHomeCategories.vue'
 import AMWVideo from './components/AMWVideo.vue'
-import AMWTeamPage from './components/AMWTeamPage.vue'
-import AMWHomeTeam from './components/AMWHomeTeam.vue'
+import AMWTeam from './components/AMWTeam.vue'
+import AMWHomeTeams from './components/AMWHomeTeams.vue'
 import AGWGnomeAppsList from './components/AMWGnomeAppsList.vue'
-
-import { NolebaseGitChangelogOptions } from '../config/plugins/index'
 
 import {
   NolebaseEnhancedReadabilitiesMenu,
@@ -39,7 +37,7 @@ export default {
       'aside-outline-after': () => h(AMWDocsAsideMeta),
       'home-features-after': () => [
         h(AMWHomeCategories),
-        h(AMWHomeTeam),
+        h(AMWHomeTeams),
         h(AMWHomeSponsors)
       ]
     })
@@ -47,7 +45,7 @@ export default {
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin)
     app.use(NolebaseGitChangelogPlugin)
-    app.component('Contribution', AMWTeamPage)
+    app.component('team', AMWTeam)
     app.component('GnomeAppsList', AGWGnomeAppsList)
 
     app.component('Video', AMWVideo)

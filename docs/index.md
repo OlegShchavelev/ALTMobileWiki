@@ -60,7 +60,7 @@ categories:
         link: guide-users/net/mobile-internet/
 
 teams:
-  title: Участники проекта ALT Mobile Wiki
+  title: Участники
   moreText: Все участники
   moreLink: projects/contributions/
 sponsors:

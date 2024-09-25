@@ -57,7 +57,7 @@ categories:
       - name: Game steaming from a computer on Ambernicc
         link: guide-users/games/game-steaming/#стриминг-игр-с-компьютера-на-anbernic/
 teams:
-  title: Contributions of the ALT Mobile Wiki project's
+  title: Contributions
   moreText: All contributions
   moreLink: projects/contributions/
 sponsors:

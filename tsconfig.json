@@ -1,29 +1,13 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
-    "lib": ["DOM", "ESNext"],
+    "lib": ["ESNext"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noEmit": true,
-    "removeComments": false,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true
+    "moduleResolution": "Bundler"
   },
   "include": [
     "**/.vitepress/**/*.ts",
     "**/.vitepress/**/*.mts",
-    "**/.vitepress/**/*.vue",
-    "**/.vitepress/**/*.data"
+    "**/.vitepress/**/*.vue"
   ],
   "exclude": ["node_modules"]
 }
