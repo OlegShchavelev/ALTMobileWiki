@@ -4,13 +4,12 @@
 
 ## Скачать бета-версию образа ALT Mobile для `sisyphus` от августа 2024 года
 
-- [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-lt11i-20240822-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="mp" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-mp-20240816-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-pine-20240821-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="rocknix" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-20240821-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240821-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="x86_64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240821-x86_64.img.xz)
-- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="riscv64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240822-riscv64.img.xz)
+- [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-lt11i-20240926-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-pine-20240926-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="rocknix" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-20240926-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240926-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="riscv64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240926-riscv64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="x86_64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240926-x86_64.img.xz)
 
 :::info
 Проверьте загруженную информацию на наличие ошибок и повреждений, используя соответствующий [файл контрольной суммы](https://beta.altlinux.org/mobile/sisyphus/latest/SHA512SUM).
