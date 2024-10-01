@@ -6,7 +6,7 @@ This section is dedicated to the installation of the ALT Mobile system on device
 
 ### Downloading ALT Mobile Image
 
-- The ALT Mobile image can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/). We need images starting with "pinephone", for example, `pinephone-phosh-20231123-aarch64.img.xz`.
+- ALT Mobile image can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/), we need images containing `pine` in the name, for example `alt-mobile-phosh-pine-20240926-aarch64.img.xz`.
 
 ### Installing on Internal Memory (emmc)
 
@@ -29,7 +29,7 @@ This section is dedicated to the installation of the ALT Mobile system on device
 - Execute the command where `sdX` is your PinePhone’s drive (replace X with your specific data):
 
 ```shell
-xzcat pinephone-phosh-latest-aarch64.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat file.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 - It is recommended to increase the size of the file system, which can be done with the commands:
@@ -56,7 +56,7 @@ resize2fs -p /dev/sdX1
 - Use the `dd` command to write the ALT Mobile image to the SD card:
 
 ```shell
-xzcat your-image-file.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat file.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 - After completing the writing process, remove the card from the computer and insert it into the PinePhone.

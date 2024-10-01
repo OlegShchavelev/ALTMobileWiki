@@ -25,7 +25,7 @@
 
 ### Статус поддержки компонентов игровых приставок
 
-|                   |     RG 552     |        RG 353M        |    RG Arc D    |    RG Arc S    |
+| Компонент         |     RG 552     |        RG 353M        |    RG Arc D    |    RG Arc S    |
 | :---------------- | :------------: | :-------------------: | :------------: | :------------: |
 | Дисплей           | :green_circle: |  :green_circle:(\*)   | :green_circle: | :green_circle: |
 | Сенсорная панель  | :green_circle: |    :green_circle:     | :green_circle: | :white_circle: |
@@ -41,8 +41,11 @@
 :::details Условные обозначения
 
 :green_circle: `Работает` - работает в полном объёме
+
 :yellow_circle: `Частично` - работает частично
+
 :red_circle: `Не работает` - не работает
+
 :white_circle: `Отсутствует` - не предусмотрено спецификацией
 
 :::
@@ -68,7 +71,7 @@ apt-get install alt-rootfs-installer
 Скачиваем образ с ядром rocknix:
 
 ```shell
-wget https://beta.altlinux.org/mobile/sisyphus/20240625/alt-mobile-phosh-rocknix-ad-20240625-aarch64.img.xz
+wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-20240926-aarch64.img.xz
 ```
 
 Вставляем адаптер с картой памяти в порт USB
@@ -83,7 +86,7 @@ alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/
 Скачиваем образ с ядром pine:
 
 ```shell
-wget https://beta.altlinux.org/mobile/sisyphus/20240625/alt-mobile-phosh-pine-ad-20240625-aarch64.img.xz
+wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-pine-20240926-aarch64.img.xz
 ```
 
 Вставляем адаптер с картой памяти в порт USB
@@ -199,7 +202,7 @@ su -
 lsblk
 ```
 
-Накопитель объёмом 58,2G с названием, схожим с mmcblkXboot1, и есть наша встроенная память, а устройство вида /dev/mmcblkApB с одним разделом без точки монтирования - карта памяти с образом.
+Накопитель объёмом 58,2G с названием, схожим с `mmcblkXboot1`, и есть наша встроенная память, а устройство вида `/dev/mmcblkApB` с одним разделом без точки монтирования - карта памяти с образом.
 
 2. Примонтировать раздел карты памяти с образом:
 
