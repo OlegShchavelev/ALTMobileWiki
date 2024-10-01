@@ -4,17 +4,11 @@
 
 ### Скачивание образа ALT Mobile
 
-Образ операционной системы ALT Mobile можно скачать с [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/)
+Образ операционной системы ALT Mobile можно скачать с [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/). Выберите образ формата, содержащий `un-def` в имени, например — `alt-mobile-phosh-un-def-20240926-x86_64.img.xz`
 
-Выберите образ формата:
+Распакуйте скачанный образ в удобное для вас место
 
-- **phosh-20231004-x86_64.img.xz**
-
-**Примечание:** Для целей виртуализации требуется образ с архитектурой x86_64. Образы для архитектур aarch64 и risc-v также поддерживаются и могут быть использованы аналогичным образом.
-
-Распакуйте скачанный образ в удобное для вас место, например:
-
-- `/home/petr/images/phosh-20231004-x86\_64.img`
+**Примечание:** Для целей виртуализации требуется образ с архитектурой `x86_64`. Образы для архитектур `aarch64` и `risc-v` также поддерживаются и могут быть использованы аналогичным образом.
 
 ### Настройка и Запуск в Qemu
 
@@ -29,7 +23,7 @@ apt-get install /usr/bin/qemu-kvm
 2. Запустите систему от обычного пользователя (не от root):
 
 ```shell
-kvm -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img
+kvm -m 4G -k en-gb -hda /путь/к/образу.img
 ```
 
 Здесь:
@@ -37,7 +31,7 @@ kvm -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img
 - `kvm` - указывает, что запускаем при помощи qemu-kvm
 - `-m 4G` - для машины будет выделено 4 ГБ ОЗУ
 - `-k en-gb` - будет использоваться английская раскладка
-- `-hda /home/user/images/phosh-20231004-x86\_64.img` - путь к нашему образу
+- `-hda /путь/к/образу.img` - путь к нашему образу
 
 Инструкции по запуску образов для [aarch64](https://www.altlinux.org/Ports/aarch64/QEMU) и [riscv64](https://www.altlinux.org/Ports/riscv64/QEMU)
 
@@ -59,15 +53,15 @@ apt-get install qemu-system-x86 qemu-ui-sdl
 2. Запустите систему от обычного пользователя:
 
 ```shell
-qemu-system-x86_64 -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img -smp cpus=4 -net user
+qemu-system-x86_64 -m 4G -k en-gb -hda /путь/к/образу.img -smp cpus=4 -net user
 ```
 
 Здесь:
 
-- `qemu-system-x86\_64`{style="font-family: monospace; color: #003300; background-color: #EEEEEE; font-weight: bold; font-size: normal;"} - указывает, что мы эмулируем x86_64 компьютер
+- `qemu-system-x86_64` - указывает, что мы эмулируем x86_64 компьютер
 - `-m 4G` - для машины будет выделено 4ГБ ОЗУ
 - `-k en-gb` - будет использоваться английская раскладка
-- `-hda /home/user/images/phosh-20231004-x86\_64.img` - путь к нашему образу
+- `-hda /путь/к/образу.img` - путь к нашему образу
 - `-smp cpus=4` - будет использовано 4 ядра процессора
 - `-net user` - будет использована сеть компьютера
 

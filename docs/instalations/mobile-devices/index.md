@@ -4,7 +4,7 @@
 
 ## Скачивание образа ALT Mobile
 
-- Образ ALT Mobile можно скачать c [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/), нам необходимы образы начинающиеся с pinephone, к примеру `pinephone-phosh-20231123-aarch64.img.xz`.
+- Образ ALT Mobile можно скачать c [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/), нам необходимы образы, содержащие в названии `pine`, к примеру `alt-mobile-phosh-pine-20240926-aarch64.img.xz`.
 
 ## Установка на внутреннюю память (emmc)
 
@@ -27,7 +27,7 @@
 - Выполните команду, где `sdX` - это накопитель вашего PinePhone(необходимо заменить X на ваши данные):
 
 ```shell
-xzcat pinephone-phosh-latest-aarch64.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat file.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 - Рекомендуется увеличить размер файловой системы, это можно сделать командами:
@@ -54,7 +54,7 @@ resize2fs -p /dev/sdX1
 - Используйте команду `dd` для записи образа ALT Mobile на SD карту:
 
 ```shell
-xzcat your-image-file.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat file.img.xz | dd of=/dev/sdX oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 - После завершения записи, извлеките карту из компьютера и вставьте её в PinePhone.

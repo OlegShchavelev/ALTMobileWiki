@@ -4,17 +4,11 @@
 
 ### Downloading the ALT Mobile Image
 
-The ALT Mobile operating system image can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/)
+The image of the ALT Mobile operating system can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest /). Select a format image containing `un-def` in the name, for example — `alt-mobile-phosh-un-def-20240926-x86_64.img.xz`
 
-Please select the image format as:
+Unzip the downloaded image to a place convenient for you
 
-- **phosh-20231004-x86_64.img.xz**
-
-**Note:** For virtualization purposes, an image with x86_64 architecture is required. Images for architectures aarch64 and risc-v are also supported and can be used in a similar manner.
-
-Extract the downloaded image to a convenient location, for example:
-
-- `/home/petr/images/phosh-20231004-x86_64.img`
+**Note:** For virtualization purposes, an image with the architecture `x86_64` is required. Images for the `aarch64` and `risc-v` architectures are also supported and can be used in a similar way.
 
 ### Configuration and Launch in Qemu
 
@@ -29,7 +23,7 @@ apt-get install /usr/bin/qemu-kvm
 2. Start the system as a regular user (not as root):
 
 ```shell
-kvm -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img
+kvm -m 4G -k en-gb -hda /path/to/image.img
 ```
 
 Here:
@@ -37,7 +31,7 @@ Here:
 - `kvm` - indicates that it is run using qemu-kvm
 - `-m 4G` - 4 GB of RAM will be allocated for the machine
 - `-k en-gb` - an English keyboard layout will be used
-- `-hda /home/user/images/phosh-20231004-x86_64.img` - path to our image
+- `-hda /path/to/image.img` - путь к нашему образу
 
 Instructions for running images for [aarch64](https://www.altlinux.org/Ports/aarch64/QEMU) and [riscv64](https://www.altlinux.org/Ports/riscv64/QEMU)
 
@@ -59,7 +53,7 @@ apt-get install qemu-system-x86 qemu-ui-sdl
 2. Start the system as a regular user:
 
 ```shell
-qemu-system-x86_64 -m 4G -k en-gb -hda /home/petr/images/phosh-20231004-x86_64.img -smp cpus=4 -net user
+qemu-system-x86_64 -m 4G -k en-gb -hda /path/to/image.img -smp cpus=4 -net user
 ```
 
 Here:
@@ -67,7 +61,7 @@ Here:
 - `qemu-system-x86_64` - indicates that we are emulating an x86_64 computer
 - `-m 4G` - 4 GB of RAM will be allocated for the machine
 - `-k en-gb` - an English keyboard layout will be used
-- `-hda /home/user/images/phosh-20231004-x86_64.img` - path to our image
+- `-hda /path/to/image.img` - path to our image
 - `-smp cpus=4` - 4 CPU cores will be used
 - `-net user` - the computer's network will be used
 
