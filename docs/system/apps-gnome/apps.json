@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Календарь",
+    "thumb": "https://apps.gnome.org/icons/scalable/org.gnome.Calendar.svg",
+    "summary": "Вычисления: арифметические, научные и финансовые"
+  },
+  {
+    "name": "Диски",
+    "summary": "Снимайте фото и видео"
+  }
+]

@@ -1,33 +1,23 @@
 <script setup lang="ts">
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
-import { getDomainName } from './../composables/link'
-
-export interface Lists {
-  label?: string
-  name?: string
-  link: string
-}
+import { extractDomain } from './../composables/link'
+import type { AMWTheme } from '../types/index'
 
 defineProps<{
-  lists: Lists[]
+  lists: AMWTheme.MetaLists[]
 }>()
 </script>
 
 <template>
   <dl>
     <template v-for="list in lists">
-      <dt v-if="list.label">
-        {{ list.label }}
-      </dt>
+      <dt>{{ $t('meta.lists.' + list.caption) }}</dt>
       <dd>
-        <VPLink :href="list.link"
-          >{{ list?.name ?? getDomainName(list.link) }}
-        </VPLink>
+        <VPLink :href="list.link">{{ extractDomain(list.link) }}</VPLink>
       </dd>
     </template>
   </dl>
 </template>
-
 <style scoped>
 dl {
   margin-top: 0;

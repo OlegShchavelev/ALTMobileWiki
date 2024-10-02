@@ -8,7 +8,7 @@ import AMWHomeCategories from './components/AMWHomeCategories.vue'
 import AMWVideo from './components/AMWVideo.vue'
 import AMWTeam from './components/AMWTeam.vue'
 import AMWHomeTeams from './components/AMWHomeTeams.vue'
-import AGWGnomeAppsList from './components/AMWGnomeAppsList.vue'
+import AMWApp from './components/AMWApp.vue'
 
 import {
   NolebaseEnhancedReadabilitiesMenu,
@@ -21,6 +21,8 @@ import { NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-chang
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+
+import { useI18n } from './plugins/i18n'
 
 import './styles/style.css'
 import './styles/theme.css'
@@ -46,9 +48,9 @@ export default {
   enhanceApp({ app }) {
     app.use(NolebaseEnhancedReadabilitiesPlugin)
     app.use(NolebaseGitChangelogPlugin)
+    app.use(useI18n)
     app.component('team', AMWTeam)
-    app.component('GnomeAppsList', AGWGnomeAppsList)
-
+    app.component('app', AMWApp)
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
   }

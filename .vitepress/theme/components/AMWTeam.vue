@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import { VPTeamPage, VPTeamPageTitle, VPHomeContent } from 'vitepress/theme'
-import KWTeamMembers from './AMWTeamMembers.vue'
+import AMWTeamMembers from './AMWTeamMembers.vue'
 import { useData } from '../composables/data'
 
 const { frontmatter: fm } = useData()
 </script>
 
 <template>
-  <div class="KWContribution">
+  <div class="AMWTeam">
     <slot name="team-top" />
     <VPTeamPage>
       <VPTeamPageTitle>
         <template v-if="fm.longtitle" #title> {{ fm.longtitle }} </template>
         <template v-if="fm.introtext" #lead>{{ fm.introtext }}</template>
       </VPTeamPageTitle>
-      <KWTeamMembers :members="fm.members" />
+      <AMWTeamMembers :members="fm.members" />
       <VPHomeContent>
         <Content />
       </VPHomeContent>

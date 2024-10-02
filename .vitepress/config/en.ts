@@ -1,8 +1,83 @@
-import { defineConfigWithTheme } from 'vitepress'
-import { nav, sidebar } from '../data/navigations'
+import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { packages } from '../../package-lock.json'
+import type { AMWTheme } from '../theme/types/index'
 
-export const en = defineConfigWithTheme({
+export const nav = (): DefaultTheme.NavItem[] => [
+  { text: 'Home', link: '/en/' },
+  { text: 'Documentation', link: '/en/wiki/' },
+  { text: 'GNOME Apps', link: '/en/system/apps-gnome/' },
+  {
+    text: 'About project',
+    items: [
+      { text: 'About project', link: '/en/projects/about/' },
+      { text: 'Contributions', link: '/en/projects/contributions/' }
+    ]
+  }
+]
+
+export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
+  {
+    items: [
+      {
+        text: 'Installation and update',
+        base: '/en/instalations',
+        items: [
+          { text: 'The loader', link: '/booting/' },
+          { text: 'Mobile devices', link: '/mobile-devices/' },
+          {
+            text: 'Portable Game Consoles',
+            link: '/portable-game-consoles/'
+          },
+          { text: 'Virtual machine', link: '/virtual-machine/' }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Software',
+        base: '/en/apps',
+        items: [
+          { text: 'Amberol', link: '/amberol/' },
+          { text: 'Text Editor', link: '/text-editor/' },
+          { text: 'Moonlight', link: '/moonlight/' }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Guide ALT Mobile',
+        base: '/en/guide-users/',
+        items: [
+          {
+            text: 'Game',
+            items: [
+              {
+                text: 'Game steaming from a computer on Ambernic',
+                link: 'games/game-steaming/'
+              }
+            ],
+            collapsed: true
+          }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Package Managers',
+        base: '/en/package-managers/',
+        items: [
+          {
+            text: 'Flatpak',
+            link: 'flatpak/'
+          }
+        ]
+      },
+      {
+        text: 'Frequently asked questions',
+        link: 'faq/'
+      }
+    ]
+  }
+]
+
+export const en = defineConfigWithTheme<AMWTheme.Config>({
   lang: 'en',
   description: 'the knowledge library of the ALT Mobile operating system',
   head: [
@@ -26,77 +101,13 @@ export const en = defineConfigWithTheme({
     ]
   ],
   themeConfig: {
-    nav: nav.en,
-    sidebar: sidebar.en,
+    nav: nav(),
+    sidebar: {
+      '/': { base: '/en/', items: sidebarDoc() }
+    },
     footer: {
       message: 'Released under the <a href="licence/">MIT License</a>',
       copyright: `Copyright © 2024 ALT Mobile Wiki, developed on the platform <a href="//vitepress.dev/" target="_blank">VitePress ${packages['node_modules/vitepress'].version}</a>`
-    },
-    asideMeta: {
-      developer: {
-        label: 'Developer'
-      },
-      keywords: {
-        core: {
-          name: 'GNOME Core',
-          type: 'info'
-        },
-        circle: {
-          name: 'GNOME Circle',
-          type: 'success'
-        },
-        adaptive: {
-          name: 'Adaptive',
-          type: 'tip'
-        },
-        proprietary: {
-          name: 'Proprietary',
-          type: 'danger'
-        },
-        restrictions: {
-          name: 'Regional restrictions',
-          type: 'danger'
-        },
-        oobe: {
-          name: 'OOBELOCAL',
-          type: 'warning'
-        },
-        dontthemes: {
-          name: 'Please don’t theme',
-          type: 'success-1'
-        }
-      },
-      lists: {
-        labels: {
-          metadata_license: 'Licence',
-          homepage: 'Project Website',
-          help: 'Help',
-          translate: 'Contribute Translations',
-          bugtracker: 'Report an Issue'
-        }
-      },
-      links: {
-        sisyphus: {
-          anchor: 'Sisyphus',
-          target: '_blank',
-          baseUrl: '//packages.altlinux.org/en/sisyphus/srpms/',
-          style:
-            '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
-        },
-        flatpak: {
-          anchor: 'Flatpak',
-          target: '_blank',
-          baseUrl: '//flathub.org/apps/',
-          style:
-            '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
-        },
-        about_app: {
-          anchor: 'More',
-          target: '_blank',
-          style:
-            '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
-        }
-      }
     }
   }
 })

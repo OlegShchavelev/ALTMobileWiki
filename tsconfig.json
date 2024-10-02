@@ -2,12 +2,19 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "module": "ESNext",
-    "moduleResolution": "Bundler"
+    "moduleResolution": "Bundler",
+    "types": [
+      "./.vitepress/theme/types/yaml.d.ts",
+      "./.vitepress/theme/types/shims-vue.d.ts",
+      "./.vitepress/theme/types/index.d.ts",
+      "@intlify/unplugin-vue-i18n/messages"
+    ]
   },
   "include": [
     "**/.vitepress/**/*.ts",
     "**/.vitepress/**/*.mts",
-    "**/.vitepress/**/*.vue"
+    "**/.vitepress/**/*.vue",
+    "**/.vitepress/**/*.d.ts"
   ],
   "exclude": ["node_modules"]
 }

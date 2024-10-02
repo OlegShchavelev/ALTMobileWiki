@@ -1,8 +1,92 @@
-import { defineConfigWithTheme } from 'vitepress'
-import { nav, sidebar } from '../data/navigations'
+import { defineConfigWithTheme, type DefaultTheme } from 'vitepress'
 import { packages } from '../../package-lock.json'
+import type { AMWTheme } from '../theme/types/index'
 
-export const ru = defineConfigWithTheme({
+export const nav = (): DefaultTheme.NavItem[] => [
+  { text: 'Главная', link: '/' },
+  { text: 'Документация', link: '/wiki/' },
+  { text: 'Приложения GNOME', link: '/system/apps-gnome/' },
+  {
+    text: 'О проекте',
+    items: [
+      { text: 'О проекте', link: '/projects/about/' },
+      { text: 'Участники', link: '/projects/contributions/' }
+    ]
+  }
+]
+
+export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
+  {
+    items: [
+      {
+        text: 'Установка и обновление',
+        base: '/instalations',
+        items: [
+          { text: 'Загрузчик', link: '/booting/' },
+          { text: 'Мобильные устройства', link: '/mobile-devices/' },
+          {
+            text: 'Портативные игровые приставки',
+            link: '/portable-game-consoles/'
+          },
+          { text: 'Виртуальная машина', link: '/virtual-machine/' }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Програмное обеспечение',
+        base: '/apps/',
+        items: [
+          { text: 'Текстовый редактор', link: 'text-editor/' },
+          { text: 'Amberol', link: 'amberol/' },
+          { text: 'Moonlight', link: 'moonlight/' }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Руководство пользователя ALT Mobile',
+        base: '/guide-users/',
+        items: [
+          {
+            text: 'Игры',
+            items: [
+              {
+                text: 'Стриминг игр с компьютора на Anbernic',
+                link: 'games/game-steaming/'
+              }
+            ],
+            collapsed: true
+          },
+          {
+            text: 'Cети',
+            items: [
+              {
+                text: 'Мобильный интернет',
+                link: 'net/mobile-internet/'
+              }
+            ]
+          }
+        ],
+        collapsed: true
+      },
+      {
+        text: 'Пакетные менеджеры',
+        base: '/package-managers/',
+        items: [
+          {
+            text: 'Flatpak',
+            link: 'flatpak/'
+          }
+        ]
+      },
+      {
+        text: 'Популярные вопросы и ответы',
+        link: 'faq/'
+      }
+    ]
+  }
+]
+
+export const ru = defineConfigWithTheme<AMWTheme.Config>({
   lang: 'ru-RU',
   description: 'библиотека знаний операционной системы ALT Mobile',
   head: [
@@ -27,6 +111,7 @@ export const ru = defineConfigWithTheme({
   ],
   themeConfig: {
     search: {
+      provider: 'local',
       options: {
         translations: {
           button: {
@@ -45,8 +130,10 @@ export const ru = defineConfigWithTheme({
         }
       }
     },
-    nav: nav.root,
-    sidebar: sidebar.root,
+    nav: nav(),
+    sidebar: {
+      '/': { base: '/', items: sidebarDoc() }
+    },
     docFooter: {
       prev: 'Предыдущая страница',
       next: 'Следующая страница'
@@ -71,72 +158,6 @@ export const ru = defineConfigWithTheme({
     footer: {
       message: 'Опубликовано под <a href="licence/">лицензией MIT</a>',
       copyright: `© 2024 ALT Mobile Wiki, разработано на платформе <a href="//vitepress.dev/" target="_blank">VitePress ${packages['node_modules/vitepress'].version}</a>`
-    },
-    asideMeta: {
-      developer: {
-        label: 'Разрабочик'
-      },
-      keywords: {
-        core: {
-          name: 'GNOME Core',
-          type: 'info'
-        },
-        circle: {
-          name: 'GNOME Circle',
-          type: 'success'
-        },
-        adaptive: {
-          name: 'Адаптивный',
-          type: 'tip'
-        },
-        proprietary: {
-          name: 'Проприетарное',
-          type: 'danger'
-        },
-        restrictions: {
-          name: 'Региональные ограничения',
-          type: 'danger'
-        },
-        oobe: {
-          name: 'Предустановлено',
-          type: 'warning'
-        },
-        dontthemes: {
-          name: 'Please don’t theme',
-          type: 'success-1'
-        }
-      },
-      lists: {
-        labels: {
-          metadata_license: 'Лицензия',
-          homepage: 'Сайт проекта',
-          help: 'Помощь',
-          translate: 'Помощь в переводе',
-          bugtracker: 'Сообщить о проблеме'
-        }
-      },
-      links: {
-        sisyphus: {
-          anchor: 'Сизиф',
-          target: '_blank',
-          baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/',
-          style:
-            '--agw-btn-bg: var(--vp-c-yellow-dimm-1); --agw-btn-color: var(--vp-c-yellow-darker); --agw-btn-hover-bg:var(--vp-c-yellow-dark); --agw-btn-hover-color: var(--vp-c-white);'
-        },
-        flatpak: {
-          anchor: 'Flatpak',
-          target: '_blank',
-          baseUrl: '//flathub.org/ru/apps/',
-          style:
-            '--agw-btn-bg: var(--vp-c-blue-dimm-1); --agw-btn-color: var(--vp-c-blue-darker); --agw-btn-hover-bg:var(--vp-c-blue-dark); --agw-btn-hover-color: var(--vp-c-white);'
-        },
-        about_app: {
-          anchor: 'Подробнее',
-          target: '_blank',
-          style:
-            '--agw-btn-bg: var(--vp-c-green-dimm-1); --agw-btn-color: var(--vp-c-green-darker); --agw-btn-hover-bg:var(--vp-c-green-dark); --agw-btn-hover-color: var(--vp-c-white);'
-        }
-      }
     }
   }
 })

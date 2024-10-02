@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { VPTeamPage } from 'vitepress/theme'
-import KWTeams from './AMWTeams.vue'
+import AMWTeams from './AMWTeams.vue'
 import { useData } from '../composables/data'
 
 const { frontmatter: fm } = useData()
@@ -8,7 +8,7 @@ const { frontmatter: fm } = useData()
 
 <template>
   <VPTeamPage>
-    <KWTeams
+    <AMWTeams
       :title="fm.teams.title"
       :lead="fm.teams.lead"
       :moreText="fm.teams.moreText"

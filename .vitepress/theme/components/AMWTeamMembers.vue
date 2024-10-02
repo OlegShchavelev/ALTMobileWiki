@@ -16,22 +16,20 @@ defineProps<{
 </script>
 
 <template>
-  <template v-for="member in members">
-    <VPTeamPageSection>
-      <template #title> {{ member.title }}</template>
-      <template v-if="member.lead" #lead> {{ member.lead }}</template>
-      <template #members>
-        <VPTeamMembers
-          :size="member.size"
-          :members="
-            teams.filter((team) =>
-              team.collaborator.includes(member.collaborator)
-            )
-          "
-        />
-      </template>
-    </VPTeamPageSection>
-  </template>
+  <VPTeamPageSection v-for="member in members">
+    <template #title> {{ member.title }}</template>
+    <template v-if="member.lead" #lead> {{ member.lead }}</template>
+    <template #members>
+      <VPTeamMembers
+        :size="member.size"
+        :members="
+          teams.filter((team) =>
+            team.collaborator.includes(member.collaborator)
+          )
+        "
+      />
+    </template>
+  </VPTeamPageSection>
 </template>
 
 <style scoped>

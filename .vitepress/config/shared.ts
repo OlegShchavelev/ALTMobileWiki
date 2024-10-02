@@ -1,3 +1,6 @@
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'url'
+
 import { defineConfigWithTheme } from 'vitepress'
 import { type AMWTheme } from '../theme/types/index'
 import markdownTimeline from 'vitepress-markdown-timeline'
@@ -5,11 +8,15 @@ import { tabsMarkdownPlugin as markdownItTabs } from 'vitepress-plugin-tabs'
 import markdownItTaskLists from 'markdown-it-task-lists'
 
 import UnoCSS from 'unocss/vite'
+import vueI18n from '@intlify/unplugin-vue-i18n/vite'
+import Yaml from '@rollup/plugin-yaml'
+
 import {
   GitChangelog,
   GitChangelogMarkdownSection
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 import { NolebaseGitChangelogOptions } from './plugins'
+import { theme } from 'unocss/preset-wind'
 
 export const shared = defineConfigWithTheme<AMWTheme.Config>({
   title: 'ALT Mobile Wiki',
@@ -22,8 +29,12 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
   vite: {
     plugins: [
       UnoCSS(),
+      Yaml(),
       GitChangelog(NolebaseGitChangelogOptions.plugin),
-      GitChangelogMarkdownSection(NolebaseGitChangelogOptions.pluginSections)
+      GitChangelogMarkdownSection(NolebaseGitChangelogOptions.pluginSections),
+      vueI18n({
+        ssr: true
+      })
     ],
     optimizeDeps: {
       exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
@@ -39,7 +50,6 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
     search: {
       provider: 'local'
     },
-    // https://vitepress.dev/reference/default-theme-config
     logo: { src: '/logo.svg', width: 36, height: 36, alt: 'ALT Mobile Wike' },
     socialLinks: [
       {
@@ -57,6 +67,33 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
     },
     outline: {
       level: [2, 3]
+    },
+    meta: {
+      keywords: {
+        core: 'info',
+        circle: 'success',
+        adaptive: 'tip',
+        proprietary: 'danger',
+        restrictions: 'danger',
+        oobe: 'warning',
+        dontthemes: 'success-1'
+      },
+      actions: {
+        sisyphus: {
+          theme: 'sisyphus',
+          target: '_blank',
+          baseUrl: '//packages.altlinux.org/ru/sisyphus/srpms/'
+        },
+        flatpak: {
+          theme: 'flatpak',
+          target: '_blank',
+          baseUrl: '//flathub.org/ru/apps/'
+        },
+        more: {
+          theme: 'more',
+          target: '_blank'
+        }
+      }
     }
   },
   markdown: {
