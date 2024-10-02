@@ -1,24 +1,27 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { useData } from '../composables/data'
 
 import AMWCategoryPage from './AMWCategoryPage.vue'
 import AMWCategoryPageTitle from './AMWCategoryPageTitle.vue'
 import AMWCategories from './AMWCategories.vue'
+import AMWCategoryPageContent from './AMWCategoryPageContent.vue'
 
-const { frontmatter } = useData()
-const props = computed(() => frontmatter.value.categories ?? {})
+const { frontmatter: fm } = useData()
 </script>
 
 <template>
   <AMWCategoryPage>
     <AMWCategoryPageTitle>
-      <template #title> {{ props.title }} </template>
+      <template #title> {{ fm.categories.title }} </template>
+      <template #lead v-if="fm.categories.lead">{{
+        fm.categories.lead
+      }}</template>
     </AMWCategoryPageTitle>
-    <AMWCategories
-      :items="props.items"
-      :title="props.title"
-      :content="props.content"
-    />
+    <AMWCategories :items="fm.categories.items" />
+    <AMWCategoryPageContent>
+      <template v-if="fm.categories.content" #content>
+        {{ fm.categories.content }}
+      </template>
+    </AMWCategoryPageContent>
   </AMWCategoryPage>
 </template>

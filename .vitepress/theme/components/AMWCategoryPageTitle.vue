@@ -1,8 +1,8 @@
 <template>
   <div class="AMWCategoryPageTitle">
-    <h1 v-if="$slots.title" class="title">
+    <h2 v-if="$slots.title" class="title">
       <slot name="title" />
-    </h1>
+    </h2>
     <p v-if="$slots.lead" class="lead">
       <slot name="lead" />
     </p>

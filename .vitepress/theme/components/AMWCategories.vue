@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
-import { computed } from 'vue'
 import AGWCategory from './AMWCategoriesItem.vue'
 
 export interface Items {
@@ -32,7 +31,6 @@ defineProps<{
           />
         </div>
       </div>
-      {{ content }}
     </div>
   </div>
 </template>
@@ -59,7 +57,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: -8px;
-  margin-bottom: 48px;
 }
 
 .item {
