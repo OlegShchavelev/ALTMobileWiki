@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { VPTeamPageTitle, VPTeamMembers, VPButton } from 'vitepress/theme'
 import AMWTeamPageAction from './AMWTeamPageAction.vue'
-import teams from '../../data/teams.json'
+import teams from '../../data/teams.yaml'
 
 defineProps<{
   title: string

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { VPTeamPageSection, VPTeamMembers } from 'vitepress/theme'
 import { type Collaborator, type AMWTheme } from '../types/index'
-import teams from '../../data/teams.json'
+import teams from '../../data/teams.yaml'
 
 export interface Member {
   title: string

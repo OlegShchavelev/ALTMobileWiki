@@ -1,5 +1,5 @@
 import { resolve, dirname } from 'node:path'
-import { fileURLToPath } from 'url'
+import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfigWithTheme } from 'vitepress'
 import { type AMWTheme } from '../theme/types/index'
@@ -43,6 +43,19 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
       noExternal: [
         '@nolebase/vitepress-plugin-enhanced-readabilities',
         '@nolebase/ui'
+      ]
+    },
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPTeamMembersItem\.vue$/,
+          replacement: fileURLToPath(
+            new URL(
+              '../theme/components/AMWTeamMembersItem.vue',
+              import.meta.url
+            )
+          )
+        }
       ]
     }
   },
