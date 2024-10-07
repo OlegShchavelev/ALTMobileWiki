@@ -2,7 +2,7 @@
 
 Доступны несколько наборов образов, специфичных для конкретных сред/архитектур.
 
-## Скачать бета-версию образа ALT Mobile для `sisyphus` от августа 2024 года
+## Скачать последнюю бета-версию образа ALT Mobile для `sisyphus`
 
 - [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-lt11i-20240926-aarch64.img.xz)
 - [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-pine-20240926-aarch64.img.xz)
@@ -17,7 +17,7 @@
 Если вы видите, что загрузка действительна, то это означает, что контрольная сумма SHA512 совпадает с контрольной суммой, указанной в подписи одного из ключей ALT Mobile.
 :::
 
-## Скачать альфа-версию образа ALT Mobile для `p11` от августа 2024 года
+## Скачать последнюю альфа-версию образа ALT Mobile для `p11`
 
 - [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
 - [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)

@@ -2,7 +2,7 @@
 
 Several sets of images are available that are specific to specific environments/architectures.
 
-## Download ALT Mobile beta image for `sisyphus` from August 2024
+## Download the latest ALT Mobile beta image for `sisyphus`
 
 - [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-lt11i-20240926-aarch64.img.xz)
 - [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-pine-20240926-aarch64.img.xz)
@@ -17,7 +17,7 @@ Check the downloaded information for errors and corruption using the correspondi
 If you see that the download is valid, it means that the SHA512 checksum matches the checksum specified in the signature of one of the ALT Mobile keys.
 :::
 
-## Download ALT Mobile alpha image for `p11` from August 2024
+## Download the latest ALT Mobile beta image for `p11`
 
 - [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
 - [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
