@@ -1,5 +1,5 @@
-import { h } from 'vue'
-import type { Theme } from 'vitepress'
+import { h, watch } from 'vue'
+import { useData, type Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
 import AMWDocsAsideMeta from './components/AMWDocsAsideMeta.vue'
@@ -53,5 +53,15 @@ export default {
     app.component('app', AMWApp)
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
+  },
+  setup() {
+    const { lang } = useData()
+    watch(
+      lang,
+      (val) => {
+        useI18n.global.locale.value = val
+      },
+      { immediate: true }
+    )
   }
 } satisfies Theme
