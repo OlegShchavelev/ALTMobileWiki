@@ -5,11 +5,6 @@ import type { DefaultTheme } from 'vitepress/theme'
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import VPSocialLinks from 'vitepress/dist/client/theme-default/components/VPSocialLinks.vue'
 
-const lang = computed(() => {
-  const { lang } = useData()
-  return lang
-})
-
 interface Props {
   size?: 'small' | 'medium'
   member: DefaultTheme.TeamMember

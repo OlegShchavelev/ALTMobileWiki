@@ -1,7 +1,11 @@
 - avatar: https://avatars.githubusercontent.com/u/2441945?v=4
-  name: Савченко Андрей
+  name:
+    ru: Савченко Андрей
+    en: Andrew Savchenko
   title: bircoph
-  desc: Релиз-менеджер ALT Mobile
+  desc:
+    ru: Релиз-менеджер
+    en: Release Manager
   org: ALT Linux Team
   orgLink: https://packages.altlinux.org/ru/sisyphus/maintainers/bircoph/
   collaborator:
@@ -11,9 +15,13 @@
     - icon: github
       link: https://github.com/bircoph
 
-- name: Быстров Артём
+- name:
+    ru: Быстров Артём
+    en: Artyom Bystrov
   title: arbars
-  desc: Сопровождающий проекта ALT Mobile
+  desc:
+    ru: Сопровождающий
+    en: Maintainer
   org: ALT Linux Team
   orgLink: https://packages.altlinux.org/ru/sisyphus/maintainers/arbars/
   avatar: https://github.com/Ubuntigroid.png
@@ -25,9 +33,13 @@
       link: https://github.com/Ubuntigroid
 
 - avatar: https://avatars.githubusercontent.com/u/44705058?v=4
-  name: Политов Антон
+  name:
+    ru: Политов Антон
+    en: Anton Politov
   title: ampernic
-  desc: Фронтенд-разработчик/VitePress/Vuejs, участник ALT Mobile Wiki
+  desc:
+    ru: Фронтенд-разработчик/VitePress/Vuejs, участник ALT Mobile Wiki
+    en: Frontend Developer/VitePress/Vuejs, member of the ALT Mobile Wiki
   collaborator:
     - knowledge
   links:
@@ -35,15 +47,21 @@
       link: https://github.com/Ampernic
 
 - avatar: https://avatars.githubusercontent.com/u/57626821?v=4
-  name: Фомченков Семен
-  desc: Python-разработчик, QA-инженер, участник ALT Mobile Wiki
+  name:
+    ru: Фомченков Семен
+    en: Semen Fomchenkov
+  desc:
+    ru: Python-разработчик, QA-инженер, участник ALT Mobile Wiki
+    en: Python Developer, QA Engineer, member of the ALT Mobile Wiki
   collaborator:
     - knowledge
   links:
     - icon: github
       link: https://github.com/Armatik
 
-- name: Васьков Владимир
+- name:
+    ru: Васьков Владимир
+    en: Vladimir Vaskov
   title: rirusha
   desc: Разработчик Vala/GTK4/libadwaita
   avatar: https://github.com/Rirusha.png
@@ -54,9 +72,13 @@
       link: https://github.com/Rirusha
 
 - avatar: https://github.com/X1Z53.png
-  name: Султаниязов Давид
+  name:
+    ru: Султаниязов Давид
+    en: Sultaniiazov David
   title: x1z53
-  desc: Фронтенд-разработчик/VitePress/Vuejs, участник ALT Mobile Wiki
+  desc:
+    ru: Фронтенд-разработчик/VitePress/Vuejs, участник ALT Mobile Wiki
+    en: Frontend Developer/VitePress/Vuejs, member of the ALT Mobile Wiki
   collaborator:
     - knowledge
   links:
@@ -64,9 +86,13 @@
       link: https://github.com/X1Z53
 
 - avatar: https://github.com/OlegShchavelev.png
-  name: Щавелев Олег
+  name:
+    ru: Щавелев Олег
+    en: Oleg Shchavelev
   title: olegshchavelev
-  desc: Фронтенд-разработчик/VitePress/Vuejs, аналитик, участник ALT Mobile Wiki
+  desc:
+    ru: Фронтенд-разработчик/VitePress/Vuejs, Cтарший аналитик, участник ALT Mobile Wiki
+    en: Frontend Developer/VitePress/Vuejs , Senior Analyst ,member of the ALT Mobile Wiki
   collaborator:
     - knowledge
   links:
@@ -74,8 +100,11 @@
       link: https://github.com/OlegShchavelev
 
 - avatar: https://avatars.githubusercontent.com/u/2198153?v=4
-  name: Пальгунов Антон
-  title: Ведущий инженер, участник ALT Mobile Wiki
+  name:
+    ru: Пальгунов Антон
+    en: Anton Palgunov
+  title: Toxblh
+  desc: Lead Engineer, member of the ALT Mobile Wiki
   collaborator:
     - knowledge
   links:
@@ -83,8 +112,13 @@
       link: https://github.com/Toxblh
 
 - avatar: https://avatars.githubusercontent.com/u/36362599?v=4
-  name: Слипенко Максим
-  title: Фронтенд-разработчик, участник ALT Mobile Wiki
+  name:
+    ru: Слипенко Максим
+    en: Maxim Slipenko
+  title: Maks1mS
+  desc:
+    ru: Фронтенд-разработчик, участник ALT Mobile Wiki
+    en: Frontend developer, member of the ALT Mobile Wiki
   collaborator:
     - knowledge
   links:
