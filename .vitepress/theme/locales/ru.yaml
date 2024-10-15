@@ -11,9 +11,12 @@ meta:
     caption: Разработчик
   lists:
     homepage: Сайт проекта
+    contact: Связь с нами
     help: Справка
     translate: Участие в переводах
     bugtracker: Сообщить о проблеме
+    vcs-browser: Посмотреть исходный код
+    contribute: Внести вклад в развитие приложения
   actions:
     sisyphus: Сизиф
     flatpak: Flapak

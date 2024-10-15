@@ -34,11 +34,12 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
       },
       {
         text: 'Software',
-        base: '/en/apps',
+        base: '/en/apps/',
         items: [
-          { text: 'Amberol', link: '/amberol/' },
-          { text: 'Text Editor', link: '/text-editor/' },
-          { text: 'Moonlight', link: '/moonlight/' }
+          { text: 'Amberol', link: 'amberol/' },
+          { text: 'Text Editor', link: 'text-editor/' },
+          { text: 'Moonlight', link: 'moonlight/' },
+          { text: 'Tuba', link: 'tuba/' }
         ],
         collapsed: true
       },

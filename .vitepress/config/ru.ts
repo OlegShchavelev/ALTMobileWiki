@@ -38,7 +38,8 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
         items: [
           { text: 'Текстовый редактор', link: 'text-editor/' },
           { text: 'Amberol', link: 'amberol/' },
-          { text: 'Moonlight', link: 'moonlight/' }
+          { text: 'Moonlight', link: 'moonlight/' },
+          { text: 'Туба', link: 'tuba/' }
         ],
         collapsed: true
       },
