@@ -33,5 +33,5 @@ The Fediverse is a decentralized social network that consists of multiple interc
 
 Explore the federated social web with Tuba for GNOME. Stay connected to your favorite communities, family and friends with support for popular Fediverse platforms like Mastodon, GoToSocial, Akkoma & more!
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-repo.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->

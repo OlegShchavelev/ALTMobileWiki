@@ -38,7 +38,7 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
         items: [
           { text: 'Amberol', link: 'amberol/' },
           { text: 'Text Editor', link: 'text-editor/' },
-          { text: 'Moonlight', link: 'moonlight/' },
+          { text: 'Screenshot', link: 'screenshot/' },
           { text: 'Tuba', link: 'tuba/' }
         ],
         collapsed: true
