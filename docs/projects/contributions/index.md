@@ -6,7 +6,7 @@ gitChangelog: false
 longtitle: Участники
 members:
   - title: Сопровождающие ALT Mobile
-    lead: Cписок сопровождающих проекта ALT Mobile
+    lead: Список сопровождающих проекта ALT Mobile
     size: medium
     collaborator: maintainer
   - title: Авторы проекта ALT Mobile Wiki
