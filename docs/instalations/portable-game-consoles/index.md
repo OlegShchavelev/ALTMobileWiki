@@ -25,18 +25,18 @@
 
 ### Статус поддержки компонентов игровых приставок
 
-| Компонент         |     RG 552     |        RG 353M        |    RG Arc D    |    RG Arc S    |
-| :---------------- | :------------: | :-------------------: | :------------: | :------------: |
-| Дисплей           | :green_circle: |  :green_circle:(\*)   | :green_circle: | :green_circle: |
-| Сенсорная панель  | :green_circle: |    :green_circle:     | :green_circle: | :white_circle: |
-| Wi-Fi             | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: |
-| Bluetooth         | :white_circle: |    :green_circle:     | :green_circle: | :green_circle: |
-| GPU               | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: |
-| Управление        | :green_circle: | :yellow_circle:(\*\*) | :green_circle: | :green_circle: |
-| OTG               | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: |
-| MiniHDMI          | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: |
-| eMMC              | :green_circle: |    :green_circle:     | :green_circle: | :white_circle: |
-| Слоты карт памяти | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: |
+| Компонент         |     RG 552     |        RG 353M        |     RG 353P    |    RG Arc D    |    RG Arc S    |
+| :---------------- | :------------: | :-------------------: | :------------: | :------------: | :------------: |
+| Дисплей           | :green_circle: |  :green_circle:(\*)   | :green_circle: | :green_circle: | :green_circle: |
+| Сенсорная панель  | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :white_circle: |
+| Wi-Fi             | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
+| Bluetooth         | :white_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
+| GPU               | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
+| Управление        | :green_circle: |    :yellow_circle:    | :green_circle: | :green_circle: | :green_circle: |
+| OTG               | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
+| MiniHDMI          | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
+| eMMC              | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :white_circle: |
+| Слоты карт памяти | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
 
 :::details Условные обозначения
 
