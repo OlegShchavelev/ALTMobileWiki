@@ -4,7 +4,7 @@
 
 # ALT Mobile Wiki
 
-Библиотека знаний ALT Mobile — операционная система для мобильных устройств семейства «Альт»
+База знаний ALT Mobile — операционная система для мобильных устройств семейства «Альт»
 
 ![GitHub License](https://img.shields.io/github/license/OlegShchavelev/ALTMobileWiki)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/OlegShchavelev/ALTMobileWiki)

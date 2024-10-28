@@ -3,7 +3,7 @@ layout: home
 title: Главная
 hero:
   name: 'ALT Mobile Wiki'
-  tagline: библиотека знаний операционной системы ALT Mobile
+  tagline: база знаний операционной системы ALT Mobile
   image:
     src: /hero.png
     alt: GNOME
