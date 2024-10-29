@@ -36,6 +36,8 @@ categories:
         link: instalations/mobile-devices/
       - name: Портативные игровые приставки
         link: instalations/portable-game-consoles/
+      - name: Планшеты
+        link: instalations/tablets/
       - name: Виртуальная машина
         link: instalations/virtual-machine/
   - title: Програмное обеспечение
