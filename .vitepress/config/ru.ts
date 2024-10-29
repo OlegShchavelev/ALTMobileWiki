@@ -28,6 +28,10 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
             text: 'Портативные игровые приставки',
             link: '/portable-game-consoles/'
           },
+          {
+            text: 'Планшеты',
+            link: '/tablets/'
+          },
           { text: 'Виртуальная машина', link: '/virtual-machine/' }
         ],
         collapsed: true
