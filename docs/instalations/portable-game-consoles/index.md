@@ -27,7 +27,7 @@
 
 | Компонент         |     RG 552     |        RG 353M        |     RG 353P    |    RG Arc D    |    RG Arc S    |
 | :---------------- | :------------: | :-------------------: | :------------: | :------------: | :------------: |
-| Дисплей           | :green_circle: |  :green_circle:(\*)   | :green_circle: | :green_circle: | :green_circle: |
+| Дисплей           | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
 | Сенсорная панель  | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :white_circle: |
 | Wi-Fi             | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
 | Bluetooth         | :white_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
@@ -49,10 +49,6 @@
 :white_circle: `Отсутствует` - не предусмотрено спецификацией
 
 :::
-
-### Примечания:
-
-\* Возможна задержка вывода изображения после запуска
 
 ## Подготовка карты памяти
 
