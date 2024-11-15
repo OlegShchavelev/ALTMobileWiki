@@ -18,7 +18,7 @@
 
 ::: details на базе RK3566
 
-- Anbernic RG 353M
+- Anbernic RG 353M, P, V
 - Anbernic RG Arc D и S
 
 :::
@@ -75,7 +75,7 @@ su -
 alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rg552-rk3399
 ```
 
-== RG353M
+== RG353M/P/V
 
 Скачиваем образ с ядром pine:
 
