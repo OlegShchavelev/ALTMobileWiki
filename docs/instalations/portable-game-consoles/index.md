@@ -18,25 +18,25 @@
 
 ::: details на базе RK3566
 
-- Anbernic RG 353M, P, V
+- Anbernic RG 353M, P, V (потенциально PS и VS)
 - Anbernic RG Arc D и S
 
 :::
 
 ### Статус поддержки компонентов игровых приставок
 
-| Компонент         |     RG 552     |        RG 353M        |     RG 353P    |    RG Arc D    |    RG Arc S    |
-| :---------------- | :------------: | :-------------------: | :------------: | :------------: | :------------: |
-| Дисплей           | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
-| Сенсорная панель  | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :white_circle: |
-| Wi-Fi             | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
-| Bluetooth         | :white_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
-| GPU               | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
-| Управление        | :green_circle: |    :yellow_circle:    | :green_circle: | :green_circle: | :green_circle: |
-| OTG               | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
-| MiniHDMI          | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
-| eMMC              | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :white_circle: |
-| Слоты карт памяти | :green_circle: |    :green_circle:     | :green_circle: | :green_circle: | :green_circle: |
+| Компонент         |     RG 552     |     RG 353M    |     RG 353P    |     RG 353V    |    RG Arc D    |    RG Arc S    |
+| :---------------- | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| Дисплей           | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Сенсорная панель  | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
+| Wi-Fi             | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Bluetooth         | :white_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| GPU               | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| Управление        | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| OTG               | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| MiniHDMI          | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
+| eMMC              | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :white_circle: |
+| Слоты карт памяти | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |
 
 :::details Условные обозначения
 
@@ -75,7 +75,7 @@ su -
 alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rg552-rk3399
 ```
 
-== RG353M/P/V
+== RG353M/P/V, Arc D/S
 
 Скачиваем образ с ядром pine:
 
