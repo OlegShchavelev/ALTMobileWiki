@@ -1,8 +1,6 @@
-# ALT Mobile PinePhone / PinePhone Pro
+# Installing ALT Mobile PinePhone Pro
 
-This section is dedicated to the installation of the ALT Mobile system on devices such as PinePhone and PinePhone Pro and other important information that may be useful during the installation process.
-
-## Installing ALT Mobile on PinePhone / PinePhone Pro
+This section is dedicated to the installation of the ALT Mobile system on devices such as PinePhone Pro and other important information that may be useful during the installation process.
 
 ### Downloading ALT Mobile Image
 

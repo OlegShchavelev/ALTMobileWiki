@@ -19,10 +19,10 @@ If you see that the download is valid, it means that the SHA512 checksum matches
 
 ## Download the latest ALT Mobile beta image for `p11`
 
-- [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha1-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-un-def-11.0-alpha1-aarch64.img.xz)
-- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="x86_64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-un-def-11.0-alpha1-x86_64.img.xz)
+- [ALT Mobile <Badge type="tip" text="lt11i" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-lt11i-11.0-alpha2-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="pine" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-pine-11.0-alpha2-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="aarch64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-un-def-11.0-alpha2-aarch64.img.xz)
+- [ALT Mobile <Badge type="tip" text="un-def" /><Badge type="warning" text="x86_64" /><Badge type="info" text="img.xz" />](https://beta.altlinux.org/mobile/p11/latest/alt-mobile-phosh-un-def-11.0-alpha2-x86_64.img.xz)
 
 :::info
 Check the downloaded information for errors and corruption using the corresponding [checksum file](https://beta.altlinux.org/mobile/p11/latest/SHA512SUM).
