@@ -44,6 +44,7 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
           { text: 'Amberol', link: 'amberol/' },
           { text: 'Moonlight', link: 'moonlight/' },
           { text: 'Screenshot', link: 'screenshot/' },
+          { text: 'Telegram Desktop', link: 'telegram-desktop/' },
           { text: 'Туба', link: 'tuba/' }
         ],
         collapsed: true

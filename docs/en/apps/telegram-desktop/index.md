@@ -24,17 +24,12 @@ appstream:
 
 A native client for instant messaging, adapted to work with mobile devices. The ability to log in using a QR code or SMS to a phone number.
 
-<!--@include: @apps/.parts/install/content-repo.md-->
-
-::: info
-Currently, the repository contains the client version `5.2.3` from the `sisyphus` branch. The adaptive interface has been improved in version `5.8.0`, details can be found in the report [BZ #51252](https://bugzilla.altlinux.org/51252).
-:::
-
-<!--@include: @apps/.parts/install/content-flatpak.md-->
+<!--@include: @en/apps/.parts/install/content-repo.md-->
+<!--@include: @en/apps/.parts/install/content-flatpak.md-->
 
 ## Scaling
 
-To fully display the client in vertical orientation, you need to change the scale of the application. Go to the menu (☰) and change the default zoom to 180%.
+To fully display the client in vertical orientation, you need to change the scale of the application. Go to the menu (☰) and change the default zoom to 190%.
 
 ## Disabling notification of an active window (Draw attention to the window)
 

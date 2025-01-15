@@ -39,6 +39,7 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
           { text: 'Amberol', link: 'amberol/' },
           { text: 'Text Editor', link: 'text-editor/' },
           { text: 'Screenshot', link: 'screenshot/' },
+          { text: 'Telegram Desktop', link: 'telegram-desktop/' },
           { text: 'Tuba', link: 'tuba/' }
         ],
         collapsed: true
