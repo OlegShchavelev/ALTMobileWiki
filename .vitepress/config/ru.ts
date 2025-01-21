@@ -5,7 +5,6 @@ import type { AMWTheme } from '../theme/types/index'
 export const nav = (): DefaultTheme.NavItem[] => [
   { text: 'Главная', link: '/' },
   { text: 'Документация', link: '/wiki/' },
-  { text: 'Приложения GNOME', link: '/system/apps-gnome/' },
   {
     text: 'О проекте',
     items: [
