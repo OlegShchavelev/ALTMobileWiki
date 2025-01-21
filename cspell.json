@@ -27,8 +27,8 @@
   ],
   "dictionaryDefinitions": [
     {
-      "name": "apps & companies",
-      "path": "./.cspell/apps&companies.dict",
+      "name": "proper nouns",
+      "path": "./.cspell/proper-nouns.dict",
       "addWords": true
     },
     {
@@ -53,21 +53,21 @@
     },
     {
       "name": "people names",
-      "path": "./.cspell/people-names.dict",
+      "path": "./.cspell/contribution-names.dict",
       "addWords": true
     },
     {
       "name": "simple words",
-      "path": "./.cspell/words.dict",
+      "path": "./.cspell/simple-words.dict",
       "addWords": true
     }
   ],
   "dictionaries": [
-    "apps & companies",
+    "proper nouns",
     "anglicisms",
     "slang",
     "forbiden",
-    "people names",
+    "contribution names",
     "terms",
     "simple words"
   ],
