@@ -7,6 +7,7 @@ import AMWHomeSponsors from './components/AMWHomeSponsors.vue'
 import AMWHomeCategories from './components/AMWHomeCategories.vue'
 import AMWVideo from './components/AMWVideo.vue'
 import AMWTeam from './components/AMWTeam.vue'
+import AMWTeams from './components/AMWTeams.vue'
 import AMWHomeTeams from './components/AMWHomeTeams.vue'
 import AMWApp from './components/AMWApp.vue'
 
@@ -50,6 +51,7 @@ export default {
     app.use(NolebaseGitChangelogPlugin)
     app.use(useI18n)
     app.component('team', AMWTeam)
+    app.component('Teams', AMWTeams)
     app.component('app', AMWApp)
     app.component('Video', AMWVideo)
     enhanceAppWithTabs(app)
