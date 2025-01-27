@@ -289,7 +289,7 @@ Use `git status` to list all new or modified files that haven't yet been committ
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
-Чтобы выделить код или текст в отдельный блок, обратитесь к рекомендациям [на странице «Возможности VitePress»](../vitepress#блоки-кода).
+Чтобы выделить код или текст в отдельный блок, обратитесь к рекомендациям [на странице «Возможности VitePress»](/projects/guide-wiki/pages/vitepress/#блоки-кода).
 
 ## Игнорирование форматирования Markdown
 
