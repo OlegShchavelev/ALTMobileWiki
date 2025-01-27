@@ -122,5 +122,16 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
       md.use(markdownItTabs)
       md.use(markdownItTaskLists)
     }
+  },
+  transformPageData(pageData) {
+    const canonicalUrl = `https://docs.karkas.chat/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl }
+    ])
   }
 })
