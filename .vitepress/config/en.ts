@@ -5,7 +5,6 @@ import type { AMWTheme } from '../theme/types/index'
 export const nav = (): DefaultTheme.NavItem[] => [
   { text: 'Home', link: '/en/' },
   { text: 'Documentation', link: '/en/wiki/' },
-  { text: 'GNOME Apps', link: '/en/system/apps-gnome/' },
   {
     text: 'About project',
     items: [
@@ -39,6 +38,7 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
           { text: 'Amberol', link: 'amberol/' },
           { text: 'Text Editor', link: 'text-editor/' },
           { text: 'Screenshot', link: 'screenshot/' },
+          { text: 'Telegram Desktop', link: 'telegram-desktop/' },
           { text: 'Tuba', link: 'tuba/' }
         ],
         collapsed: true

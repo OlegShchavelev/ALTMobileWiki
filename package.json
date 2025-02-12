@@ -34,13 +34,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "docs:check": "npm run docs:spell-check && docs:remark-full",
-    "docs:spell-check": "npm run docs:yaspeller-full && npm run docs:cspell-full",
-    "docs:yaspeller-full": "yaspeller --dictionary .yaspeller/frontmatter.json:.yaspeller/apps\\&companies.json:.yaspeller/names.json ./docs --only-errors",
-    "docs:yaspeller": "yaspeller --dictionary .yaspeller/frontmatter.json:.yaspeller/apps\\&companies.json:.yaspeller/names.json",
-    "docs:cspell-full": "npx cspell --show-context --show-suggestions --color ./docs/**/*.md",
-    "docs:cspell": "npx cspell --show-context --show-suggestions --color",
-    "docs:remark-full": "remark ./docs --frail",
-    "docs:remark": "remark"
+    "lint:cspell": "npx cspell --show-context --show-suggestions --color",
+    "lint:cspell:full": "npx cspell --show-context --show-suggestions --color \"./docs/**/*.md\"",
+    "lint:yaspeller": "npx yaspeller --dictionary .yaspeller/frontmatter.json:.yaspeller/proper-nouns.json:.yaspeller/contribution-names.json",
+    "lint:yaspeller:full": "npx yaspeller --dictionary .yaspeller/frontmatter.json:.yaspeller/proper-nouns.json:.yaspeller/contribution-names.json ./docs --only-errors",
+    "lint:spelling": "npm run lint:cspell:full || npm run lint:yaspeller:full"
   }
 }

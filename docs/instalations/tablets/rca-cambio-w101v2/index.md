@@ -69,7 +69,7 @@
 1. Скачиваем образ ОС:
 
 ```shell
-wget http://ftp.altlinux.org/pub/beta/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240926-x86_64.img.xz
+wget http://ftp.altlinux.org/pub/beta/mobile/sisyphus/latest/alt-mobile-phosh-def-20241211-x86_64.img.xz
 ```
 
 2. Вставляем флешку / карту памяти в ПК, смотрим, как она определилась в системе, и записываем образ:

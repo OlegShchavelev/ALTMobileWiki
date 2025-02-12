@@ -13,6 +13,7 @@ const { frontmatter: fm } = useData()
       :lead="fm.teams.lead"
       :moreText="fm.teams.moreText"
       :moreLink="fm.teams.moreLink"
+      :layout="fm.layout"
     />
   </VPTeamPage>
 </template>
