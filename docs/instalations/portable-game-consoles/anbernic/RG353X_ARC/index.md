@@ -17,7 +17,7 @@
 | Оперативная память |                            2 GB LPDDR4                                  | :green_circle: |
 | Постоянная память  |                 eMMC 64 Gb, 2 слота microSD (до 512 GB)                 | :green_circle: |
 |  Сенсорная панель  |                Goodix / Hynitron cst3xx, 10 точек касания               | :green_circle: |
-|       Питание      |    Сборка на 3500 mAh - 2 аккумулятора по 1700 mAh, порт USB Type-C     | :green_circle: |
+|       Питание      |                 Сборка на 3500/3200 mAh, порт USB Type-C                | :green_circle: |
 |        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO | :green_circle: |
 |        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        | :green_circle: |
 |     Вывод видео    |                            Mini HDMI                                    | :green_circle: |
@@ -32,7 +32,7 @@
 |      Дисплей       |                  4 дюйма, 640 x 480 пикселей                            | :green_circle: |
 | Оперативная память |                          1 GB LPDDR4                                    | :green_circle: |
 | Постоянная память  |                     2 слота microSD (до 512 GB)                         | :green_circle: |
-|       Питание      |    Сборка на 3600 mAh - 2 аккумулятора по 1800 mAh, порт USB Type-C     | :green_circle: |
+|       Питание      |              Сборка на 3500/3200 mAh, порт USB Type-C                   | :green_circle: |
 |        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO | :green_circle: |
 |        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        | :green_circle: |
 |     Вывод видео    |                            Mini HDMI                                    | :green_circle: |
