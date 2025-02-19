@@ -1,4 +1,4 @@
-# Anbernic RG 353M, 353P/PS/V/VS, Arc D/S.
+# Anbernic RG 353M/P/PS/V/VS, Arc D/S.
 
 :::danger Внимание!
 Все действия, описанные в данной статье, вы выполняете на свой страх и риск. Автор статьи и сообщество ALT Linux Team, а также ООО "Базальт СПО" не несут ответственность за "окирпиченные" и сгоревшие приставки, затёртые данные пользователя, а также сгоревшие инструменты и прочие последствия.
@@ -7,53 +7,36 @@
 ## Технические характеристики
 
 ::: tabs
-== RG353M/P/V / ARC D
+== RG353M/P/V, ARC D
 
-|     Компонент      |                                 Название                                |         Статус       |
-| :----------------: | :---------------------------------------------------------------------: | :------------------: |
-|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                |    :green_circle:    |
-|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         |    :green_circle:    |
-|      Дисплей       |                  4 дюйма, 640 x 480 пикселей                            |    :green_circle:    |
-| Оперативная память |                          2 GB LPDDR4                                    |    :green_circle:    |
-| Постоянная память  |                 eMMC 64 Gb, 2 слота microSD (до 512 GB)                 | :green_circle: (\*)  |
-|  Сенсорная панель  |                Goodix / Hynitron cst3xx, 10 точек касания               |    :green_circle:    |
-|       Питание      |    Сборка на 3500 mAh - 2 аккумулятора по 1700 mAh, порт USB Type-C     |    :green_circle:    |
-|        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO |    :green_circle:    |
-|        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        |    :green_circle:    |
-|     Вывод видео    |                            Mini HDMI                                    | :yellow_circle: (\*) |
-|        USB         |                        Порт USB Type-C (OTG)                            |   :green_circle:     |
+|     Компонент      |                                 Название                                |     Статус     |
+| :----------------: | :---------------------------------------------------------------------: | :------------: |
+|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                | :green_circle: |
+|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         | :green_circle: |
+|      Дисплей       |                    4 дюйма, 640 x 480 пикселей                          | :green_circle: |
+| Оперативная память |                            2 GB LPDDR4                                  | :green_circle: |
+| Постоянная память  |                 eMMC 64 Gb, 2 слота microSD (до 512 GB)                 | :green_circle: |
+|  Сенсорная панель  |                Goodix / Hynitron cst3xx, 10 точек касания               | :green_circle: |
+|       Питание      |    Сборка на 3500 mAh - 2 аккумулятора по 1700 mAh, порт USB Type-C     | :green_circle: |
+|        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO | :green_circle: |
+|        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        | :green_circle: |
+|     Вывод видео    |                            Mini HDMI                                    | :green_circle: |
+|        USB         |                        Порт USB Type-C (OTG)                            | :green_circle: |
 
-== RG353PS/VS
+== RG353PS/VS, ARC S
 
-|     Компонент      |                                 Название                                |         Статус       |
-| :----------------: | :---------------------------------------------------------------------: | :------------------: |
-|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                |    :green_circle:    |
-|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         |    :green_circle:    |
-|      Дисплей       |                  4 дюйма, 640 x 480 пикселей                            |    :green_circle:    |
-| Оперативная память |                          2 GB LPDDR4                                    |    :green_circle:    |
-| Постоянная память  |                     2 слота microSD (до 512 GB)                         | :green_circle: (\*)  |
-|       Питание      |    Сборка на 3600 mAh - 2 аккумулятора по 1800 mAh, порт USB Type-C     |    :green_circle:    |
-|        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO |    :green_circle:    |
-|        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        |    :green_circle:    |
-|     Вывод видео    |                            Mini HDMI                                    | :yellow_circle: (\*) |
-|        USB         |                        Порт USB Type-C (OTG)                            |   :green_circle:     |
-
-
-== RG353PS/VS
-
-|     Компонент      |                                 Название                                |         Статус       |
-| :----------------: | :---------------------------------------------------------------------: | :------------------: |
-|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                |    :green_circle:    |
-|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         |    :green_circle:    |
-|      Дисплей       |                  4 дюйма, 640 x 480 пикселей                            |    :green_circle:    |
-| Оперативная память |                          2 GB LPDDR4                                    |    :green_circle:    |
-| Постоянная память  |                     2 слота microSD (до 512 GB)                         | :green_circle: (\*)  |
-|       Питание      |    Сборка на 3600 mAh - 2 аккумулятора по 1800 mAh, порт USB Type-C     |    :green_circle:    |
-|        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO |    :green_circle:    |
-|        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        |    :green_circle:    |
-|     Вывод видео    |                            Mini HDMI                                    | :yellow_circle: (\*) |
-|        USB         |                        Порт USB Type-C (OTG)                            |   :green_circle:     |
-
+|     Компонент      |                                 Название                                |     Статус     |
+| :----------------: | :---------------------------------------------------------------------: | :------------: |
+|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                | :green_circle: |
+|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         | :green_circle: |
+|      Дисплей       |                  4 дюйма, 640 x 480 пикселей                            | :green_circle: |
+| Оперативная память |                          1 GB LPDDR4                                    | :green_circle: |
+| Постоянная память  |                     2 слота microSD (до 512 GB)                         | :green_circle: |
+|       Питание      |    Сборка на 3600 mAh - 2 аккумулятора по 1800 mAh, порт USB Type-C     | :green_circle: |
+|        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO | :green_circle: |
+|        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        | :green_circle: |
+|     Вывод видео    |                            Mini HDMI                                    | :green_circle: |
+|        USB         |                        Порт USB Type-C (OTG)                            | :green_circle: |
 
 :::
 
@@ -68,12 +51,6 @@
 :white_circle: `Отсутствует` - не предусмотрено спецификацией
 
 :::
-
-### Примечания:
-
-\*  Проблемы при инициализации звука в HDMI
-
-\** Может не выдержать активного процесса чтения-записи
 
 ## Подготовка карты памяти
 
@@ -94,7 +71,7 @@ wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-20
 
 ```shell
 su -
-alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rg552-rk3399
+alt-rootfs-installer --image-in=/путь/до/образа.img.xz --media=/dev/sdX --target=anbernic-rgxx3-rk3566
 ```
 
 ## Подготовка приставки (для моделей RG353M / P / V и Arc D)
@@ -210,7 +187,7 @@ mount /dev/mmcblkApB /mnt
 3. Записать образ стокового Android обратно во встроенную память с помощью dd:
 
 ```shell
-dd if=/mnt/android_rg552.img of=/dev/mmcblkX oflag=direct,sync iflag=fullblock bs=1M status=progress
+dd if=/mnt/android_anbernic.img of=/dev/mmcblkX oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 По завершении записи выключить приставку, вынуть обе карты памяти, и включить устройство. Android должен начать загрузку.
