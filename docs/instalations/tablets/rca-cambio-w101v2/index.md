@@ -130,32 +130,32 @@ xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_eMMC> 
 
 3. Устанавливаем все обновления - соглашаемся на перезагрузку. После перезагрузки планшет снова загрузится в ОС.
 
-4. После установки обновлений нужно поставить несколько пакетов. Запускаем терминал и от рута устанавливаем следующие пакеты:
+4. После установки обновлений нужно поставить пакет с прошивкой для аудиокодека. Запускаем терминал и от рута устанавливаем следующий пакет:
 
 ```shell
 [user@comp~]$ su -
 
-[root@comp~]# apt-get install kernel-image-6.10 kernel-modules-staging-6.10
+[root@comp~]# apt-get install firmware-alsa-sof
 ```
 
 5. Затем скачиваем файл прошивки сенсорной панели
 
 ```shell
-[root@comp~]# wget https://github.com/onitake/gsl-firmware/blob/master/firmware/rca/w101v2/firmware.fw
+[root@comp~]# wget https://github.com/onitake/gsl-firmware/raw/refs/heads/master/firmware/rca/w101v2/SileadTouch.fw
 ```
 
 6. Создаём каталог для прошивки и копируем её с нужным именем
 
 ```shell
-[root@comp~]# mkdir /lib/firmware/silead && cp firmware.fw /lib/firmware/silead/silead_ts.fw
+[root@comp~]# mkdir /lib/firmware/silead && cp SileadTouch.fw /lib/firmware/silead/mssl1680.fw
 ```
 
-7. Открываем файл /etc/default/grub и приводим сторку с параметрами загрузки к следующему виду:
+7. Открываем файл /etc/default/grub и приводим сторку с параметрами загрузки к следующему виду (данное решение работает, начиная с версии ядра 6.10):
 
 ```shell
 [root@comp~]# mcedit /etc/default/grub
 
-GRUB_CMDLINE_LINUX_DEFAULT='panic=30 splash psi=1 console=tty1 console=ttyS0,115200n8 i2c_touchscreen_props=MSSL1680:touchscreen-swapped-x-y:touchscreen-inverted-y:touchscreen-min-x=5:touchscreen-min-y=12:touchscreen-size-x=1660:touchscreen-size-y=884'
+GRUB_CMDLINE_LINUX_DEFAULT='panic=30 splash psi=1 console=tty1 console=ttyS0,115200n8 i2c_touchscreen_props=MSSL1680:touchscreen-swapped-x-y:touchscreen-inverted-y:touchscreen-min-x=5:touchscreen-min-y=8:touchscreen-size-x=1650:touchscreen-size-y=880'
 ```
 
 8. Сохраняем изменения и запускаем update-grub
