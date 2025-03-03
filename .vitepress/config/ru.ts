@@ -31,7 +31,8 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
             text: 'Планшеты',
             link: '/tablets/'
           },
-          { text: 'Виртуальная машина', link: '/virtual-machine/' }
+          { text: 'Виртуальная машина', link: '/virtual-machine/' },
+          { text: 'LUKS', link: '/luks/' }
         ],
         collapsed: true
       },
