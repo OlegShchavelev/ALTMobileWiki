@@ -86,6 +86,7 @@ make vm/pinephone-phosh.img ARCH=aarch64 DEBUG=1
 - [Установка ALT Mobile на портативные приставки Anbernic](/instalations/portable-game-consoles/)
 - [Установка ALT Mobile на планшеты-трансформеры](/instalations/tablets/)
 - [ALT Mobile Виртуальная машина](/instalations/virtual-machine/)
+- [Полнодисковое шифрование](/instalations/luks/)
 
 ## Использование
 

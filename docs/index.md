@@ -40,6 +40,8 @@ categories:
         link: instalations/tablets/
       - name: Виртуальная машина
         link: instalations/virtual-machine/
+      - name: LUKS
+        link: instalations/luks/
   - title: Програмное обеспечение
     icon:
       dark: software-dark.svg
