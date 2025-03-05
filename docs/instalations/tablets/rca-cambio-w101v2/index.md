@@ -80,7 +80,7 @@ lsblk
 xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_устройства> oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
-3. Монтируем наш накопитель, и под рутом копируем образ прямо на неё
+3. Монтируем наш накопитель, и под `root` копируем образ прямо на неё
 
 ```shell
 [user@comp~]$ su -
@@ -100,7 +100,7 @@ xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_уст
 
 4. Переходим во вкладку Save & Exit (клавиша вправо), выбираем пункт Save Changes and Exit, соглашаемся, выбрав пункт Yes и нажав на Enter, перезагружаем планшет.
 
-5. Загружаемся в нашу ОС и входим в сессию (пароль входа - 271828, пароль рута - altlinux)
+5. Загружаемся в нашу ОС и входим в сессию (пароль входа — `271828`, пароль `root` — `altlinux`)
 
 6. Мышкой кликаем один раз по значку терминала.
 
@@ -150,7 +150,7 @@ xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_eMMC> 
 [root@comp~]# mkdir /lib/firmware/silead && cp SileadTouch.fw /lib/firmware/silead/mssl1680.fw
 ```
 
-7. Открываем файл /etc/default/grub и приводим сторку с параметрами загрузки к следующему виду (данное решение работает, начиная с версии ядра 6.10):
+7. Открываем файл /etc/default/grub и приводим строку с параметрами загрузки к следующему виду (данное решение работает, начиная с версии ядра 6.10):
 
 ```shell
 [root@comp~]# mcedit /etc/default/grub

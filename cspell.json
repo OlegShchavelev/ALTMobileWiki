@@ -17,10 +17,15 @@
     {
       "name": "html-comment-block",
       "pattern": "/^\\s*<<!--[\\s\\S]*?^\\s*-->>/gs"
+    },
+    {
+      "name": "html-tag",
+      "pattern": "<.*?/>"
     }
   ],
   "ignoreRegExpList": [
     ["code-block"],
+    ["html-tag"],
     ["frontmatter-block"],
     ["html-comment-block"],
     ["frontmatter-inter"]
@@ -53,7 +58,7 @@
     },
     {
       "name": "people names",
-      "path": "./.cspell/contribution-names.dict",
+      "path": "./.cspell/people-names.dict",
       "addWords": true
     },
     {
@@ -67,7 +72,7 @@
     "anglicisms",
     "slang",
     "forbiden",
-    "contribution names",
+    "people names",
     "terms",
     "simple words"
   ],

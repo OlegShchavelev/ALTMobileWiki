@@ -25,37 +25,37 @@ features:
 categories:
   title: ALT Mobile Documentation
   items:
-  - title: Installation and update
-    icon:
-      dark: ../install-dark.svg
-      light: ../install-light.svg
-    pages:
-      - name: The loader
-        link: instalations/booting/
-      - name: Mobile devices
-        link: instalations/mobile-devices/
-      - name: Portable Game Consoles
-        link: instalations/portable-game-consoles/
-      - name: Virtual machine
-        link: instalations/virtual-machine/
-  - title: Software
-    icon:
-      dark: ../software-dark.svg
-      light: ../software-light.svg
-    pages:
-      - name: Text Editor
-        link: apps/text-editor/
-      - name: Amberol
-        link: apps/amberol/
-      - name: Moonlight
-        link: apps/moonlight/
-  - title: Guide ALT Mobile
-    icon:
-      dark: ../document-dark.svg
-      light: ../document-light.svg
-    pages:
-      - name: Game steaming from a computer on Ambernicc
-        link: guide-users/games/game-steaming/#стриминг-игр-с-компьютера-на-anbernic/
+    - title: Installation and update
+      icon:
+        dark: ../install-dark.svg
+        light: ../install-light.svg
+      pages:
+        - name: The loader
+          link: instalations/booting/
+        - name: Mobile devices
+          link: instalations/mobile-devices/
+        - name: Portable Game Consoles
+          link: instalations/portable-game-consoles/
+        - name: Virtual machine
+          link: instalations/virtual-machine/
+    - title: Software
+      icon:
+        dark: ../software-dark.svg
+        light: ../software-light.svg
+      pages:
+        - name: Text Editor
+          link: apps/text-editor/
+        - name: Amberol
+          link: apps/amberol/
+        - name: Moonlight
+          link: apps/moonlight/
+    - title: Guide ALT Mobile
+      icon:
+        dark: ../document-dark.svg
+        light: ../document-light.svg
+      pages:
+        - name: Game steaming from a computer on Ambernicc
+          link: guide-users/games/game-steaming/#стриминг-игр-с-компьютера-на-anbernic/
 teams:
   title: Contributions
   moreText: All contributions

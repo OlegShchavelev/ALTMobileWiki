@@ -9,17 +9,17 @@
 aggregation:
   sisyphus: # srpms id
   flatpak:
-    id:    # flatpak id
+    id: # flatpak id
     build: # сборка official/unofficial
   snap:
-    id:    # snap id
+    id: # snap id
     build: # сборка official/unofficial
   epm:
     play:
-      id:    # epm play id
+      id: # epm play id
       build: # сборка official/unofficial
 appstream:
-  id:   # appstream id приложения
+  id: # appstream id приложения
   name: # Название приложения
   icon: # путь к логотипу приложения
   summary: # краткое описание
@@ -28,16 +28,15 @@ appstream:
     name: # лицензия
     link: # ссылка на лицензию
   developer:
-    name:     # имя разработчика
+    name: # имя разработчика
     nickname: # nickname разработчика
-    avatar:   # ссылка или путь на аватар разработчика
+    avatar: # ссылка или путь на аватар разработчика
   url:
-    homepage:   # ссылка на страницу проекта
+    homepage: # ссылка на страницу проекта
     bugtracker: # ссылка на багтрекер (например, github issue)
-    translate:  # ссылка на помощь с переводом
-    help:       # ссылка на гайд по использованию
-    donation:   # ссылка на донаты
-
+    translate: # ссылка на помощь с переводом
+    help: # ссылка на гайд по использованию
+    donation: # ссылка на донаты
 ---
 ```
 
@@ -48,14 +47,14 @@ appstream:
 ```md
 ---
 keywords:
-  - core         # GNOME Core
-  - circle       # GNOME Circle
-  - dev          # GNOME Development
-  - oobe         # Предустановлено
-  - adaptive     # Адаптивное
-  - proprietary  # Проприетарное
+  - core # GNOME Core
+  - circle # GNOME Circle
+  - dev # GNOME Development
+  - oobe # Предустановлено
+  - adaptive # Адаптивное
+  - proprietary # Проприетарное
   - restrictions # Региональные ограничения
-  - dontthemes   # Please don’t theme
+  - dontthemes # Please don’t theme
 ---
 ```
 

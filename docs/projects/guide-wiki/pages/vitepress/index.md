@@ -172,16 +172,14 @@ export default {
 
 ```js
 export default {
-  name: 'MyComponent',
+  name: 'MyComponent'
   // ...
 }
 ```
 
 ```html
 <ul>
-  <li v-for="todo in todos" :key="todo.id">
-    {{ todo.text }}
-  </li>
+  <li v-for="todo in todos" :key="todo.id">{{ todo.text }}</li>
 </ul>
 ```
 
@@ -277,7 +275,7 @@ export default {
 
 ```js
 export default {
-  data () {
+  data() {
     return {
       msg: 'Подсвечено!' // [!code highlight]
     }
@@ -309,7 +307,7 @@ export default {
 
 ```js
 export default {
-  data () {
+  data() {
     return {
       msg: 'Фокус!' // [!code focus]
     }
@@ -372,7 +370,7 @@ export default {
 
 ```js
 export default {
-  data () {
+  data() {
     return {
       msg: 'Ошибка', // [!code error]
       msg: 'Предупреждение' // [!code warning]
@@ -533,7 +531,6 @@ b content 2
 
 **Разметка**
 
-
 ```md
 <!--@include: \@/.parts/blocks/constructing.md\-->
 ```
@@ -554,7 +551,6 @@ b content 2
 
 С помощью бейджев удобно добавлять статус к заголовкам или иным строковым элементам. Например, может быть полезно указать тип раздела или поддерживаемую версию.
 
-
 ### Использование в заголовках
 
 Вы можете использовать компонент Badge, который доступен глобально.
@@ -563,14 +559,20 @@ b content 2
 
 ```md
 ### Заголовок <Badge type="info" text="по умолчанию" />
+
 ### Заголовок <Badge type="tip" text="^1.9.0" />
+
 ### Заголовок <Badge type="warning" text="beta" />
+
 ### Заголовок <Badge type="danger" text="осторожно" />
 ```
 
 **Результат**
 
 #### Заголовок <Badge type="info" text="по умолчанию" />
+
 #### Заголовок <Badge type="tip" text="^1.9.0" />
+
 #### Заголовок <Badge type="warning" text="beta" />
+
 #### Заголовок <Badge type="danger" text="осторожно" />

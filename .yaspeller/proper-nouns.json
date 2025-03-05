@@ -24,6 +24,8 @@
   "RG|D",
   "snapshot",
   "TextEditor",
+  "BLE",
+  "NXP",
   "textpieces",
   "TextPieces",
   "VideoTrimmer",
@@ -35,6 +37,10 @@
   "AXP288",
   "10ICR",
   "SDIO",
+  "PS",
+  "RK3399",
   "1212",
-  "BCM43430"
+  "A72 x2",
+  "BCM43430",
+  "RTL8188FTV"
 ]

@@ -6,10 +6,10 @@
 
 After installing the ALT Mobile operating system, use for automation:
 
-| Login    | Password |
-| -------- | -------- |
-| root     | altlinux |
-| altlinux | 271828   |
+| Login      | Password   |
+| ---------- | ---------- |
+| `root`     | `altlinux` |
+| `altlinux` | `271828`   |
 
 ### I found a bug in the program. How do I report it?
 

@@ -9,34 +9,34 @@
 ::: tabs
 == RG353M/P/V, ARC D
 
-|     Компонент      |                                 Название                                |     Статус     |
+|     Компонент      |                                Название                                 |     Статус     |
 | :----------------: | :---------------------------------------------------------------------: | :------------: |
-|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                | :green_circle: |
-|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         | :green_circle: |
-|      Дисплей       |                    4 дюйма, 640 x 480 пикселей                          | :green_circle: |
-| Оперативная память |                            2 GB LPDDR4                                  | :green_circle: |
+|     Процессор      |                Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                 | :green_circle: |
+|      Графика       |                      Mali-G52 2EE, 2 ядра, 650Мгц                       | :green_circle: |
+|      Дисплей       |                       4 дюйма, 640 x 480 пикселей                       | :green_circle: |
+| Оперативная память |                               2 GB LPDDR4                               | :green_circle: |
 | Постоянная память  |                 eMMC 64 Gb, 2 слота microSD (до 512 GB)                 | :green_circle: |
-|  Сенсорная панель  |                Goodix / Hynitron cst3xx, 10 точек касания               | :green_circle: |
-|       Питание      |                 Сборка на 3500/3200 mAh, порт USB Type-C                | :green_circle: |
+|  Сенсорная панель  |               Goodix / Hynitron cst3xx, 10 точек касания                | :green_circle: |
+|      Питание       |                Сборка на 3500/3200 mAh, порт USB Type-C                 | :green_circle: |
 |        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO | :green_circle: |
 |        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        | :green_circle: |
-|     Вывод видео    |                            Mini HDMI                                    | :green_circle: |
-|        USB         |                        Порт USB Type-C (OTG)                            | :green_circle: |
+|    Вывод видео     |                                Mini HDMI                                | :green_circle: |
+|        USB         |                          Порт USB Type-C (OTG)                          | :green_circle: |
 
 == RG353PS/VS, ARC S
 
-|     Компонент      |                                 Название                                |     Статус     |
+|     Компонент      |                                Название                                 |     Статус     |
 | :----------------: | :---------------------------------------------------------------------: | :------------: |
-|     Процессор      |                 Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                | :green_circle: |
-|      Графика       |                    Mali-G52 2EE, 2 ядра, 650Мгц                         | :green_circle: |
-|      Дисплей       |                  4 дюйма, 640 x 480 пикселей                            | :green_circle: |
-| Оперативная память |                          1 GB LPDDR4                                    | :green_circle: |
-| Постоянная память  |                     2 слота microSD (до 512 GB)                         | :green_circle: |
-|       Питание      |              Сборка на 3500/3200 mAh, порт USB Type-C                   | :green_circle: |
+|     Процессор      |                Rockchip RK3566,"Cortex-A55 x4", 1,8 Ггц                 | :green_circle: |
+|      Графика       |                      Mali-G52 2EE, 2 ядра, 650Мгц                       | :green_circle: |
+|      Дисплей       |                       4 дюйма, 640 x 480 пикселей                       | :green_circle: |
+| Оперативная память |                               1 GB LPDDR4                               | :green_circle: |
+| Постоянная память  |                       2 слота microSD (до 512 GB)                       | :green_circle: |
+|      Питание       |                Сборка на 3500/3200 mAh, порт USB Type-C                 | :green_circle: |
 |        WiFi        | Адаптер беспроводной сети Realtek RTL8188FTV 802.11b/g/n 1T1R 2.4G SDIO | :green_circle: |
 |        Звук        |        2 динамика, порт для наушников 3,5мм, встроенный микрофон        | :green_circle: |
-|     Вывод видео    |                            Mini HDMI                                    | :green_circle: |
-|        USB         |                        Порт USB Type-C (OTG)                            | :green_circle: |
+|    Вывод видео     |                                Mini HDMI                                | :green_circle: |
+|        USB         |                          Порт USB Type-C (OTG)                          | :green_circle: |
 
 :::
 
@@ -98,13 +98,13 @@ apt-get install android-tools
 
 2. Вводим одну за другой команды, дожидаясь завершения выполнения каждой из них.
 
-Ищем наше устройство. Должна появиться строка к кодовым номером и названием \"Recovery\":
+Ищем наше устройство. Должна появиться строка к кодовым номером и названием «Recovery»:
 
 ```shell
 adb devices
 ```
 
-Получаем привелегии суперпользователя на системе устройства:
+Получаем привилегии суперпользователя на системе устройства:
 
 ```shell
 adb root

@@ -22,7 +22,7 @@
 |       Камеры       |   2MP (фронтальная) и 2MP (основная), обе на базе датчика OV2680    |   :red_circle:(\*)   |
 |  Датчик освещения  |                          Solteam JSA-1212                           |     :red_circle:     |
 |      Гироскоп      |                            Bosch BMG160                             |    :green_circle:    |
-|    Акселерометр    |                         AK09911C8KXCJK-1013                         |    :green_circle:    |
+|    Акселерометр    |                        AK09911C 8KXCJK-1013                         |    :green_circle:    |
 |    Вывод звука     |               Моно динамик, порт для наушников 3,5мм                | :green_circle:(\*\*) |
 |    Вывод видео     |                              Mini HDMI                              |    :green_circle:    |
 |        USB         |         Порт microUSB 2.0 (также для зарядки), порт USB 2.0         |    :green_circle:    |
