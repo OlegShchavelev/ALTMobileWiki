@@ -26,4 +26,4 @@ jobs:
         run: npm ci
       - name: Check spell using cspell
         run: |
-          npm run docs:cspell-full
+          npm run lint:cspell:full
