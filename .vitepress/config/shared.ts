@@ -26,6 +26,7 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
   sitemap: {
     hostname: 'https://altmobile.org'
   },
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
   vite: {
     plugins: [
       UnoCSS(),
