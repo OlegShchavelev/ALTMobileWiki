@@ -9,8 +9,9 @@
 ## Установка с помощью alt-rootfs-installer
 
 Установить систему на зашифрованный раздел можно с помощью интерактивной
-утилиты alt-rootfs-installer. Для этого у неё есть опции `--luks` и
-`--luks-opt="OPTSTR"` для передачи опций к `cryptsetup luksFormat`
+утилиты alt-rootfs-installer, начиная с версии 0.6.1-alt1. Для этого у неё
+есть опции `--luks` и `--luks-opt="OPTSTR"` для передачи опций к
+`cryptsetup luksFormat`
 
 Пример команды:
 
