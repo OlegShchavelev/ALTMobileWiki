@@ -82,7 +82,7 @@ wget http://nightly.altlinux.org/sisyphus/tested/regular-icewm-latest-x86_64.iso
 6. Скачайте образ ALT Mobile:
 
 ```shell
-wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-def-20241211-x86_64.img.xz
+wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-def-20250224-x86_64.img.xz
 ```
 
 7. Войдите в супер-пользователя (`root`) и перейдите в домашний каталог:
