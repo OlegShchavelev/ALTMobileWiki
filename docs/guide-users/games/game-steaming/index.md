@@ -14,7 +14,7 @@ Sunshine — это автономный игровой сервер Steam дл�
 wget https://github.com/LizardByte/Sunshine/releases/latest/download/sunshine.AppImage -O ~/Загрузки/sunshine.AppImage
 ```
 
-Для распоковки файла AppImage воспользуйте коммандой epm:
+Для распаковки файла AppImage воспользуйтесь командой `epm`:
 
 ```shell
 su -

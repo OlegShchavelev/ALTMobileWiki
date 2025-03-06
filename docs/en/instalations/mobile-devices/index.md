@@ -6,12 +6,12 @@ This section is dedicated to the installation of the ALT Mobile system on device
 
 - ALT Mobile image can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/), we need images containing `pine` in the name, for example `alt-mobile-phosh-pine-20240926-aarch64.img.xz`.
 
-### Installing on Internal Memory (emmc)
+### Installing on Internal Memory (eMMC)
 
 **Preparing the Phone:**
 
 - Make sure your PinePhone has the tow-boot loader installed on the SPI flash.
-- To boot the phone in emmc export mode as a USB drive, hold the Volume Up button while turning it on.
+- To boot the phone in eMMC export mode as a USB drive, hold the Volume Up button while turning it on.
 
 **Graphical Method of Installation:**
 
@@ -22,7 +22,7 @@ This section is dedicated to the installation of the ALT Mobile system on device
 - Specify the unpacked image and begin the writing process.
 - After writing, it is recommended to extend the system partition. For this, choose the "Resize" option.
 
-**Installing ALT Mobile on emmc via Terminal:**
+**Installing ALT Mobile on eMMC via Terminal:**
 
 - Execute the command where `sdX` is your PinePhone’s drive (replace X with your specific data):
 
@@ -88,7 +88,7 @@ This boot order and the ability to choose the boot source provide flexibility in
 
 ## Possible Issues
 
-**Problems with emmc firmware:**
+**Problems with eMMC firmware:**
 
 - If there are connection issues, try reversing the Type-C connector.
 - Ensure you are using the appropriate port and cable.

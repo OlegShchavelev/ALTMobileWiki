@@ -34,10 +34,12 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
+    "lint:remark": "remark ",
+    "lint:remark:full": "remark ./docs --frail",
     "lint:cspell": "npx cspell --show-context --show-suggestions --color",
     "lint:cspell:full": "npx cspell --show-context --show-suggestions --color \"./docs/**/*.md\"",
     "lint:yaspeller": "npx yaspeller --dictionary .yaspeller/frontmatter.json:.yaspeller/proper-nouns.json:.yaspeller/contribution-names.json",
     "lint:yaspeller:full": "npx yaspeller --dictionary .yaspeller/frontmatter.json:.yaspeller/proper-nouns.json:.yaspeller/contribution-names.json ./docs --only-errors",
-    "lint:spelling": "npm run lint:cspell:full || npm run lint:yaspeller:full"
+    "lint:spelling": "npm run lint:cspell:full && npm run lint:yaspeller:full"
   }
 }
