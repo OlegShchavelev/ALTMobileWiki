@@ -26,7 +26,9 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
   sitemap: {
     hostname: 'https://altmobile.org'
   },
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+  ],
   vite: {
     plugins: [
       UnoCSS(),
@@ -64,7 +66,10 @@ export const shared = defineConfigWithTheme<AMWTheme.Config>({
     search: {
       provider: 'local'
     },
-    logo: { src: '/logo.svg', width: 36, height: 36, alt: 'ALT Mobile Wike' },
+    logo: {
+      src: '/logo.svg',
+      alt: 'ALT Mobile Wiki'
+    },
     socialLinks: [
       {
         icon: 'github',
