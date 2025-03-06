@@ -1,42 +1,44 @@
 # Страница приложения
 
-Страница подчинённая разделу «Программное обеспечение», состоит из нескольких блоков
+Страница, относящаяся к разделу «Программное обеспечение», состоит из нескольких блоков.
 
 ## Метаданные
 
-```md
+Описываются в сегменте Frontmatter с помощью языка YAML.
+
+```yml
 ---
 aggregation:
-  sisyphus: # srpms id
+  sisyphus: # SRPMS ID
   flatpak:
-    id: # flatpak id
-    build: # сборка official/unofficial
+    id: # Flatpak ID
+    build: # сборка — official/unofficial
   snap:
-    id: # snap id
-    build: # сборка official/unofficial
+    id: # Snap ID
+    build: # сборка — official/unofficial
   epm:
     play:
-      id: # epm play id
-      build: # сборка official/unofficial
+      id: # EPM Play ID
+      build: # сборка — official/unofficial
 appstream:
-  id: # appstream id приложения
+  id: # Appstream ID приложения
   name: # Название приложения
-  icon: # путь к логотипу приложения
-  summary: # краткое описание
-  keywords: # список бейджей (подробнее ниже)
+  icon: # Путь к логотипу приложения
+  summary: # Краткое описание
+  keywords: # Список бейджей (подробнее ниже)
   metadata_license:
-    name: # лицензия
-    link: # ссылка на лицензию
+    name: # Лицензия
+    link: # Ссылка на лицензию
   developer:
-    name: # имя разработчика
-    nickname: # nickname разработчика
-    avatar: # ссылка или путь на аватар разработчика
+    name: # Имя разработчика
+    nickname: # Псевдоним разработчика
+    avatar: # Ссылка или путь на аватар разработчика
   url:
-    homepage: # ссылка на страницу проекта
-    bugtracker: # ссылка на багтрекер (например, github issue)
-    translate: # ссылка на помощь с переводом
-    help: # ссылка на гайд по использованию
-    donation: # ссылка на донаты
+    homepage: # Ссылка на страницу проекта
+    bugtracker: # Ссылка на багтрекер (например, github issue)
+    translate: # Ссылка на помощь с переводом
+    help: # Ссылка на гайд по использованию
+    donation: # Ссылка на донаты
 ---
 ```
 
@@ -44,7 +46,7 @@ appstream:
 
 В боковом баре используется следующий список бейджей:
 
-```md
+```yaml
 ---
 keywords:
   - core # GNOME Core
@@ -54,13 +56,13 @@ keywords:
   - adaptive # Адаптивное
   - proprietary # Проприетарное
   - restrictions # Региональные ограничения
-  - dontthemes # Please don’t theme
+  - dontthemes # Please don’t theme (stopthemingmy.app)
 ---
 ```
 
 ## Установка
 
-Текстовые блоки описывающий порядок установки приложения, необходимо лишь заполнить Frontmatter переменные и подключить шаблоны.
+Текстовые блоки, описывающий порядок установки приложения. Необходимо лишь заполнить Frontmatter-переменные и подключить шаблоны.
 
 ::: tabs
 == Репозиторий
