@@ -9,7 +9,32 @@ export const nav = (): DefaultTheme.NavItem[] => [
     text: 'О проекте',
     items: [
       { text: 'О проекте', link: '/projects/about/' },
+      { text: 'Справочник', link: '/projects/guide-wiki/pages/alteration/' },
       { text: 'Участники', link: '/projects/contributions/' }
+    ]
+  }
+]
+
+export const sidebarProjectGuide = (): DefaultTheme.SidebarItem[] => [
+  {
+    text: 'Создание страниц',
+    base: '/projects/guide-wiki/pages/',
+    items: [
+      { text: 'Внесение изменений', link: 'alteration/' },
+      { text: 'Возможности Markdown', link: 'markdown/' },
+      { text: 'Возможности VitePress', link: 'vitepress/' },
+      { text: 'Условия и правила размещения', link: 'moderation/' }
+    ],
+    collapsed: false
+  },
+  {
+    text: 'Макеты',
+    base: '/projects/guide-wiki/layouts/',
+    items: [
+      {
+        text: 'Страница приложения',
+        link: 'apps/'
+      }
     ]
   }
 ]
@@ -139,7 +164,11 @@ export const ru = defineConfigWithTheme<AMWTheme.Config>({
     },
     nav: nav(),
     sidebar: {
-      '/': { base: '/', items: sidebarDoc() }
+      '/': { base: '/', items: sidebarDoc() },
+      '/projects/guide-wiki/': {
+        base: '/reference/',
+        items: sidebarProjectGuide()
+      }
     },
     docFooter: {
       prev: 'Предыдущая страница',
