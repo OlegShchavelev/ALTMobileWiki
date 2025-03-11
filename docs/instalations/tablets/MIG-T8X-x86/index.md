@@ -58,7 +58,7 @@
 1. Скачиваем образ ОС:
 
 ```shell
-wget http://ftp.altlinux.org/pub/beta/mobile/sisyphus/latest/alt-mobile-phosh-un-def-20240926-x86_64.img.xz
+wget https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-def-latest-x86_64.img.xz
 ```
 
 2. Вставляем флешку / карту памяти в ПК, смотрим, как она определилась в системе, и записываем образ:
@@ -66,7 +66,7 @@ wget http://ftp.altlinux.org/pub/beta/mobile/sisyphus/latest/alt-mobile-phosh-un
 ```shell
 lsblk
 
-xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_устройства> oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat alt-mobile-phosh-def-latest-x86_64.img.xz | dd of=/dev/<имя_устройства> oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 3. Монтируем наш накопитель, и под `root` копируем образ прямо на неё
@@ -74,7 +74,7 @@ xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_уст
 ```shell
 [user@comp~]$ su -
 
-[root@comp~]# cp /home/user/alt-mobile-phosh-un-def-20240926-x86_64.img.xz /run/media/user/<имя_накопителя>
+[root@comp~]# cp /home/user/alt-mobile-phosh-def-latest-x86_64.img.xz /run/media/user/<имя_накопителя>
 ```
 
 4. Отмонтируем флешку.
@@ -104,7 +104,7 @@ xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_уст
 ```shell
 lsblk
 
-xzcat alt-mobile-phosh-un-def-20240926-x86_64.img.xz | dd of=/dev/<имя_eMMC> oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat alt-mobile-phosh-def-latest-x86_64.img.xz | dd of=/dev/<имя_eMMC> oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 9. По окончании процесса записи кликаем по верхней панели, в верхнем правом углу - по кнопке питания, и в выпадающем меню выбираем пункт "Выключить". После выключения вынимаем установочный накопитель.

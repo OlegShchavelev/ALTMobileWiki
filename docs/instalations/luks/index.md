@@ -61,7 +61,7 @@ mount LABEL=YOURLABEL_BOOT /mnt/luks_root/boot/
 Распаковываем тарболл в смонтированный корень.
 
 ```sh
-tar xf alt-mobile-phosh-pine-20241010-aarch64.tar.xz -C /mnt/luks_root/
+tar xf alt-mobile-phosh-pine-latest-aarch64.tar.xz -C /mnt/luks_root/
 ```
 
 Исправляем `extlinux.conf` указав правильный `LABEL=YOURLABEL_ROOT`.

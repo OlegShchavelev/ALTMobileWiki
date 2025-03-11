@@ -60,7 +60,7 @@
 1. Скачайте образы ОС ALT Regular (для примера — IceWM):
 
 ```shell
-wget http://nightly.altlinux.org/sisyphus/tested/regular-icewm-latest-x86_64.iso
+wget https://nightly.altlinux.org/sisyphus/tested/regular-icewm-latest-x86_64.iso
 ```
 
 2. Вставьте флешку / карту памяти в ПК и запишите образ `regular-icewm-latest-x86_64.iso` через ALT Media Writer;
@@ -82,7 +82,7 @@ wget http://nightly.altlinux.org/sisyphus/tested/regular-icewm-latest-x86_64.iso
 6. Скачайте образ ALT Mobile:
 
 ```shell
-wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-def-20250224-x86_64.img.xz
+wget https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-def-latest-x86_64.img.xz
 ```
 
 7. Войдите в супер-пользователя (`root`) и перейдите в домашний каталог:
@@ -98,7 +98,7 @@ wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-def-202502
 ```shell
 lsblk
 
-xzcat alt-mobile-phosh-un-def-<release_date>-x86_64.img.xz | dd of=/dev/<имя_eMMC> oflag=direct,sync iflag=fullblock bs=1M status=progress
+xzcat alt-mobile-phosh-def-latest-x86_64.img.xz | dd of=/dev/<имя_eMMC> oflag=direct,sync iflag=fullblock bs=1M status=progress
 ```
 
 9. По окончании процесса записи выполните команду `poweroff`. Планшет выключится. После выключения отключите внешний накопитель.

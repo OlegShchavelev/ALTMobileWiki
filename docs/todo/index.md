@@ -92,7 +92,7 @@ Chromium и Firefox не влезают в вертикальной ориент
 #### Поддержка других пользовательских оболочек
 
 - [ ] SWMO
-- [ ] KDE Plasma Mobile: есть в Сизифе, но сломана [BZ44714](http://bugzilla.altlinux.org/44714)
+- [ ] KDE Plasma Mobile: есть в Сизифе, но сломана [BZ44714](https://bugzilla.altlinux.org/44714)
 
 #### Интеграция с доменом
 
@@ -172,7 +172,7 @@ Chromium и Firefox не влезают в вертикальной ориент
 Telegram
 
 - [x] Обновить `telegram-desktop` в Сизифе (очень не хватает полноценной поддержки топиков)
-- [x] Проблема нестабильность новых версий [BZ47959](http://bugzilla.altlinux.org/47959)
+- [x] Проблема нестабильность новых версий [BZ47959](https://bugzilla.altlinux.org/47959)
 
 #### Браузеры
 
@@ -275,12 +275,12 @@ Telegram
 
 - [x] Тяжелые приложения долго грузятся и могут вовсе не загрузиться при запуске с основного экрана. При этом всегда загружаются из консоли (VT). Нужно разобраться что из прибивает, возможно, где-то `timeout` в `phosh`. Длительность загрузки связана с таском [Медленный I/O](#медленныи-i-o/), но это не объясняет прерывание процесса запуска
 - [x] Апстримный баг [GNOME](https://gitlab.gnome.org/GNOME/xdg-desktop-portal-gnome/-/issues/86) и [Flatpak](https://github.com/flatpak/xdg-desktop-portal/issues/986), [решение в Arch](https://bbs.archlinux.org/viewtopic.php?id=285590), [апстримный патч](https://github.com/flatpak/xdg-desktop-portal/pull/985), который не помог
-  - [x] Решено серией правок: [BZ46978](http://bugzilla.altlinux.org/46978), [BZ46895](http://bugzilla.altlinux.org/46014) [BZ46014](http://bugzilla.altlinux.org/46014) [BZ47681](http://bugzilla.altlinux.org/47681)
+  - [x] Решено серией правок: [BZ46978](https://bugzilla.altlinux.org/46978), [BZ46895](https://bugzilla.altlinux.org/46014) [BZ46014](https://bugzilla.altlinux.org/46014) [BZ47681](https://bugzilla.altlinux.org/47681)
 
 #### Энергосбережение
 
 - [x] Управление питанием модема через `udev`
-- [x] доработка phosh [BZ48062](http://bugzilla.altlinux.org/48062) — позволяет не просыпаться от сообщений о скором засыпании, что приводило к фактическому отсутствию сна и быстрому расходу батареи
+- [x] доработка phosh [BZ48062](https://bugzilla.altlinux.org/48062) — позволяет не просыпаться от сообщений о скором засыпании, что приводило к фактическому отсутствию сна и быстрому расходу батареи
 
 #### Отключения экрана
 

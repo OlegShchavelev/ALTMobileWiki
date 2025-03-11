@@ -4,7 +4,7 @@
 
 ## Скачивание образа ALT Mobile
 
-- Образ ALT Mobile можно скачать c [ftp](http://beta.altlinux.org/mobile/sisyphus/latest/), нам необходимы образы, содержащие в названии `pine`, к примеру `alt-mobile-phosh-pine-20240926-aarch64.img.xz`.
+- Образ ALT Mobile можно скачать c [ftp](https://beta.altlinux.org/mobile/sisyphus/latest/), нам необходимы образы, содержащие в названии `pine`, к примеру `alt-mobile-phosh-pine-latest-aarch64.img.xz`.
 
 ## Установка на внутреннюю память (eMMC)
 

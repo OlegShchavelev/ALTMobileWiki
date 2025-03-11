@@ -4,9 +4,7 @@
 
 ### Downloading the ALT Mobile Image
 
-The image of the ALT Mobile operating system can be downloaded from [ftp](http://beta.altlinux.org/mobile/sisyphus/latest /). Select a format image containing `un-def` in the name, for example — `alt-mobile-phosh-un-def-20240926-x86_64.img.xz`
-
-Unzip the downloaded image to a place convenient for you
+The image of the ALT Mobile operating system can be downloaded from [ftp](https://beta.altlinux.org/mobile/sisyphus/latest/). Select a format image containing `def` in the name. Unzip the downloaded image to a place convenient for you.
 
 **Note:** For virtualization purposes, an image with the architecture `x86_64` is required. Images for the `aarch64` and `risc-v` architectures are also supported and can be used in a similar way.
 
