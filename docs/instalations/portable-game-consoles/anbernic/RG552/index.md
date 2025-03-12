@@ -49,7 +49,7 @@ apt-get install alt-rootfs-installer
 Скачиваем образ с ядром rocknix:
 
 ```shell
-wget http://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-20250224-aarch64.img.xz
+wget https://beta.altlinux.org/mobile/sisyphus/latest/alt-mobile-phosh-rocknix-latest-aarch64.img.xz
 ```
 
 Вставляем адаптер с картой памяти в порт USB

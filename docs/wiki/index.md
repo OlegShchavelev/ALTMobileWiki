@@ -52,13 +52,13 @@
 
 ### Дисковые образы
 
-Есть сборки образов для архитектур `x86_64`, `aarch64`, `riscv`. Их можно как запускать на оборудовании, поддерживаемом ядром `un-def`, так и с помощью QEMU.
+Есть сборки образов для архитектур `x86_64`, `aarch64`, `riscv`. Их можно как запускать на оборудовании, поддерживаемом ядром `def`, так и с помощью QEMU.
 
 Они вполне достаточны для работ над мобильным интерфейсом, адаптацией приложений. При подключении внешнего модема, поддерживаемого ModemManager (в идеале Quectel EG25-G) возможна и работа с мобильными сетями и сопутствующей телефонией).
 
 ## Образы
 
-Образы для aarch64 оборудования и qemu для поддерживаемых архитектур доступны на ftp для [sisyphus](http://beta.altlinux.org/mobile/sisyphus/latest/) и [p11](http://beta.altlinux.org/mobile/p11/latest/).
+Образы для aarch64 оборудования и qemu для поддерживаемых архитектур доступны на ftp для [sisyphus](https://beta.altlinux.org/mobile/sisyphus/latest/) и [p11](https://beta.altlinux.org/mobile/p11/latest/).
 
 Инструмент сборки образов `mkimage-profiles` доступен в [git](https://git.altlinux.org/people/antohami/packages/mkimage-profiles.git).
 
