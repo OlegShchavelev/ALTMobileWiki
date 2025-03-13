@@ -8,24 +8,24 @@
 
 ### Технические характеристики
 
-|     Компонент      |                              Название                               |     Статус     |
-| :----------------: | :-----------------------------------------------------------------: | :------------: |
-|     Процессор      |                Intel® Atom™ Z8300, 4 ядра на 1,840 ГГц              | :green_circle: |
-|      Дисплей       |      10`1 дюйма, 1200x1920 пикселей, встроенная графика Intel HD    | :green_circle: |
-| Оперативная память |                              DDR3L 4GB                              | :green_circle: |
-| Постоянная память  |                  64GB eMMC, слот microSD (до 64 GB)                 | :green_circle: |
-|  Сенсорная панель  |                      GSL3680, 10 точек касания                      | :green_circle: |
-|        Звук        |            Intel Atom x5-E8000/J3xxx/N3xxx Series Imaging Unit      | :green_circle: |
-|      Питание       |                Аккумулятор, 6 600 мАч, контроллер AXP288            | :green_circle: |
-|        WiFi        | Адаптер беспроводной сети Broadcom BCM43430 802.11b/g/n 2.4GHz SDIO | :green_circle: |
-|     Bluetooth      |                        Realtek RGN RTL8723BS                        | :green_circle: |
-|       Камеры       |   2MP (фронтальная) и 2MP (основная), обе на базе датчика OV2680    |  :red_circle:  |
-|  Датчик освещения  |                          Solteam JSA-1212                           | :green_circle: |
-|      Гироскоп      |                            Bosch BMG160                             | :green_circle: |
-|    Акселерометр    |                        AK09911C 8KXCJK-1013                         | :green_circle: |
-|    Вывод звука     |               Моно динамик, порт для наушников 3,5мм                | :green_circle: |
-|    Вывод видео     |                              Micro HDMI                             | :green_circle: |
-|        USB         | Порт Micro USB 2.0 (OTG / зарядка), порт USB TypeC (только зарядка) | :green_circle: |
+|     Компонент      |                              Название                               |      Статус      |
+| :----------------: | :-----------------------------------------------------------------: | :--------------: |
+|     Процессор      |                Intel® Atom™ Z8300, 4 ядра на 1,840 ГГц              |  :green_circle:  |
+|      Дисплей       |      10`1 дюйма, 1200x1920 пикселей, встроенная графика Intel HD    |  :green_circle:  |
+| Оперативная память |                              DDR3L 4GB                              |  :green_circle:  |
+| Постоянная память  |                  64GB eMMC, слот microSD (до 64 GB)                 |  :green_circle:  |
+|  Сенсорная панель  |                      GSL3680, 10 точек касания                      |  :green_circle:  |
+|        Звук        |            Intel Atom x5-E8000/J3xxx/N3xxx Series Imaging Unit      |  :green_circle:  |
+|      Питание       |                Аккумулятор, 6 600 мАч, контроллер AXP288            |  :green_circle:  |
+|        WiFi        | Адаптер беспроводной сети Broadcom BCM43430 802.11b/g/n 2.4GHz SDIO |  :green_circle:  |
+|     Bluetooth      |                        Realtek RGN RTL8723BS                        |  :green_circle:  |
+|       Камеры       |   2MP (фронтальная) и 2MP (основная), обе на базе датчика OV2680    | :red_circle:(\*) |
+|  Датчик освещения  |                          Solteam JSA-1212                           |  :green_circle:  |
+|      Гироскоп      |                            Bosch BMG160                             |  :green_circle:  |
+|    Акселерометр    |                        AK09911C 8KXCJK-1013                         |  :green_circle:  |
+|    Вывод звука     |               Моно динамик, порт для наушников 3,5мм                |  :green_circle:  |
+|    Вывод видео     |                              Micro HDMI                             |  :green_circle:  |
+|        USB         | Порт Micro USB 2.0 (OTG / зарядка), порт USB TypeC (только зарядка) |  :green_circle:  |
 
 :::details Условные обозначения
 
@@ -42,8 +42,6 @@
 ### Примечания
 
 \* Отсутствует полноценный модуль ядра и драйвер.
-
-\*\* Конфигурация звукового устройства не совпадает с распиновкой гнезда для наушников.
 
 ## Подготовка
 
