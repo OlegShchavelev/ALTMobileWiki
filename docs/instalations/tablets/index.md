@@ -8,3 +8,4 @@
 - [Lenovo MIIX 320-10ICR](lenovo-miix-320-10icr/)
 - [Chuwi Hi8 Pro](chuwi-hi8-pro/)
 - [MIG T8X x86](MIG-T8X-x86/)
+- [Chuwi HiBook (CWI514)](chuwi-hibook-cwi514/)
