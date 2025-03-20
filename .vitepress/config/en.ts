@@ -19,7 +19,7 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
     items: [
       {
         text: 'Installation and update',
-        base: '/en/instalations',
+        base: '/en/installations',
         items: [
           { text: 'The loader', link: '/booting/' },
           { text: 'Mobile devices', link: '/mobile-devices/' },

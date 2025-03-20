@@ -31,13 +31,13 @@ categories:
         light: ../install-light.svg
       pages:
         - name: The loader
-          link: instalations/booting/
+          link: installations/booting/
         - name: Mobile devices
-          link: instalations/mobile-devices/
+          link: installations/mobile-devices/
         - name: Portable Game Consoles
-          link: instalations/portable-game-consoles/
+          link: installations/portable-game-consoles/
         - name: Virtual machine
-          link: instalations/virtual-machine/
+          link: installations/virtual-machine/
     - title: Software
       icon:
         dark: ../software-dark.svg
