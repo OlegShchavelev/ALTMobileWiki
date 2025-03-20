@@ -31,17 +31,17 @@ categories:
         light: install-light.svg
       pages:
         - name: Загрузчик
-          link: instalations/booting/
+          link: installations/booting/
         - name: Мобильные устройства
-          link: instalations/mobile-devices/
+          link: installations/mobile-devices/
         - name: Портативные игровые приставки
-          link: instalations/portable-game-consoles/
+          link: installations/portable-game-consoles/
         - name: Планшеты
-          link: instalations/tablets/
+          link: installations/tablets/
         - name: Виртуальная машина
-          link: instalations/virtual-machine/
+          link: installations/virtual-machine/
         - name: LUKS
-          link: instalations/luks/
+          link: installations/luks/
     - title: Програмное обеспечение
       icon:
         dark: software-dark.svg
