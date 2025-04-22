@@ -9,4 +9,4 @@
 - [Chuwi Hi8 Pro](chuwi-hi8-pro/)
 - [MIG T8X x86](MIG-T8X-x86/)
 - [Chuwi HiBook (CWI514)](chuwi-hibook-cwi514/)
-- [HP Pro Tablet 608 G1] (hp-pro-tablet-608-g1/)
+- [HP Pro Tablet 608 G1](hp-pro-tablet-608-g1/)
