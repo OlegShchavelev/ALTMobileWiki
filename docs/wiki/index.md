@@ -24,43 +24,119 @@
 
 Построение базовой системы на СПО позволяет легко добавить поддержку нового оборудования при условии наличия `devicetree` и исходников драйверов устройств.
 
-На текущий момент поддерживается ниже перечисленное оборудование:
+На текущий момент поддерживается ниже перечисленное оборудование
 
-#### Rockchip
+### Смартфоны
 
-Поддерживается оборудование на базе СнК Rockchip aarch64, для которых есть `devicetree` и драйвера для периферии. В частности:
+| **Модель**           |    PinePhone    |  PinePhone Pro  |
+| -------------------- | :-------------: | :-------------: |
+| **Статус**           | Готов к работе  | Готов к работе  |
+| **Процессор / SoC**  |  Allwinner A64  | Rockchip RK3399 |
+| **Экран**            | :green_circle:  | :green_circle:  |
+| **Графика**          | :green_circle:  | :green_circle:  |
+| **Накопитель**       | :green_circle:  | :green_circle:  |
+| **Батарея**          | :green_circle:  | :green_circle:  |
+| **Датчики**          | :green_circle:  | :green_circle:  |
+| **Звук**             | :green_circle:  | :green_circle:  |
+| **Bluetooth**        | :green_circle:  | :green_circle:  |
+| **Wi-Fi**            | :green_circle:  | :green_circle:  |
+| **Сеть по USB**      | :green_circle:  | :green_circle:  |
+| **Камера**           | :yellow_circle: | :yellow_circle: |
+| **Мобильные данные** | :green_circle:  | :green_circle:  |
+| **USB-OTG**          | :green_circle:  | :green_circle:  |
+| **NFC**              | :black_circle:  | :black_circle:  |
 
-##### `rk3399`
+### Планшеты
 
-Игровая приставка **Anbernic RG552**
+| **Модель**           |     PineTab 2     |     MIG T8X     |
+| -------------------- | :---------------: | :-------------: |
+| **Статус**           | Требует доработки |                 |
+| **Процессор / SoC**  |  Rockchip RK3566  |                 |
+| **Экран**            |  :green_circle:   | :green_circle:  |
+| **Графика**          |  :green_circle:   | :green_circle:  |
+| **Накопитель**       |  :green_circle:   | :green_circle:  |
+| **Батарея**          |  :green_circle:   | :green_circle:  |
+| **Датчики**          |  :yellow_circle:  | :green_circle:  |
+| **Звук**             |  :green_circle:   | :green_circle:  |
+| **Bluetooth**        |  :red_circle:\*   | :green_circle:  |
+| **Wi-Fi**            |  :yellow_circle:  | :yellow_circle: |
+| **Сеть по USB**      |  :green_circle:   | :green_circle:  |
+| **Камера**           |  :red_circle:\*   | :green_circle:  |
+| **Мобильные данные** |  :black_circle:   | :black_circle:  |
+| **USB-OTG**          |  :green_circle:   | :green_circle:  |
+| **NFC**              |  :black_circle:   | :black_circle:  |
 
-##### `rk3399s`
+### Планшеты-трансформеры
 
-Телефон **PinePhone Pro**
+| **Модель**           | Chuwi Hi8 Pro  | Chuwi HiBook (CWI514) | HP Pro Tablet 608 G1 | Lenovo MIIX 320-10ICR | RCA Cambio w101v2 |
+| -------------------- | :------------: | :-------------------: | :------------------: | :-------------------: | :---------------: |
+| **Статус**           |                |                       |                      |                       |                   |
+| **Процессор / SoC**  |                |                       |                      |                       |                   |
+| **Экран**            | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Графика**          | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Накопитель**       | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Батарея**          | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Датчики**          | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Звук**             | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Bluetooth**        | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Wi-Fi**            | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Сеть по USB**      | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **Камера**           | :red_circle:\* |    :red_circle:\*     |    :red_circle:\*    |    :red_circle:\*     |  :red_circle:\*   |
+| **Мобильные данные** | :black_circle: |    :black_circle:     |    :black_circle:    |    :black_circle:     |  :black_circle:   |
+| **USB-OTG**          | :green_circle: |    :green_circle:     |    :green_circle:    |    :green_circle:     |  :green_circle:   |
+| **NFC**              | :black_circle: |    :black_circle:     |    :black_circle:    |    :black_circle:     |  :black_circle:   |
 
-##### `rk3566`
+### Игровые приставки — первый этап
 
-Планшет **PineTab2**, игровые приставки **ANBERNIC RG ARC-D/RG ARC-S**, **Anbernic RG353M, P, V**
+| **Модель**           |    RG-353P     |    RG-353V     |    RG-353VS    |    RG-353M     |    RG-353PS    |       RG-503        |     RG-552     |  PowKiddy X55  |     RK2023     | RK2023 (Wi-Fi model) | PowKiddy RGB30 |    RG ARC-D    |    RG ARC-S    |   RGB10MAX3    |    RGB20SX     |        X35S         |     RGB20 Pro      |   GAMEMT E6 Plus    |
+| -------------------- | :------------: | :------------: | :------------: | :------------: | :------------: | :-----------------: | :------------: | :------------: | :------------: | :------------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :-----------------: | :----------------: | :-----------------: |
+| **Статус**           | Готов к работе | Готов к работе | Готов к работе | Готов к работе | Готов к работе |  Требует доработки  | Готов к работе | Готов к работе | Готов к работе |    Готов к работе    | Готов к работе | Готов к работе | Готов к работе | Готов к работе | Готов к работе |  Требует доработки  | Требует доработки  |  Требует доработки  |
+| **Процессор / SoC**  |     RK3566     |     RK3566     |     RK3566     |     RK3566     |     RK3566     |       RK3566        |     RK3399     |     RK3566     |     RK3566     |        RK3566        |     RK3566     |     RK3566     |     RK3566     |     RK3566     |     RK3566     |       RK3566        |       RK3566       |       RK3566        |
+| **Экран**            | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_circle:\*\* | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_circle:\*\* | :yello_circle:\*\* | :yello_circle:\*\*  |
+| **Графика**          | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   |   :green_circle:    |
+| **Накопитель**       | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   |   :green_circle:    |
+| **Батарея**          | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   | :yellow_circle:\*\* |
+| **Датчики**          | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    | :black_circle: | :black_circle: | :black_circle: |    :black_circle:    | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    |   :black_circle:   |   :black_circle:    |
+| **Звук**             | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    | :black_circle: | :black_circle: | :black_circle: |    :black_circle:    | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    |   :black_circle:   |   :black_circle:    |
+| **Bluetooth**        | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :black_circle: | :green_circle: | :black_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :red_circle:\*    |   :red_circle:\*   |   :red_circle:\*    |
+| **Wi-Fi**            | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :black_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :red_circle:\*    |   :red_circle:\*   |   :red_circle:\*    |
+| **Сеть по USB**      | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :red_circle:\*    |   :green_circle:   |   :red_circle:\*    |
+| **Камера**           | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    | :black_circle: | :black_circle: | :black_circle: |    :black_circle:    | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    |   :black_circle:   |   :black_circle:    |
+| **Мобильные данные** | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    | :black_circle: | :black_circle: | :black_circle: |    :black_circle:    | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    |   :black_circle:   |   :black_circle:    |
+| **USB-OTG**          | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   |   :green_circle:    |
+| **NFC**              | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    | :black_circle: | :black_circle: | :black_circle: |    :black_circle:    | :black_circle: | :black_circle: | :black_circle: | :black_circle: | :black_circle: |   :black_circle:    |   :black_circle:   |   :black_circle:    |
 
-#### Скиф
+### Игровые приставки — второй этап
 
-Специалистами Элвис обеспечена работа на системе на кристалле Скиф. Поддержка реализована в качестве производной ALT Mobile, использует ядро, отсутствующее в Сизифе.
+| **Характеристика**   | Retroid Pocket 5 \*\* |    RG-34XX     |   RG Cube XX   |    RG-40XXV    |    RG-40XXH    |   RG-35XX SP   |    RG-28XX     |  RG-35XX 2024  |   RG-35XX H    |  RG-35XX Plus  | RGb10 Max 3 Pro |
+| -------------------- | :-------------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :-------------: |
+| **Статус**           |      Эксперимент      |                |  Эксперимент   |                |                |  Эксперимент   |                |                |  Эксперимент   |                |   Эксперимент   |
+| **Процессор / SoC**  |    Qualcomm SD825     | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 |  Amlogic A311D  |
+| **Экран**            |    :green_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Графика**          |    :green_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Накопитель**       |    :green_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Батарея**          |    :green_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Датчики**          |    :black_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Звук**             |     :red_circle:      |                |                |                |                |                |                |                |                |                |                 |
+| **Bluetooth**        |     :red_circle:      |                |                |                |                |                |                |                |                |                |                 |
+| **Wi-Fi**            |     :red_circle:      |                |                |                |                |                |                |                |                |                |                 |
+| **Сеть по USB**      |    :green_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Камера**           |    :black_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **Мобильные данные** |    :black_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **USB-OTG**          |    :green_circle:     |                |                |                |                |                |                |                |                |                |                 |
+| **NFC**              |    :black_circle:     |                |                |                |                |                |                |                |                |                |                 |
 
-#### x86_64
+## Образы
 
-Планшеты **RCA Cambio w101v2** и **Lenovo MIIX 320-10ICR**
+Образы для `aarch64` оборудования и `qemu` для поддерживаемых архитектур доступны на FTP для веток [sisyphus](https://beta.altlinux.org/mobile/sisyphus/latest/) и [p11](https://beta.altlinux.org/mobile/p11/latest/).
+
+Инструмент сборки образов `mkimage-profiles` доступен в [git](https://altlinux.space/antohami/mkimage-profiles).
 
 ### Дисковые образы
 
 Есть сборки образов для архитектур `x86_64`, `aarch64`, `riscv`. Их можно как запускать на оборудовании, поддерживаемом ядром `def`, так и с помощью QEMU.
 
 Они вполне достаточны для работ над мобильным интерфейсом, адаптацией приложений. При подключении внешнего модема, поддерживаемого ModemManager (в идеале Quectel EG25-G) возможна и работа с мобильными сетями и сопутствующей телефонией).
-
-## Образы
-
-Образы для aarch64 оборудования и qemu для поддерживаемых архитектур доступны на ftp для [sisyphus](https://beta.altlinux.org/mobile/sisyphus/latest/) и [p11](https://beta.altlinux.org/mobile/p11/latest/).
-
-Инструмент сборки образов `mkimage-profiles` доступен в [git](https://git.altlinux.org/people/antohami/packages/mkimage-profiles.git).
 
 ### Сборка
 

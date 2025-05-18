@@ -43,6 +43,16 @@ export const sidebarDoc = (): DefaultTheme.SidebarItem[] => [
   {
     items: [
       {
+        text: 'Документация',
+        base: '/wiki',
+        items: [
+          {
+            text: 'Поддерживаемое оборудование',
+            link: '#поддерживаемое-оборудование'
+          }
+        ]
+      },
+      {
         text: 'Установка и обновление',
         base: '/instalations',
         items: [

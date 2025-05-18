@@ -88,7 +88,7 @@ git commit -m "commit message"
 Замените `commit message` на описание ваших изменений.
 
 == VSCodium
-Добавьте описание и нажмите «Сommit»,
+Добавьте описание и нажмите «Commit»,
 
 :::
 
