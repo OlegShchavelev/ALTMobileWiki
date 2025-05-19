@@ -26,6 +26,24 @@
 
 На текущий момент поддерживается ниже перечисленное оборудование
 
+:::details Условные обозначения
+
+:green_circle: `Работает` - работает в полном объёме
+
+:yellow_circle: `Частично` - работает частично
+
+:red_circle: `Не работает` - не работает
+
+:white_circle: `Отсутствует` - не предусмотрено спецификацией
+
+\* Отсутствует драйвер и модуль ядра
+
+** Требуется доработка Device Tree или смена ядра
+
+*** Требуется создание отдельного Device Tree
+
+:::
+
 ### Смартфоны
 
 | **Модель**           |    PinePhone    |  PinePhone Pro  |
@@ -92,7 +110,7 @@
 | -------------------- | :------------: | :------------: | :------------: | :------------: | :------------: | :-----------------: | :------------: | :------------: | :------------: | :------------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :-----------------: | :----------------: | :-----------------: |
 | **Статус**           | Готов к работе | Готов к работе | Готов к работе | Готов к работе | Готов к работе |  Требует доработки  | Готов к работе | Готов к работе | Готов к работе |    Готов к работе    | Готов к работе | Готов к работе | Готов к работе | Готов к работе | Готов к работе |  Требует доработки  | Требует доработки  |  Требует доработки  |
 | **Процессор / SoC**  |     RK3566     |     RK3566     |     RK3566     |     RK3566     |     RK3566     |       RK3566        |     RK3399     |     RK3566     |     RK3566     |        RK3566        |     RK3566     |     RK3566     |     RK3566     |     RK3566     |     RK3566     |       RK3566        |       RK3566       |       RK3566        |
-| **Экран**            | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_circle:\*\* | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_circle:\*\* | :yello_circle:\*\* | :yello_circle:\*\*  |
+| **Экран**            | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_circle:\*\* | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :yellow_circle:\*\* | :yellow_circle:\*\* | :yellow_circle:\*\*  |
 | **Графика**          | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   |   :green_circle:    |
 | **Накопитель**       | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   |   :green_circle:    |
 | **Батарея**          | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    | :green_circle: | :green_circle: | :green_circle: |    :green_circle:    | :green_circle: | :green_circle: | :green_circle: | :green_circle: | :green_circle: |   :green_circle:    |   :green_circle:   | :yellow_circle:\*\* |
@@ -108,7 +126,7 @@
 
 ### Игровые приставки — второй этап
 
-| **Характеристика**   | Retroid Pocket 5 \*\* |    RG-34XX     |   RG Cube XX   |    RG-40XXV    |    RG-40XXH    |   RG-35XX SP   |    RG-28XX     |  RG-35XX 2024  |   RG-35XX H    |  RG-35XX Plus  | RGb10 Max 3 Pro |
+| **Характеристика**   | Retroid Pocket 5 \*\* |    RG-34XX     |   RG Cube XX   |    RG-40XXV    |    RG-40XXH    |   RG-35XX SP   |    RG-28XX     |  RG-35XX 2024  |   RG-35XX H    |  RG-35XX Plus  | RGB10 Max 3 Pro |
 | -------------------- | :-------------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :-------------: |
 | **Статус**           |      Эксперимент      |                |  Эксперимент   |                |                |  Эксперимент   |                |                |  Эксперимент   |                |   Эксперимент   |
 | **Процессор / SoC**  |    Qualcomm SD825     | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 |  Amlogic A311D  |
