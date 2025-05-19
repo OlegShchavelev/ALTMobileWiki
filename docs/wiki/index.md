@@ -108,7 +108,7 @@
 
 ### Игровые приставки — второй этап
 
-| **Характеристика**   | Retroid Pocket 5 \*\* |    RG-34XX     |   RG Cube XX   |    RG-40XXV    |    RG-40XXH    |   RG-35XX SP   |    RG-28XX     |  RG-35XX 2024  |   RG-35XX H    |  RG-35XX Plus  | RGb10 Max 3 Pro |
+| **Характеристика**   | Retroid Pocket 5 \*\* |    RG-34XX     |   RG Cube XX   |    RG-40XXV    |    RG-40XXH    |   RG-35XX SP   |    RG-28XX     |  RG-35XX 2024  |   RG-35XX H    |  RG-35XX Plus  | RGB10 Max 3 Pro |
 | -------------------- | :-------------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :-------------: |
 | **Статус**           |      Эксперимент      |                |  Эксперимент   |                |                |  Эксперимент   |                |                |  Эксперимент   |                |   Эксперимент   |
 | **Процессор / SoC**  |    Qualcomm SD825     | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 | Allwinner H700 |  Amlogic A311D  |
